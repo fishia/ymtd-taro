@@ -1,0 +1,57 @@
+.guide-panel {
+  height: calc(100vh - 150px);
+  display: flex;
+  align-items: center;
+  align-items: center;
+
+  &__step-container {
+    height: 1000px;
+    width: 100%;
+  }
+
+  &__step-panel {
+    text-align: center;
+    height: 1000px;
+    width: 100%;
+  }
+
+  &__step-badge {
+    color: #141933;
+    font-size: 24px;
+    font-weight: 500;
+    color: #141933;
+    line-height: 34px;
+    border-radius: 8px;
+    border: 2px solid currentColor;
+    padding: 2px 10px;
+    display: inline-block;
+  }
+
+  &__step-title {
+    font-family: ymtdFont2;
+    font-size: 48px;
+    font-weight: normal;
+    color: #141933;
+    line-height: 64px;
+    margin-top: 12px;
+    margin-bottom: 32px;
+  }
+
+  &__step-bg {
+    width: 562px;
+    height: 720px;
+    margin-bottom: 88px;
+  }
+
+  &__action {
+    position: fixed;
+    bottom: 50px;
+    width: 100%;
+  }
+
+  &__button {
+    background: #4256DC;
+    margin: 0 56px;
+    width: 638px;
+  }
+}

@@ -1,0 +1,77 @@
+.hd-button {
+  text-align: center;
+
+  &--default {
+    width: 560px;
+    height: 88px;
+    border-radius: 44px;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 88px;
+  }
+
+  &--primary {
+    background: $primaryColor;
+    color: #FFFFFF;
+  }
+
+  &--border {
+    color: $primaryColor;
+    background: #fff;
+    border: 2px solid $primaryColor;
+  }
+
+  &--borderAndBg {
+    color: $primaryColor;
+    background: #f3f5ff;
+    border: 2px solid $primaryColor;
+  }
+
+  &--grey {
+    background: $borderColor;
+    color: #FFFFFF !important;
+  }
+
+  &--disabled {
+    background: #B4CBFC;
+    color: #FFFFFF !important;
+  }
+
+  &--delete {
+    width: 480px !important;
+    font-weight: 600;
+    background: #EAEAEA;
+    color: #636363 !important;
+    border-width: 0;
+    outline: none;
+
+    &::after {
+      border-width: 0;
+    }
+  }
+
+  &--text {
+    width: auto;
+    color: $primaryColor;
+    background: #fff;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  &--round {
+    border-radius: 9999PX;
+  }
+}
+
+// 去除默认边框
+taro-button-core:after {
+  display: none;
+}
+
+// 去除激活状态
+taro-button-core:not([disabled]):active {
+  background-color: initial !important;
+  color: inherit !important;
+}

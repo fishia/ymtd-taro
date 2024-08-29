@@ -1,0 +1,33 @@
+$MenuHeight: 158px;
+
+.active-Menu {
+  display: flex;
+  justify-content: space-around;
+  height: $MenuHeight;
+  align-items: center;
+  background: #fff;
+  border-bottom: 1px solid #f0f2f5;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 9;
+
+  & &__item {
+    text-align: center;
+
+    &__value {
+      font-size: 32px;
+      font-weight: 500;
+      color: #333333;
+      line-height: 44px;
+      margin-bottom: 5px;
+    }
+
+    &__description {
+      font-size: 28px;
+      font-weight: 400;
+      color: #999999;
+      line-height: 40px;
+    }
+  }
+}

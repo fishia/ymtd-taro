@@ -1,0 +1,138 @@
+.quality-position-popup {
+  position: relative;
+  max-height: 1240px;
+  width: 718px;
+  transition: opacity 200ms;
+  opacity: 0;
+  border-radius: 12px;
+  overflow: hidden;
+
+  &.dragonSpringWar {
+    width: 686px;
+    height: 1094px;
+    
+    .quality-position-popup__body {
+      width: 686px;
+      height: 100%;
+    }
+    .quality-position-popup__title {
+      display: none;
+    }
+    .quality-position-popup__scroll {
+      padding-top: 180rpx;
+      overflow: hidden;
+    }
+    .quality-position-popup__action {
+      margin-top: -150rpx;
+      opacity: 0;
+    }
+  }
+
+  &.active {
+    opacity: 1;
+  }
+
+  &__body {
+    width: 718px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__action {
+    height: 152px;
+    padding: 32px 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__confirm {
+    width: 654px;
+    height: 88px;
+    border-radius: 9999PX;
+    margin: 0 auto;
+  }
+
+  &__scroll {
+    max-height: 942px;
+    max-height: min(calc(75vh - 152px - 146px), 942px);
+    width: 686px;
+    margin: 0 auto;
+
+    &-inner {
+      border-radius: 12px;
+      background-color: #FFF;
+      width: 686px;
+    }
+  }
+
+  &__job-card {
+    position: relative;
+    margin-bottom: 0;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 32px;
+      right: 32px;
+      bottom: 0;
+      border-bottom: 1px solid #E6E8F2;
+    }
+
+    &:last-child::after {
+      border-bottom: none;
+    }
+  }
+
+  &__title {
+    height: 146px;
+    display: flex;
+    justify-content: center;
+    padding-top: 48px;
+
+    &-bg {
+      height: 68px;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    top: 30px;
+    right: 30px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: -20px;
+      bottom: -20px;
+      left: -20px;
+      right: -20px;
+    }
+  }
+}
+
+.quality-position-popup-mask {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+  background: rgba(0, 0, 0, 0.5);
+  transition: opacity 200ms;
+  opacity: 0;
+
+  &.active {
+    opacity: 1;
+  }
+
+  &.similar {
+    z-index: 50;
+  }
+}

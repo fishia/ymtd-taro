@@ -1,0 +1,13 @@
+
+@include setBackground('.two-way-selection-index', $bgColor, -1);
+
+.two-way-selection-index {
+  padding-bottom: $pageBottom;
+  overflow: hidden;
+
+ &__scrollView{
+    position:fixed;
+    top:0;
+    bottom:$pageBottom;
+ }
+}

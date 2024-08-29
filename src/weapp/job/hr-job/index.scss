@@ -1,0 +1,52 @@
+@include setBackground('.hr-job_index', $bgColor, -1);
+
+.hr-job_index {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+
+  &__card {
+    padding: 20px 30px 0 40px;
+    background: #FFF;
+  }
+
+  &__title {
+    padding-left: 30px;
+    line-height: 124px;
+    @extend .font48;
+    background-color: #fff;
+  }
+
+  &__position {
+    margin: 0 16px 16px 16px;
+  }
+
+  &__scrollView {
+    position: fixed;
+    width: 100%;
+    top: 210px;
+    bottom: $pageBottom;
+  }
+
+  &__jobList {
+    margin-top: 16px;
+  }
+
+  .at-tabs__header {
+    height: 104px !important;
+    background-color: #fff;
+    padding: 30px 0 0 32px;
+  }
+
+  .at-tabs__item {
+    line-height: 44px;
+  }
+
+  .at-tabs__item--active .at-tabs__item-underline {
+    transform: scaleX(1) translateX(0) !important;
+    width: 128px;
+    margin-top: 28px;
+  }
+
+}

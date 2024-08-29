@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 5</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="双选会-查看更多" transform="translate(-327.000000, -533.000000)">
+            <g id="编组-2" transform="translate(16.000000, 442.500000)">
+                <g id="编组-5" transform="translate(311.983962, 91.214413)">
+                    <g id="编组备份-3" transform="translate(15.508019, 15.411192) rotate(-180.000000) translate(-15.508019, -15.411192) translate(0.000000, 0.000000)" fill="#436EF3" fill-rule="nonzero">
+                        <polygon id="路径" points="1.58533551e-14 30.8223837 -1.40834382e-14 13.5153581 13.2719357 0.25 31.0160378 1.14847256e-14"></polygon>
+                    </g>
+                    <text id="投简历" transform="translate(19.171211, 19.965782) rotate(-45.000000) translate(-19.171211, -19.965782) " font-family="PingFangSC-Medium, PingFang SC" font-size="7" font-weight="400" fill="#FFFFFF">
+                        <tspan x="8.67121129" y="22.465782">投简历</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

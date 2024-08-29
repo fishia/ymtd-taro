@@ -1,0 +1,144 @@
+//@import url('../intentInfoCard/index.scss');
+
+.select-intents_popup__card {
+
+  & &__body {
+    width: 100%;
+    position: relative;
+  }
+
+  & &__title {
+    font-size: 36px;
+    font-weight: 600;
+    color: #333;
+    line-height: 50px;
+  }
+
+  & &__listTitle {
+    @extend .select-intents_popup__card__title;
+    font-size: 32px;
+  }
+
+  & &__tips {
+    font-size: 26px;
+    font-weight: 400;
+    color: #666;
+    line-height: 48px;
+    margin: 12px 0 48px 0;
+  }
+
+  & &__content {
+    height: 600px;
+    overflow: auto;
+  }
+
+  // & &__city_tags {
+  //   display: flex;
+  //   margin: 20px 0;
+  //   max-width: 33.33%;
+  //   white-space: wrap;
+  //   overflow: hidden;
+  //   text-overflow: ellipsis;
+
+  //   .selectd {
+  //     background-color: $primaryColor;
+  //     color: #fff;
+  //   }
+  // }
+
+  // & &__city_tag {
+  //   background-color: #F5f5f5;
+  //   color: #333;
+  //   padding: 5px 16px;
+  //   margin-right: 20px;
+  //   max-width: 208px;
+  //   border-radius: 2px;
+  //   font-size: 26px;
+  // }
+
+  & &__action {
+    margin: 40px 0;
+  }
+
+  & &__button {
+    text-align: center;
+    line-height: 88px;
+    color: #fff;
+    background: $primaryColor;
+    border-radius: 44px;
+    font-family: PingFangSC-Regular,
+      PingFang SC;
+    font-weight: 400;
+  }
+
+  .icon {
+    display: inline-block;
+    font-size: 34px;
+    margin-right: 20px;
+    vertical-align: bottom;
+  }
+
+  .icongouxuan {
+    color: #D8D8D8;
+    line-height: 34px;
+    padding-right: 20px;
+
+    &--checked {
+      color: $themeColor;
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      width: 40px;
+      height: 40px;
+      top: -6px;
+      left: -6px;
+      background-color: transparent;
+    }
+  }
+
+  &__intentInfocard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0;
+    padding: 32px 0;
+    border-bottom: 1px solid #F0F2F5;
+
+    &__orderIndex {
+      width: 40px;
+      line-height: 40px;
+      border-radius: 50%;
+      background: #4773FF;
+      text-align: center;
+      font-size: 24px;
+      color: #fff;
+    }
+
+    &__basic {
+      width: calc(100% - 65px);
+      flex-shrink: 0;
+    }
+
+    &__name {
+      font-size: 28px;
+      font-weight: 500;
+      color: #333;
+      line-height: 40px;
+    }
+
+    &__tags {
+      display: flex;
+    }
+
+    &__tag {
+      color: #666;
+      line-height: 36px;
+
+      &::after {
+        height: 27px;
+      }
+    }
+  }
+}

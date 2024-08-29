@@ -1,0 +1,35 @@
+.cityFilter-index {
+ &__menusWrapper {
+    position: fixed;
+    top: $navBarHeight;
+    left: 0;
+    bottom: #{$pageBottom};
+    width: 100%;
+    display: flex;
+    border-top: 1PX solid #E6E8F2;
+  }
+
+  &__menu {
+    width: 250px;
+    height: 100%;
+    flex: 0 0 auto;
+    box-sizing: border-box;
+    border-right: 1PX solid #E6E8F2;
+    &:nth-child(3) {
+      border-right: none;
+      .cityFilter-index__menu__block {
+        &--selected {
+          position: relative;
+         &::after{
+            content: url('./choose-line.png');
+            width: 36px;
+            height: 38px;
+            position: absolute;
+            right: 32px;
+            top: 22px;
+          }
+        }
+      }
+    }
+  }
+}

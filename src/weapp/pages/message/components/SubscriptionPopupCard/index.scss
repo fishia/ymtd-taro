@@ -1,0 +1,81 @@
+.commonTextStyle {
+  font-family: PingFangSC-Regular,
+    PingFang SC;
+  color: #333;
+  line-height: 44px;
+}
+
+.subscription_popup__card {
+  margin: 20px 32px 0 32px;
+
+  & &__body {
+    width: 100%;
+    position: relative;
+  }
+
+  &__image {
+    display: block;
+    width: 330px;
+    height: 302px;
+    margin: 0 auto 38px auto;
+  }
+
+  & &__title {
+    padding-top: 32px;
+    font-size: 32px;
+    font-weight: 600;
+    @extend .commonTextStyle;
+  }
+
+  & &__content {
+    font-size: 24px;
+    font-weight: 400;
+    @extend .commonTextStyle;
+    margin: 20px 0 28px 0;
+  }
+
+  & &__action {
+    display: flex;
+  }
+
+  & &__button {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 88px;
+    color: $textColor;
+    border-radius: 5px;
+    font-family: PingFangSC-Regular,
+      PingFang SC;
+    font-weight: 400;
+    margin: 0 20px;
+    flex-shrink: 0;
+  }
+
+  .primary {
+    max-width: 426px;
+    color: #fff;
+    background: $primaryColor;
+  }
+
+  .sub {
+    max-width: 240px;
+    color: #4773FF;
+    background: #F5F7F8;
+  }
+
+  .icon {
+    display: inline-block;
+    font-size: 34px;
+    margin-right: 20px;
+    vertical-align: bottom;
+  }
+
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 0px;
+    color: rgba($color: #fff, $alpha: 0.59);
+  }
+}

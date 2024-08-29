@@ -1,0 +1,62 @@
+.message-item__request {
+  display: flex;
+  justify-content: center;
+
+  & &__body {
+    width: 500px;
+    background-color: #fff;
+    border-radius: 8px;
+  }
+
+  & &__content {
+    padding: 30px;
+    font-size: 32px;
+    color: #333333;
+    font-weight: 500;
+    border-bottom: #F0F2F5 1PX solid;
+  }
+
+  & &__action {
+    padding: 20px 0;
+    display: flex;
+  }
+
+  & &__button {
+    flex-grow: 1;
+    font-size: 30px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    color: $textColor;
+    border-left: #F0F2F5 1PX solid;
+    position: relative;
+
+    &:first-child {
+      border-left: none;
+    }
+
+    &.hl {
+      color: $primaryColor;
+      font-weight: 500;
+    }
+
+    &.border {
+      color: #7A7F99;
+      font-weight: 500;
+    }
+
+    &.disabled {
+      color: #C7CBDE;
+    }
+
+    & .badge {
+      width: 136px;
+      height: 36px;
+      position: absolute;
+      top: -24px;
+      right: 14px;
+    }
+  }
+}

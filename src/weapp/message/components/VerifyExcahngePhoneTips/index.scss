@@ -1,0 +1,19 @@
+.message-item__verify-tips-exchange-phone {
+  font-size: 30px;
+  color: $titleColor;
+  margin-top: 50px;
+
+  &__name {
+    font-size: 34px;
+    font-weight: bold;
+    color: #333333;
+  }
+
+  &__number {
+    margin-top: 30px;
+  }
+
+  &__notice {
+    margin-bottom: 40px;
+  }
+}

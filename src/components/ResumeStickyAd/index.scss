@@ -1,0 +1,18 @@
+.hd-resume-sticky-ad {
+  width: 100%;
+  position: relative;
+  margin: 16px 0;
+  height: 392px;
+
+  &__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+  }
+  &__img {
+    width: 100%;
+    height: 392px;
+  }
+}

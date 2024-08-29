@@ -1,0 +1,28 @@
+.limit-job-card-list {
+  &__recruitList {
+    border-radius: 12px;
+    background-color: #fff;
+    padding: 0 32px;
+    margin-bottom: 16px;
+
+    .hd-jobcard {
+      padding: 40px 0;
+      margin-bottom: 0;
+      border-bottom: 1px solid #F5F5F9;
+    }
+    .job-company__jobCount{
+      margin-left: 100px;
+    }
+  }
+
+  &__btn {
+    text-align: center;
+    padding: 40px 0;
+    border-top: 1px solid #f0f2f5;
+    font-size: 28px;
+    font-family: PingFangSC-Semibold, PingFang SC;
+    font-weight: 600;
+    color: #474C66;
+    line-height: 40px;
+  }
+}

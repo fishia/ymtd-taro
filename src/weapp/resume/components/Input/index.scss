@@ -1,0 +1,38 @@
+.form__input {
+  position: relative;
+  height: 164px;
+  padding: 32px;
+
+  &__title {
+    font-size: 28px;
+    color: #333333;
+    line-height: 40px;
+  }
+
+  &__input {
+    margin-top: 16px;
+    display: block;
+    font-size: 32px;
+    font-weight: 500;
+    color: #333333;
+    line-height: 44px;
+  }
+
+  &__input-placeholder {
+    color: #999999;
+    font-weight: 400;
+  }
+
+  &::after {
+    @include halfPxBorder;
+    content: '';
+    left: 32px;
+    right: 32px;
+    background: #F0F2F5;
+    bottom: 0;
+  }
+
+  &--error::after {
+    background: $errorColor;
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "printWidth": 100,
+  "singleQuote": true,
+  "semi": false,
+  "trailingComma": "es5",
+  "tabWidth": 2,
+  "arrowParens": "avoid",
+  "endOfLine": "lf",
+  "useTabs": false,
+  "importOrder": [
+    "^@?/?!(def/|apis/|utils/|pages/|styles/|services/|components/|store/|layout/|hooks/|weapp/|config|assets/)[a-z].+",
+    "^@/?(def|apis|utils|pages|styles|services|components|store|layout|hooks|weapp|config)?/.+",
+    "^\\.\\.?/?s?((?!css).)+$",
+    "\\.",
+    "\\.s?css$"
+  ],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": false,
+  "importOrderGroupNamespaceSpecifiers": false
+}

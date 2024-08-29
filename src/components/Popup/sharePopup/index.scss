@@ -1,0 +1,72 @@
+.custom_fixed_bottom {
+  .hd-fixedbottompopup__container {
+    padding: 0;
+    bottom: 0;
+    padding-bottom: $pageBottom;
+    height: calc(400px + #{$pageBottom});
+    background: #F5F7FA;
+  }
+
+  .shared_card {
+    width: 100%;
+    height: 100%;
+
+    &__images {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: calc(100% - 88px);
+      width: 85%;
+      margin: 0 auto;
+    }
+
+    &__item {
+      text-align: center;
+      background-color: transparent;
+
+      // 清除taro默认伪元素
+      &:after {
+        display: none;
+      }
+
+      image {
+        width: 104px;
+        height: 104px;
+        border-radius: 50%;
+      }
+
+      .text {
+        @extend .font24;
+        line-height: 30px;
+      }
+    }
+
+    &__cancelbtn {
+      width: 100%;
+      line-height: 88px;
+      background-color: #fff;
+      @extend .font32;
+      position: absolute;
+      padding-bottom: $pageBottom;
+      bottom: 0;
+      text-align: center;
+    }
+  }
+}
+
+.share_swiper_container {
+  .hd-fixedbottompopup__container {
+    bottom: 0;
+    width: 750px;
+    height: calc(1000px + #{$pageBottom});
+    background: #F8F7FC;
+    border-radius: 20px 20px 0px 0px;
+    padding: 30px;
+    padding-bottom: calc(30px + #{$pageBottom});
+  }
+
+  .swiper_action {
+    height: calc(88px + #{$pageBottom});
+    padding-bottom: $pageBottom;
+  }
+}

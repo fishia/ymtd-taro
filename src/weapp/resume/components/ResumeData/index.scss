@@ -1,0 +1,47 @@
+.resume-field {
+  color: $titleColor;
+  padding-right: 16px;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 550px;
+  vertical-align: text-bottom;
+
+  &--inline {
+    display: inline;
+    word-break: break-all;
+    white-space: unset;
+    line-height: 1.6;
+    overflow: hidden;
+    text-overflow: unset;
+    max-width: unset;
+  }
+
+  &--separator {
+    &::after {
+      content: ' ';
+      vertical-align: middle;
+      margin-left: 16px;
+      display: inline-block;
+      height: 24px;
+      border-right: 1PX solid $borderColor;
+    }
+  }
+
+  &--separator-before {
+    &::before {
+      content: ' ';
+      vertical-align: middle;
+      margin-right: 16px;
+      display: inline-block;
+      height: 24px;
+      border-right: 1PX solid $borderColor;
+    }
+  }
+
+  &--hint {
+    font-weight: 400;
+    color: $noticeColor !important;
+  }
+}

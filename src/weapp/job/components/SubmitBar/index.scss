@@ -1,0 +1,25 @@
+.hd-submitbar {
+  position: fixed;
+  width: 100vw;
+  bottom: 0;
+  padding: 0 30px $pageBottom 30px;
+  display: flex;
+  align-items: center;
+  height:calc(#{$submitBarHeight} + #{$pageBottom});
+  border-top: 1PX solid #ebebeb;
+  background: #FFFFFF;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+
+  .badge {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 136px;
+    height: 34px;
+    right: 30px;
+    z-index: 1;
+    top: 20px;
+  }
+}

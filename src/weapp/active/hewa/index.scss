@@ -1,0 +1,32 @@
+.ym-to-hewa {
+  padding-bottom: calc(120px + #{$pageBottom});
+
+  Image {
+    width: 100vw;
+  }
+
+  .footer {
+    width: 100%;
+    height: calc(120px + #{$pageBottom});
+    padding: 16px 32px $pageBottom 32px;
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 0;
+    background: #FFFFFF;
+
+    .btn {
+      width: 100%;
+      height: 88px;
+      background: #4256DC;
+      border-radius: 88px;
+      font-family: PingFang SC;
+      font-size: 36px;
+      line-height: 88px;
+      font-weight: bold;
+      letter-spacing: 4px;
+      text-align: center;
+      color: #FFFFFF;
+      cursor: pointer;
+    }
+  }
+}

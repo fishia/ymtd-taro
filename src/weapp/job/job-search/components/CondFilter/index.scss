@@ -1,0 +1,51 @@
+.job-search__filter {
+  &__sub-cond {
+    .job-search__filter__block-title {
+      font-size: 28px;
+    }
+  }
+
+  &__block-title {
+    font-size: 32px;
+    font-weight: 600;
+    color: #151931;
+    line-height: 44px;
+    margin-bottom: 32px;
+  }
+
+  &__block-subtitle {
+    margin-left: 16px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #7B7F97;
+    line-height: 34px;
+  }
+
+  &__block-content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 216px;
+    background: #F7F8FA;
+    border-radius: 5px;
+    font-size: 26px;
+    font-weight: 400;
+    color: #474C66;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    text-align: center;
+    line-height: 36px;
+    padding: 16px;
+    min-height: 80px;
+
+    &.active {
+      background: #E8EFFC;
+      color: #4773FF;
+    }
+  }
+}

@@ -1,0 +1,68 @@
+.product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 160px;
+  border-radius: 4px;
+  border: 2px solid #E2E4EE;
+  margin-bottom: 32px;
+  &:last-child{
+    margin-bottom: 3px;
+  }
+
+  &__left {
+    width: 200px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+
+  }
+  image {
+    width: 200px;
+    height: 157px;
+  }
+
+  &__right {
+    width: 438px;
+    margin-right: 32px;
+    flex-shrink: 0;
+  }
+  &__name {
+    font-size: 28px;
+    font-weight: 500;
+    color: #141933;
+    line-height: 40px;
+    margin-bottom: 6px;
+  }
+
+  &__desc {
+    font-size: 24px;
+    font-weight: 400;
+    color: #7A7F99;
+    line-height: 34px;
+    max-height: 68px;
+    @include multiLineEllipsis;
+  }
+}
+.noflex {
+  display:block;
+  padding:0 60px;
+  border: none;
+  height:auto;
+  &__top{
+    width: 200px;
+    margin: 140px auto 32px auto;
+  }
+  &__bottom{
+    width: 100%;
+    .product__name{
+      text-align: center;
+    }
+  }
+  .product__desc{
+    display:block;
+    height: 374px;
+    max-height: 374px; // 解决别的地方样式污染此处
+    overflow: scroll;
+  }
+}

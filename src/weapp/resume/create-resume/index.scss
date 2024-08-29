@@ -1,0 +1,138 @@
+.create-resume {
+  // @include bg2();
+
+  overflow: hidden;
+  padding: 40px 32px $pageBottom;
+
+  &__dytips {
+    background-color: #8f96ae;
+    color: #fff;
+    font-size: 24px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 40px;
+    font-weight: 500;
+    color: #141933;
+    line-height: 56px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    &-extra {
+      position: relative;
+
+      &-icon {        
+        width: 35.2px;
+        height: 35.2px; 
+        margin-left: 4px;
+      }
+
+      &-tips {
+        position: absolute;
+        top: 40px;
+        left: -38px;
+        width: 408px;
+        height: 214px;
+        background-image: url('../../../assets/imgs/springWar/red-tips.png');
+        background-color: unset !important;
+        box-shadow: unset;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        .toast-tips__close {
+          width: 20px;
+          height: 20px;
+          top: 32px;
+          right: 28px;
+        }
+      }
+
+      .toast-tips__arrow {
+        display: none;
+      }
+      .tips-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 24px;
+        font-weight: 400;
+        color: #141933;
+        line-height: 32px;
+        height: 214px;
+
+
+        & > View {
+          margin: 8px 0;
+        }
+
+        .bold {
+          font-weight: bold;
+        }
+
+        .red {
+          color: #FE1521;
+        }
+
+      }
+    }
+  }
+
+  &__subTitle{
+    font-size: 28px;
+    font-weight: 400;
+    color: #7A7F99;
+    line-height: 40px;
+    margin-bottom: 72px;
+  }
+
+  &__topCard{
+    margin-bottom: 72px;
+  }
+
+  &__tips{
+    font-size: 24px;
+    font-weight: 400;
+    color: #7A7F99;
+    line-height: 34px;
+    margin-bottom: 72px;
+  }
+
+  &__regularBtn {
+    width: 112px;
+    line-height: 48px;
+    background: #4773FF;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    color: #FFFFFF;
+  }
+
+  &__block {
+    background: #ffffff;
+    border-radius: 5px;
+    margin-bottom: 20px;
+
+    &__title {
+      font-size: 36px;
+      font-weight: bold;
+      color: #333333;
+      line-height: 50px;
+      padding: 32px;
+    }
+
+    &__tips {
+      font-size: 28px;
+      color: #666666;
+      line-height: 40px;
+      padding: 0 32px;
+      margin-bottom: 18px;
+    }
+  }
+
+}

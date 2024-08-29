@@ -1,0 +1,182 @@
+@import "~taro-ui/dist/style/components/swipe-action.scss";
+
+.greeting-word {
+  @include bgFFF();
+
+  &__tips {
+    font-size: 26px;
+    font-weight: 400;
+    color: #999999;
+    line-height: 36px;
+    height: 116px;
+    padding: 32px;
+  }
+
+  &__body {
+    position: fixed;
+    top: 116px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  &__group {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 160px;
+    border-right: 1px #F0F2F5 solid;
+
+    &-item {
+      height: 96px;
+      font-size: 28px;
+      font-weight: 400;
+      color: #333333;
+      line-height: 96px;
+      text-align: center;
+
+      &.checked {
+        background: #E8EFFC;
+        font-weight: 500;
+        color: #4773FF;
+      }
+    }
+  }
+
+  &__list {
+    position: absolute;
+    top: 0;
+    bottom: calc(#{$pageBottom} + 88px + 88px);
+    left: 160px;
+    width: 590px;
+
+    &-item {
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 32px;
+        right: 32px;
+        border-bottom: 1px solid #F0F2F5;
+      }
+
+      &:last-of-type .greeting-word__content::after {
+        border-bottom: none;
+      }
+
+      &__content {
+        width: 590px;
+        position: relative;
+        padding: 32px 32px;
+      }
+
+      &__text {
+        width: 480px;
+        max-width: 480px;
+        display: inline-block;
+        vertical-align: top;
+        font-size: 28px;
+        font-weight: 400;
+        color: #333333;
+        line-height: 48px;
+        word-break: break-all;
+
+        &.checked {
+          color: #4773FF;
+        }
+
+        &.custom {
+          width: 420px;
+          max-width: 420px;
+        }
+      }
+
+      &__checked {
+        width: 32px;
+        height: 32px;
+        margin-left: 10px;
+        margin-top: 8px;
+      }
+
+      &__action {
+        position: absolute;
+        right: 32px;
+        top: 32px;
+        width: 48px;
+        height: 48px;
+        vertical-align: top;
+        z-index: 10;
+
+        &::after {
+          content: '';
+          position: absolute;
+          top: -30px;
+          bottom: -30px;
+          left: -30px;
+          right: -16px;
+          z-index: 10;
+        }
+      }
+
+      &__edit {
+        width: 48px;
+        height: 48px;
+      }
+
+      &__delete {
+        background-color: none;
+        background: url(../assets/delete-icon.png);
+        background-size: 48px 48px;
+        background-repeat: no-repeat;
+        background-clip: border-box;
+        padding: 0;
+      }
+    }
+  }
+
+  &__list-empty {
+    text-align: center;
+    padding-top: 182px;
+
+    &__bg {
+      width: 480px;
+    }
+
+    &__tips {
+      margin-top: 16px;
+      font-size: 28px;
+      font-weight: 400;
+      color: #999999;
+      line-height: 40px;
+    }
+  }
+
+  .at-swipe-action__option:active {
+    background-color: #FFF;
+  }
+
+  &__action {
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 162px;
+    right: 0;
+    padding: 44px 32px calc(44px + #{$pageBottom});
+  }
+
+  &__button {
+    width: unset;
+    border-radius: 9999PX;
+  }
+
+  &__full-tips {
+    font-size: 28px;
+    font-weight: 400;
+    color: #999999;
+    line-height: 40px;
+    text-align: center;
+  }
+}

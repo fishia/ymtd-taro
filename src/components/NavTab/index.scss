@@ -1,0 +1,75 @@
+$switch-underline_list: 0, 1, 2;
+$tabHeight: 88px;
+
+.nav-tab {
+  width: 100%;
+
+  &__fixed {
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    padding-left: 32px;
+    background-color: $primaryColor;
+  }
+
+  &__switch {
+    height: $tabHeight;
+    display: flex;
+    align-items: center;
+  }
+
+  &__switch-item {
+    font-size: 32px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 44px;
+    margin-right: 48px;
+    position: relative;
+    white-space: nowrap;
+
+    &.active {
+      font-size: 36px;
+      font-weight: 600;
+      color: #fff;
+    }
+
+    &--dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: #D13E37;
+      position: absolute;
+      top: 0;
+      right: -10px;
+    }
+  }
+
+  &__switch-underline {
+    position: absolute;
+    left: 50%;
+    bottom: -16px;
+    transform: translate(-50%, -50%);
+    height: 4px;
+    width: 86%;
+    border-radius: 9999PX;
+    background: #4773ff;
+    z-index: 99;
+  }
+}
+
+.customTab {
+  padding-left: 40px;
+  background-color: #fff;
+
+  .nav-tab__switch {
+    height: 96px;
+  }
+
+  .nav-tab__switch-item {
+    text-align: center;
+    font-size: 28px;
+    margin-right: 64px;
+    white-space: nowrap;
+  }
+}

@@ -1,0 +1,54 @@
+.form__inputText {
+  position: relative;
+  padding: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__input {
+    width: 568px;
+    font-size: 32px;
+    color: #141933;
+    line-height: 44px;
+    flex: 1 1 auto;
+  }
+
+  &__input-placeholder {
+    color: #C7CBDE;
+  }
+
+  &__lengthCount {
+    width: 120px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 24px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #474C66;
+    line-height: 20px;
+
+    &--hl {
+      color: $primaryColor;
+      margin-left: 4px;
+    }
+  }
+
+  &::after {
+    @include halfPxBorder;
+    content: '';
+    left: 32px;
+    right: 32px;
+    background: $primaryColor;
+    bottom: 0;
+  }
+
+  &--error::after {
+    background: $errorColor;
+  }
+
+  image {
+    width: 32px;
+    height: 32px;
+  }
+}

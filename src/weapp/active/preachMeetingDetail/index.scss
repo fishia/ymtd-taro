@@ -1,0 +1,51 @@
+@import '~taro-ui/dist/style/components/tabs.scss';
+@include setBackground('.preach-meeting-detail-index', $bgColor, -1);
+
+$AudioHeight:420px;
+$companyHeight: 192px;
+$tabHeaderHeight:90px;
+
+.preach-meeting-detail-index {
+  width: 100%;
+
+  .at-tabs {
+    position: fixed;
+    top: #{$AudioHeight + 150px};
+    bottom:$pageBottom;
+    height: auto;
+  }
+
+  .at-tabs__header {
+    height: $tabHeaderHeight;
+  }
+
+  .at-tabs__item {
+    height: $tabHeaderHeight;
+    font-size: 32px;
+    line-height: 44px;
+    padding: 28px;
+  }
+
+  .at-tabs__body {
+    height: 100%;
+    padding-bottom: $tabHeaderHeight;
+  }
+
+  .at-tabs-pane {
+    height: 100%;
+    overflow-y: scroll;
+  }
+  .noCompany {
+    background-color: #fff;
+    height:100%;
+    overflow: hidden;
+    .hd-empty__image {
+      width:375px;
+      height:270px;
+      margin:92px auto 0 auto;
+    }
+  }
+  &__scrollView {
+    height: 100%;
+  }
+}

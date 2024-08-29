@@ -1,0 +1,14 @@
+.edit-basic-info {
+  @include bgFFF();
+
+  padding-bottom: calc(189px + #{$pageBottom});
+  padding-top: 40px;
+  overflow: hidden;
+  position: relative;
+  color: $titleColor;
+
+  &__block {
+    margin-bottom: 10px;
+    background-color: #fff;
+  }
+}

@@ -1,0 +1,35 @@
+.login-tips-card {
+  &.login-tips-card {
+    text-align: center;
+    padding: 32px;
+    background: #FFFFFF !important;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    background: unset;
+  }
+
+  &__title {
+    font-size: 32px;
+    font-weight: 500;
+    color: #333333;
+    line-height: 44px;
+  }
+
+  &__tips {
+    margin-top: 16px;
+    font-size: 24px;
+    color: #999999;
+    line-height: 34px;
+  }
+
+  &__button {
+    margin-top: 32px;
+    display: inline-block;
+    background: #4655D4;
+    border-radius: 9999PX;
+    font-size: 24px;
+    color: #FFFFFF;
+    padding: 16px 170px;
+    line-height: 34px;
+  }
+}

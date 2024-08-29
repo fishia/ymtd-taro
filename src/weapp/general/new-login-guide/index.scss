@@ -1,0 +1,170 @@
+.new-login-guide {
+  overflow: hidden;
+
+  &__header {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    width: 212px;
+    height: 60px;
+    margin-left: 32px;
+  }
+
+  &__title {
+    padding-left: 32px;
+    margin-top: 38px;
+    margin-bottom: 96px;
+    display: flex;
+    align-items: center;
+
+    &__text-main {
+      font-size: 36px;
+      font-weight: 500;
+      color: #151931;
+      line-height: 50px;
+    }
+
+    &__text-sub {
+      margin-top: 8px;
+      font-size: 24px;
+      color: #7B7F97;
+      line-height: 34px;
+    }
+
+    &__toggler {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      margin-right: 32px;
+      padding: 8px 24px;
+      font-size: 24px;
+      color: #4655D4;
+      line-height: 34px;
+      background: #FFFFFF;
+      box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+      border-radius: 9999PX;
+
+      &-icon {
+        margin-left: 6px;
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+
+  &__form {
+    margin-bottom: 36px;
+
+    .form__link,
+    .form__salary-range-picker,
+    .form__location-picker {
+      height: 156px;
+    }
+
+    .form__link__title,
+    .form__salary-range-picker__title,
+    .form__location-picker__title {
+      font-size: 28px;
+      font-weight: 500;
+      color: #484C64;
+      line-height: 40px;
+    }
+
+    .form__link__placeholder,
+    .form__salary-range-picker__placeholder,
+    .form__location-picker__placeholder {
+      font-size: 24px;
+      color: #C8CBDC;
+      line-height: 34px;
+    }
+
+    .form__link__content,
+    .form__salary-range-picker__content,
+    .form__location-picker__content {
+      margin-top: 8px;
+    }
+
+    .form__link__arrow,
+    .form__salary-range-picker__arrow,
+    .form__location-picker__arrow {
+      bottom: 92px;
+    }
+  }
+
+  &__action-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 254px;
+  }
+
+  &__action {
+    padding-top: 46px;
+    padding-bottom: 48px;
+    background: #FFFFFF;
+    width: 100%;
+
+    &.relative {
+      position: absolute;
+      top: 0;
+    }
+
+    &.fixed {
+      border-top: 1PX solid #E2E4ED;
+      position: fixed;
+      padding-bottom: calc(48px + #{$pageBottom});
+      bottom: 0;
+
+      .skip {
+        font-weight: 400;
+        color: #4655D4;
+      }
+    }
+
+    &__submit {
+      width: 638px;
+      background: #4655D4;
+    }
+
+    &__skip {
+      display: inline-block;
+      margin-top: 32px;
+      font-size: 28px;
+      color: #7B7F97;
+      line-height: 40px;
+    }
+  }
+
+  &__bg {
+    margin-top: 164px;
+    margin-bottom: 254px;
+    width: 750px;
+  }
+
+  &__recommend {
+    display: flex;
+    align-items: center;
+    padding: 18px 32px;
+    padding-right: 0;
+    font-size: 24px;
+    color: #484C64;
+    line-height: 34px;
+
+    &-item {
+      flex-shrink: 0;
+      padding: 10px 16px;
+      font-size: 24px;
+      color: #484C64;
+      line-height: 34px;
+      background: #F7F8FA;
+      border-radius: 4px;
+      margin-left: 14px;
+
+      &.actived {
+        background: #F3F5FE;
+        color: #4655D4;
+      }
+    }
+  }
+}

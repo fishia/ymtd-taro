@@ -1,0 +1,82 @@
+.text-input {
+  @include bgFFF();
+
+  padding: 32px;
+
+  &__textarea {
+    display: block;
+    width: 686px;
+    word-break: break-all;
+    font-size: 32px;
+    font-weight: 400;
+    color: #333333;
+    line-height: 48px;
+  }
+
+  &__textarea-placeholder {
+    word-break: break-all;
+    font-size: 32px;
+    font-weight: 400;
+    color: #CCCCCC;
+    line-height: 48px;
+  }
+
+  &__border {
+    height: 32px;
+    border-bottom: 1PX solid #F0F2F5;
+  }
+
+  &__action {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 32px 32px calc(32px + #{$pageBottom});
+    z-index: 100;
+  }
+
+  &__confirm {
+    width: unset;
+    border-radius: 9999PX;
+  }
+
+  &__toolbar {
+    transition: bottom 150ms ease-in-out;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: calc(88px + 64px + #{$pageBottom});
+    background-color: #fff;
+    z-index: 10;
+    height: 108px;
+    padding: 22px 32px;
+    font-size: 28px;
+    font-weight: 400;
+    color: #CCCCCC;
+    line-height: 44px;
+  }
+
+  &__toolbar-tips.strong {
+    font-size: 32px;
+    font-weight: 400;
+    color: #999990;
+    line-height: 44px;
+  }
+
+  &__toolbar-submit {
+    position: absolute;
+    display: inline-block;
+    right: 32px;
+    bottom: 24px;
+    width: 120px;
+    height: 64px;
+    text-align: center;
+    background: #4773FF;
+    border-radius: 9999PX;
+    font-size: 28px;
+    padding: 12px 32px;
+    font-weight: 500;
+    color: #FFFFFF;
+    line-height: 40px;
+  }
+}

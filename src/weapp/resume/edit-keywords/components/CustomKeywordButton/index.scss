@@ -1,0 +1,44 @@
+.commonInputStyle {
+  height: 74px;
+  margin-top: 20px;
+  border-bottom: 1px solid #F0F2F5;
+}
+
+.custom-keyword-button {
+  width: 216px;
+  line-height: 80px;
+  border-radius: 5px;
+  border: 2px dashed #448DE4;
+  text-align: center;
+  color: #333;
+  @extend .font26;
+  margin: 50px 32px 32px 32px;
+  position: relative;
+  padding-left: 40px;
+
+  &__plus {
+    font-weight: bold;
+    font-size: 20PX;
+    position: absolute;
+    left: 50px;
+    top: -4px;
+  }
+}
+
+.keyword-input {
+  @extend .commonInputStyle;
+
+  .input-placeholder {
+    color: #959595;
+    @extend .font24;
+  }
+}
+
+.keyword-input-placeholder--strong {
+  @extend .commonInputStyle;
+
+  .input-placeholder {
+    color: #FFC3C3;
+    @extend .font24;
+  }
+}

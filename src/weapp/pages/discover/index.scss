@@ -1,0 +1,65 @@
+.discover-index {
+  &__top {
+    padding: 24px 32px;
+    height: 166px;
+  }
+
+  &__tags {
+    display: flex;
+    align-items: center;
+    padding-bottom: 24px;
+  }
+
+  &__tag {
+    padding: 0 20px;
+    line-height: 60px;
+    background: #F3F5FF;
+    border-radius: 8px;
+    @extend .font24;
+    color: #474C66;
+    margin-right: 20px;
+
+    &--active {
+      color: $primaryColor;
+    }
+  }
+
+  &__desc {
+    display: flex;
+    padding: 0 0 24px 20px;
+  }
+
+  &__count {
+    font-size: 24px;
+    font-family: PingFangSC-Semibold, PingFang SC;
+    color: #7A7F99;
+    line-height: 34px;
+    margin-right: 20px;
+
+    text {
+      color: #141933;
+      font-weight: 600;
+    }
+  }
+
+  &__scrollView {
+    position: fixed;
+    bottom: $tabBarBottom;
+    background: #ECEEF4;
+    padding: 16px 0;
+  }
+
+  &__list {
+    margin: 0 32px;
+
+    .job-company {
+      border-top: 0;
+    }
+  }
+
+  &__empty {
+    .hd-empty__image {
+      margin-top: 120px;
+    }
+  }
+}

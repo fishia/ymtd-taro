@@ -1,0 +1,23 @@
+.detail-location {
+  display: flex;
+  align-items: center;
+
+  &__position {
+    font-size: 24px;
+    font-weight: 400;
+    color: #474C66;
+    line-height: 34px;
+  }
+
+/*   .icondingwei {
+    margin-right: 20px;
+    font-size: 40px;
+    color: $primaryColor;
+  }
+
+  &__line {
+    margin: 20px 0;
+    height: 1px;
+    background-color: $bgColor;
+  } */
+}

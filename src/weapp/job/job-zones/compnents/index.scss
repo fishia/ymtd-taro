@@ -1,0 +1,57 @@
+.zones-navigation {
+  z-index: 5;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  &__title {
+    font-size: 34px;
+    font-weight: 600;
+    color:#1A1919;
+    text-align: center;
+    position: relative;
+  }
+  .whiteTitle{
+    font-weight: 600;
+    color: #FFFFFF;
+  }
+
+  &__tabs {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height:90px;
+    .tabItem--active {
+      font-weight: 600;
+      color:#151931;
+    }
+  }
+
+  &__tabItem {
+    max-width: 200px;
+    height: 44px;
+    font-size: 32px;
+    margin: 0 32px;
+    color:#303958;
+    line-height: 44px;
+    font-weight: 400;
+    @extend .line-ellipsis;
+  }
+  & &__icon {
+    position: absolute;
+    left: 10px;
+    top: 0;
+    display: inline-block;
+  }
+
+  & &__back {
+    display: inline-block;
+    color: #000;
+    font-size: 60px;
+  }
+}
+
+.hasBg {
+  background: url('./navbg.png');
+  background-size: 100% 100%;
+}

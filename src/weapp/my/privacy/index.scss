@@ -1,0 +1,26 @@
+@include setBackground('.my-privacy', #f5f7fa, -1);
+
+.my-privacy {
+  .card {
+    padding-top: 20px;
+    background-color: #fff;
+
+    .hd-cell__title {
+      font-size: 30px;
+      color: #333;
+    }
+  }
+
+  .hd-cell {
+    padding: 45px 30px;
+    height: 130px;
+  }
+
+  .form__switch-weapp {
+    padding: 45px 30px;
+  }
+
+  .form__switch-weapp__title {
+    font-weight: 500;
+  }
+}

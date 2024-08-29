@@ -1,0 +1,149 @@
+.job-hr {
+  display: flex;
+  align-items: center;
+  padding: 40px 0;
+  background-color: #fff;
+
+  &__tip {
+    width: 361px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    display: inline-block;
+    max-width: 50%;
+    word-break: break-all;
+    @extend .line-ellipsis;
+    font-size: 28px;
+    font-weight: 400;
+    color: #999;
+    line-height: 40px;
+
+  }
+
+  &__right {
+    flex: 1;
+    position: relative;
+  }
+
+  &__rightTop {
+    width: 361px;
+    display: flex;
+    align-items: center;
+    margin: 8px 0 8px 0;
+  }
+
+  &__icon {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    margin-right: 16px;
+    position: relative;
+  }
+
+  &__headFrame {
+    width: 124px;
+    height: 124px;
+    // border-radius: 50%;
+    margin-right: 16px;
+    position: absolute;
+    top: -16px;
+    left: -12px;
+    z-index: 1;
+  }
+
+  &__title {
+    max-width: 350px;
+    display: flex;
+
+    @extend .font32;
+    @extend .line-ellipsis;
+    color: #151931;
+    font-weight: 400;
+    line-height: 44px;
+
+    &__identity {
+      font-size: 28px;
+      color: #999;
+      margin-left: 16px;
+    }
+  }
+
+
+
+  &__intro {
+    display: flex;
+    @extend .font28;
+    @extend .line-ellipsis;
+    color: $titleColor;
+    margin-bottom: 8px;
+
+  }
+
+  &__onlineTag {
+    width: 64px;
+    padding-left: 18px;
+    line-height: 34px;
+    background-color: #F2FAEE;
+    color: #80A946;
+    font-size: 20px;
+    margin-left: 16px;
+    border-radius: 6px;
+    position: relative;
+
+    &::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      background-color: #80A946;
+      border-radius: 50%;
+      position: absolute;
+      top: 15px;
+      left: 8px;
+    }
+  }
+
+  &__textTag {
+    @extend .font24;
+    color: #7B7F97;
+    margin-left: 16px;
+  }
+
+  &__replyTag {
+    background: #F3F5FF;
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #8F96AE;
+    line-height: 28px;
+    padding: 3px 6px;
+    margin-left: 8px;
+  }
+
+  .at-icon-chevron-right {
+    color: #7A7F99;
+    margin-left: auto;
+    font-size: 42px;
+  }
+
+  .chatBtn {
+    position: absolute;
+    top: 50%;
+    right: 6px;
+    transform: translateY(-50%);
+
+    .circle {
+      line-height: 48px;
+      background: #4655D4;
+      border-radius: 44px;
+      // border: 1px solid #4773ff;
+      font-size: 24px;
+      color: #FFFFFF;
+      width: 192px;
+      height: 48px;
+      border-radius: 44px;
+      padding: 0 24px;
+    }
+  }
+}

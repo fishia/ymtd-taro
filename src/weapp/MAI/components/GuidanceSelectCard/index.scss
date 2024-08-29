@@ -1,0 +1,33 @@
+.newBottomBtn{
+    width: 490px;
+    height: 64px;
+    line-height: 64px;
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 32px;
+    margin-bottom: 12px;
+  }
+  
+  .newBottomLine{
+    width: 490px;
+    height: 1px;
+    background: #E6E8F2;
+    margin: 32px auto;
+  }
+  .borderNone{
+    border-bottom: none !important;
+  }
+
+  .message-content-title{
+    .text{
+        margin-top: 32px;
+        color:#474C66;
+        font-family: PingFang SC;
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 46px;
+    }
+    .iconMAIedit{
+      font-size: 26px;
+    }
+  }

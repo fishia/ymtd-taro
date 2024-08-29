@@ -1,0 +1,19 @@
+.message-item {
+  padding: 25px 0;
+
+  &:first-child {
+    padding-top: 50px;
+  }
+
+  &:last-child {
+    padding-bottom: 50px;
+  }
+
+  & &__time {
+    text-align: center;
+    font-size: 24px;
+    line-height: 24px;
+    color: $tipColor;
+    padding-bottom: 50px;
+  }
+}

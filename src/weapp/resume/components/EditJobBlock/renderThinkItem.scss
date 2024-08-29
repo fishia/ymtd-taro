@@ -1,0 +1,30 @@
+.resume__position-input {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+
+  &__item {
+    border-bottom: 1px solid #F0F2F5;
+    margin: 20px 32px;
+
+    &__title {
+      font-size: 28px;
+      font-weight: 400;
+      color: #414141;
+      line-height: 40px;
+
+      .text--emphasize {
+        color: #668EF6;
+      }
+    }
+
+    &__sub {
+      font-size: 24px;
+      font-weight: 400;
+      color: #8E8E8E;
+      line-height: 34px;
+      margin: 20px 0;
+    }
+  }
+}

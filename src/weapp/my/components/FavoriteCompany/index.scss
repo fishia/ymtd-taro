@@ -1,0 +1,52 @@
+.favorite-company {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 85PX;
+  padding: 40px 30px;
+  background-color: #fff;
+  margin-bottom: 10px;
+
+  &__left {
+    max-width: 550px;
+  }
+
+  &__title {
+    @extend .font34;
+    @extend .line-ellipsis;
+    font-weight: 700;
+    color: $titleColor;
+    margin-bottom: 20px;
+  }
+
+  &__intro {
+    display: flex;
+    overflow: hidden;
+    @extend .font26;
+    @extend .line-ellipsis;
+    color: $textColor;
+  }
+
+  &__industry {
+    width: max-content;
+    max-width: 150px;
+    flex:0 1 auto;
+    @extend .line-ellipsis;
+  }
+
+  &__num{
+    width: max-content;
+  }
+
+  @include textSpliter('&__num','before');
+
+  @include textSpliter('&__tip',null);
+
+
+  &__icon {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #D9D9D9;
+    border-radius: 2px;
+  }
+}

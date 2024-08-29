@@ -1,0 +1,23 @@
+.resume-no-login {
+  overflow: hidden;
+  position: fixed;
+  display: flex;
+  top: 0;
+  bottom: $tabBarBottom;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  z-index: 5;
+
+  & &__empty {
+    .hd-empty__image {
+      margin: 0 auto;
+    }
+  }
+
+  & &__button {
+    margin-top: 50px;
+    border-radius: 9999PX;
+  }
+}

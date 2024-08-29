@@ -1,0 +1,30 @@
+@include setBackground('.chat', $bgColor, -1);
+
+.chat {
+  & &__message {
+    position: fixed;
+  }
+
+  & &__no-more-tips {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-size: 24px;
+    color: #A6A6A6;
+    text-align: center;
+  }
+
+  & &__wechat-input {
+    width: 512px;
+    height: 88px;
+    background: #F7F8FA;
+    border-radius: 12px;
+    padding-left: 20px;
+    &--placeholeder {
+      font-size: 32px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #C7CBDE;
+      line-height: 44px;
+    }
+  }
+}

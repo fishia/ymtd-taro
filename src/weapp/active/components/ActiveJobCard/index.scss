@@ -1,0 +1,28 @@
+.active-jobCard {
+  background-color: #fff;
+  position: relative;
+	padding-bottom: 64px;
+  .hd-jobcard {
+    padding: 30px 30px 0 30px;
+    margin-bottom: 0;
+  }
+  &__deliveryStatus {
+		position: absolute;
+    height: 64px;
+		width: calc(100% - 60px);
+		right: 30px;
+		// bottom: 10px;
+    text-align: right;
+    // margin: -10px 30px 0 30px;
+    border-bottom: 1px solid #F0F2F5;
+  }
+	&:last-child {
+		.active-jobCard__deliveryStatus {
+			border: none;
+		}
+	}
+  &__img {
+    width: 64px;
+    height: 100%;
+  }
+}

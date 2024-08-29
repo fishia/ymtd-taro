@@ -1,0 +1,14 @@
+.custom-modal-content {
+  text-align: center;
+
+  &__image {
+    width: 110PX;
+    height: 110PX;
+  }
+
+  &__text {
+    line-height: 40px;
+    color: #000;
+    @extend .font28;
+  }
+}

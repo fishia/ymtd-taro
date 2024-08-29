@@ -1,0 +1,14 @@
+
+@include setBackground('.preach-meeting-index', $bgColor, -1);
+
+.preach-meeting-index {
+  padding-bottom: $pageBottom;
+  overflow: hidden;
+
+
+ &__scrollView{
+    position:fixed;
+    top:0;
+    bottom:$pageBottom;
+ }
+}

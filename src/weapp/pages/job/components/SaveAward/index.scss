@@ -1,0 +1,40 @@
+
+.save-award {
+  &__modal {
+    background: linear-gradient(181deg, #FFFFFD 1.35%, #FFF7DF 98.93%);
+    width: 686px;
+    height: 614px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    &-title {
+      color: #141933;      
+      font-size: 40px;
+      font-weight: 500;
+      margin: 64px 0 28px 0;
+    }
+    &-img {
+      width: 230px;
+      height: 230px;
+      margin-bottom: 20px;
+    }
+    &-sub {
+      font-size: 28px;
+      color: #484C64;
+      font-weight: 400;
+      &-title {
+        color: #141933;
+        font-size: 32px;
+      }
+    }
+    .mb32 {
+      margin-bottom: 32px;
+    }
+    
+    .mb76 {
+      margin-bottom: 76px;
+    }
+  }
+}

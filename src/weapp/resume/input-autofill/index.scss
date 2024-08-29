@@ -1,0 +1,24 @@
+.picker-search {
+  &__navbar {
+    position: fixed;
+    top: 0;
+    z-index: 6;
+    width: calc(100% - 64px);
+    margin: 0 32px;
+
+    .hd-searchbar {
+      margin: 0 0;
+    }
+
+    &-bottom {
+      height: 1PX;
+      background-color: $bgColor;
+
+    }
+  }
+
+  .text--emphasize {
+    color: #668EF6;
+    margin: 0;
+  }
+}

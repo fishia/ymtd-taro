@@ -1,0 +1,22 @@
+.list-tail-login-tips {
+  padding: 48px 0;
+  text-align: center;
+
+  &__title {
+    font-size: 28px;
+    color: #333333;
+    line-height: 40px;
+  }
+
+  &__button {
+    margin-top: 32px;
+    display: inline-block;
+    background: #4655D4;
+    padding: 16px 58px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #FFFFFF;
+    border-radius: 9999PX;
+    line-height: 34px;
+  }
+}

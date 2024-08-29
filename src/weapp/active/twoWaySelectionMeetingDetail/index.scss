@@ -1,0 +1,118 @@
+@include setBackground('.two-way-selection-index', $bgColor, -1);
+
+$bannerHeight: 324px;
+$MenuHeight: 158px;
+
+.two-way-selection-detail-index {
+  padding-bottom: $pageBottom;
+  overflow: hidden;
+
+  &__scrollView {
+    position: fixed;
+    top: 0;
+    bottom: $pageBottom;
+  }
+
+  &__empty {
+    position: absolute;
+    width: 100%;
+
+    .hd-empty__image {
+      margin: 40px auto 0;
+    }
+  }
+}
+
+.swiper {
+  &__container {
+    padding: 16px 32px 0;
+    background: #F7F8FA;
+
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+
+
+    &__badge {
+      width: 54px;
+      line-height: 44px;
+      background: #FFF7F0;
+      border-radius: 0px 8px 0px 16px;
+      font-size: 24px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      font-weight: 500;
+      color: #F0A152;
+      position: absolute;
+      top: 0;
+      right: 0;
+      text-align: center;
+    }
+
+    &__content {
+      padding: 16px 24px;
+      width: 218px;
+      height: 290px;
+      background: #FFFFFF;
+      border-radius: 8px;
+      box-sizing: border-box;
+      position: relative;
+
+      &__top {
+        &--logo {
+          width: 96px;
+          height: 96px;
+          border-radius: 4px;
+          border: 2px solid #F6F7FB;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          image {
+            width: 86px;
+            height: 64px;
+          }
+        }
+
+        &--name {
+          width: 168px;
+          font-size: 24px;
+          font-family: PingFangSC-Medium, PingFang SC;
+          font-weight: 500;
+          color: #151931;
+          line-height: 34px;
+          @extend .line-ellipsis;
+          margin-top: 24px;
+        }
+      }
+
+      &__bottom {
+        margin-top: 8px;
+
+        &--tags {
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+        }
+
+        &--tag {
+          padding: 2px 8px;
+          margin-top: 10px;
+          background: #F3F5FF;
+          border-radius: 4px;
+          font-size: 20px;
+          font-family: PingFangSC-Regular, PingFang SC;
+          font-weight: 400;
+          color: #474C66;
+          line-height: 28px;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+}
+
+.stickyTop {
+  box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.06);
+}

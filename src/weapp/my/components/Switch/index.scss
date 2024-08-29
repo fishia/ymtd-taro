@@ -1,0 +1,60 @@
+.form__switch-weapp {
+  padding: 60px 30px 46px;
+  display: flex;
+  align-items: center;
+  color: #333333;
+  background: #fff;
+  font-size: 30px;
+
+  $switchHeight: 48px;
+
+  & &__switcher {
+    position: absolute;
+    right: 30px;
+    width: 84px;
+    display: inline-block;
+    height: $switchHeight;
+    border: 1px solid #EBEBEB;
+    outline: 0;
+    border-radius: 9999PX;
+    box-sizing: border-box;
+    transition: background-color 0.1s, border 0.1s;
+
+    &::before {
+      content: " ";
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      border-radius: 9999PX;
+      background-color: #EBEBEB;
+      transition: transform 0.35s cubic-bezier(0.45, 1, 0.4, 1);
+    }
+
+    &::after {
+      content: " ";
+      position: absolute;
+      top: 5.5px;
+      left: 6px;
+      width: $switchHeight - 12;
+      height: $switchHeight - 12;
+      border-radius: 9999PX;
+      background-color: #fff;
+      transition: transform 0.35s cubic-bezier(0.4, 0.4, 0.25, 1.35);
+    }
+
+    &--checked {
+      border-color: $primaryColor;
+      background-color: $primaryColor;
+
+      &::before {
+        transform: scale(0);
+      }
+
+      &::after {
+        transform: translateX(35px);
+      }
+    }
+  }
+}

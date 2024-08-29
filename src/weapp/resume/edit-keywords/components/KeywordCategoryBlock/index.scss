@@ -1,0 +1,35 @@
+.keyword-categories__block {
+  padding: 0 32px;
+
+  &__title {
+    font-size: 28px;
+    font-weight: bold;
+    padding: 54px 0 10px 0
+  }
+
+  &__content {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: wrap;
+  }
+
+  &__button {
+    flex-shrink: 1;
+    width: 215px;
+    max-width: 215px;
+    min-height: 80px;
+    font-size: 26px;
+    border-radius: 5px;
+    margin: 10px 20px 10px 0
+  }
+
+  &__button:nth-child(3n) {
+    margin: 10px 0;
+  }
+
+  .job-category-button--selected {
+    color: #668EF6;
+    background: #E3EBFF;
+    border: none;
+  }
+}

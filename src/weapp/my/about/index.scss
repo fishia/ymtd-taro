@@ -1,0 +1,15 @@
+@include setBackground('.about-us', $bgColor, -1);
+
+.about-us {
+  & &__head {
+    background-color: #FFF;
+    text-align: center;
+  }
+
+  & &__image {
+    height: 152px;
+    width: 132px;
+    margin-top: 96px;
+    margin-bottom: 66px;
+  }
+}

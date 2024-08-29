@@ -1,0 +1,36 @@
+.hd-toast {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 5000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  min-height: 88px;
+  min-width: 380px;
+  max-width: 700px;
+  transform: translate(-50%, -50%);
+  padding: 15px 30px;
+  color: #FFFFFF;
+  background: #262626;
+  border-radius: 8px;
+  opacity: 0;
+  transition: opacity 150ms;
+
+  &__content {
+    vertical-align: middle;
+    -webkit-font-smoothing: antialiased;
+    font-size: 30px;
+    font-weight: 500;
+  }
+
+  &__text {
+    word-break: break-all;
+    line-height: 50px;
+  }
+
+  &--active {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,64 @@
+.job-detail-mr {
+
+  .br,
+  .h5-br {
+    display: block;
+  }
+
+  & &__tags {}
+
+  & &__pdtag {
+    display: inline-block;
+    padding: 0 12px;
+    margin-bottom: 16px;
+    margin-right: 12px;
+    background: #F3F5FE;
+    color: #484C64;
+    font-size: 24px;
+    line-height: 44px;
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 4px;
+  }
+
+  & &__record {
+    display: flex;
+    align-items: flex-start;
+    color: $titleColor;
+    font-size: 28px;
+    padding: 8px 0px;
+
+    &__title {
+      flex-shrink: 0;
+      line-height: 48px;
+    }
+
+    &__value {
+      line-height: 48px;
+    }
+
+    &__value__tag {
+      display: inline-block;
+      padding: 0 16px;
+      margin-right: 16px;
+      background-color: #F2F9FF;
+      color: #005FC0;
+      font-size: 24px;
+      line-height: 48px;
+      height: 48px;
+      vertical-align: middle;
+      text-align: center;
+      position: relative;
+      top: -2px;
+    }
+  }
+
+  &__desc {
+    font-size: 28px;
+    font-family: PingFangSC-Light, PingFang SC;
+    font-weight: 300;
+    color: #151931;
+    line-height: 42px;
+    padding: 24px 32px 16px;
+  }
+}

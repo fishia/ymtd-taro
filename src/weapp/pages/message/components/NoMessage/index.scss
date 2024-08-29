@@ -1,0 +1,59 @@
+.message-no-message {
+  // overflow: hidden;
+  width: 100%;
+  background-color: #fff;
+  margin-top: 20px;
+  // z-index: 1;
+  // position: absolute;
+  // top:50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
+
+  &__no__login__tips {
+    font-size: 36px;
+    font-weight: bold;
+    color: #141933;
+    line-height: 50px;
+    text-align: center;
+    margin-bottom: 22px;
+
+    &__image {
+      text-align: center;
+      width: 718px;
+      height: 470px;
+      margin: 0 16px;
+
+      &__button {
+        width: 476px;
+        height: 88px;
+        background: #4655D4;
+        border-radius: 44px;
+        font-size: 32px;
+        font-weight: 600;
+        color: #FFFFFF;
+        line-height: 88px;
+        margin-top: 68px;
+      }
+    }
+  }
+
+
+  & &__empty {
+    .hd-empty__image {
+      margin: 0 auto;
+    }
+  }
+
+  & &__button {
+    margin-top: 50px;
+    border-radius: 9999PX;
+  }
+}
+
+.message-no-message-center {
+  z-index: 1;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

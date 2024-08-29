@@ -1,0 +1,120 @@
+.job-categories {
+
+  &__sidebar {
+    display: inline-block;
+    position: fixed;
+    top: $navBarHeight;
+    left: 32px;
+    bottom: #{$pageBottom};
+    width: 234px;
+    box-sizing: border-box;
+    border-right: 1PX solid #F6F6F6;
+
+    &--multi {
+      bottom: calc(154px + #{$pageBottom});
+    }
+  }
+
+  &__major {
+    height: 96px;
+    font-size: 28px;
+    color: #333333;
+    display: flex;
+    align-items: center;
+    padding-left: 28px;
+
+    &__count {
+      position: absolute;
+      right: 10px;
+      color: #fff;
+      background-color: $primaryColor;
+      font-size: 24px;
+      width: 48px;
+      height: 36px;
+      background: #436EF3;
+      border-radius: 18px;
+      text-align: center;
+    }
+
+    &--selected {
+      color: $primaryColor;
+      position: relative;
+
+      &::before {
+        content: ' ';
+        position: absolute;
+        left: 0;
+        top: 30px;
+        background-color: $primaryColor;
+        height: 36px;
+        width: 6px;
+      }
+    }
+  }
+
+  &__group {
+    position: fixed;
+    top: $navBarHeight;
+    right: 0;
+    bottom: #{$pageBottom};
+    width: 482px;
+    overflow: hidden;
+
+    &--multi {
+      bottom: calc(154px + #{$pageBottom});
+    }
+  }
+
+  &__block {
+    &__title {
+      font-size: 28px;
+      color: #333;
+      font-weight: bold;
+      padding: 30px 0 10px;
+      padding-left: 30px;
+    }
+
+    &__content {
+      padding: 30px 17px;
+    }
+  }
+
+  .job-category-button {
+    margin: 6px 12px;
+  }
+
+  & &__multi-bar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 2;
+    padding: 33px 30px calc(33px + #{$pageBottom});
+    height: calc(154px + #{$pageBottom});
+    border-top: 1PX solid #F6F6F6;
+    background: #fff;
+    display: flex;
+
+    &__tip {
+      width: 230px;
+      font-size: 24px;
+      vertical-align: middle;
+      display: flex;
+      align-items: center;
+      padding-left: 15px;
+
+      .icon {
+        display: inline-block;
+        font-size: 30px;
+        width: 30px;
+        height: 30px;
+        color: $primaryColor;
+        margin-right: 17px;
+        vertical-align: middle;
+      }
+    }
+
+    &__confirm {
+      flex-grow: 1;
+    }
+  }
+}

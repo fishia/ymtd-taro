@@ -1,0 +1,318 @@
+// @prefixCls: ~'ymtd-resumeSticky';
+
+// .safe-bottom(@pb:16px) {
+//   padding-bottom: calc(@pb + constant(safe-area-inset-bottom));
+//   padding-bottom: calc(@pb + env(safe-area-inset-bottom));
+// }
+
+.ymtd-resumeSticky {
+  background-image: linear-gradient(#5c6ef5, #5b43bb);
+  position: relative;
+
+  .top-left {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 422px;
+    height: 406px;
+    background: url('https://oss.yimaitongdao.com/mp/resumeSticky/top-left.png')
+      no-repeat center/cover;
+  }
+  .top-right {
+    position: absolute;
+    z-index: 0;
+    top: 40px;
+    right: 42px;
+    width: 274px;
+    height: 348px;
+    background: url('https://oss.yimaitongdao.com/mp/resumeSticky/top-right.png')
+      no-repeat center/cover;
+  }
+
+  .top-info {
+    height: 282px;
+    padding-left: 26px;
+    padding-top: 44px;
+    .JLZD {
+      width: 220px;
+      height: 54px;
+    }
+    .info-1 {
+      margin-top: 22px;
+      width: 322px;
+      height: 40px;
+      font-size: 28px;
+      font-weight: 400;
+      color: #ffffff;
+      line-height: 40px;
+      white-space: nowrap;
+      position: relative;
+
+      .info-1-span {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        z-index: 0;
+        left: 0;
+        bottom: 2px;
+        height: 10px;
+        width: 100%;
+        border-radius: 5px;
+        background-image: linear-gradient(
+          to left,
+          rgba(118, 157, 246),
+          rgba(129, 192, 251)
+        );
+      }
+    }
+    .info-2 {
+      margin-top: 4px;
+      width: 320px;
+      font-size: 24px;
+      font-weight: 400;
+      color: #bfbaff;
+      line-height: 34px;
+      .enf {
+        display: inline;
+        color: #f9bd7c;
+      }
+    }
+  }
+
+  &-sw {
+    width: 686px;
+    margin: 0 auto;
+    height: 472px;
+    --track-padding: 0 0 20px;
+
+    .adm-swiper-track-inner {
+      border-radius: 16px;
+      overflow: hidden;
+    }
+  }
+
+  .swItem {
+    width: 686px;
+    height: 472px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    user-select: none;
+    image {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &-sw-indicator {
+    display: flex;
+    justify-content: space-between;
+    width: 80px;
+    margin: 0 auto;
+    &-item {
+      width: 16px;
+      height: 16px;
+      background: #fff;
+      border-radius: 8px;
+      &.active {
+        background: #fcd9b5;
+      }
+    }
+  }
+
+  &-floor {
+    margin: 0 auto;
+    padding-top: 48px;
+    width: 686px;
+
+    image {
+      display: flex;
+      width: 100%;
+      height: 1722px;
+    }
+
+    .service-title {
+      font-size: 24px;
+      font-weight: 500;
+      color: #ffffff;
+      line-height: 34px;
+    }
+    .service-info {
+      margin-top: 12px;
+      font-size: 20px;
+      font-weight: 400;
+      color: #c1c8d6;
+      line-height: 28px;
+      display: flex;
+
+      &-link {
+        font-size: 20px;
+        font-weight: 500;
+        color: #5d6df4;
+        line-height: 28px;
+      }
+    }
+  }
+
+  .product-info {
+    font-weight: 400;
+    width: 686px;
+    height: 370px;
+    background: url('https://oss.yimaitongdao.com/mp/resumeSticky/wrapper.png') no-repeat
+      center/100% 100%;
+    padding: 32px;
+    .info-1 {
+      font-size: 24px;
+      color: #474c66;
+      line-height: 34px;
+      text-align: center;
+    }
+    .info-2 {
+      margin-top: 8px;
+      font-size: 28px;
+      color: #474c66;
+      line-height: 40px;
+      text-align: center;
+    }
+    .info-detail {
+      margin-top: 54px;
+      width: 622px;
+      height: 170px;
+      background: #fffbf0;
+      border-radius: 16px;
+      border: 2px solid #f9bd7c;
+      position: relative;
+      padding: 32px;
+      display: flex;
+      justify-content: space-between;
+      &-tag {
+        position: absolute;
+        left: -2px;
+        top: 0;
+        transform: translateY(-50%);
+        width: 176px;
+        height: 56px;
+        line-height: 56px;
+        background: #cf303a;
+        border-radius: 24px 0px 24px 0px;
+        font-weight: 500;
+        color: #ffffff;
+        font-size: 32px;
+        text-align: center;
+      }
+      &-left {
+        .desc-1 {
+          margin-top: 6px;
+          font-size: 32px;
+          font-weight: 400;
+          color: #141933;
+          line-height: 44px;
+        }
+        .desc-2 {
+          margin-top: 22px;
+          font-size: 24px;
+          font-weight: 400;
+          color: #7a7f99;
+          line-height: 34px;
+        }
+      }
+      .ori-price {
+        margin-top: 16px;
+      }
+    }
+  }
+
+  &-bottom {
+    margin-top: 48px;
+    height: 146px;
+    padding: 16px 32px;
+    box-sizing: content-box;
+    &-cont {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 146px;
+      padding: 16px 32px;
+      box-sizing: content-box;
+      background-color: #fff;
+      display: flex;
+      justify-content: space-between;
+
+      .buy-info {
+        text-align: right;
+        position: relative;
+        .price-tag {
+          position: absolute;
+          top: 0;
+          left: 0;
+          min-width: 176px;
+          transform: translateY(-100%);
+          font-size: 24px;
+          font-weight: 500;
+          color: #ffffff;
+          line-height: 56px;
+          padding: 0 10px;
+          background: #cf303a;
+          border-radius: 24px 0px 24px 0px;
+        }
+        .old-price {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-top: 16px;
+
+          .discount-tag {
+            background: #CF303A;
+            font-size: 18px;
+            color: #fff;
+            width: 58px;
+            height: 26px;
+            text-align: center;
+            line-height: 26px;
+            border-radius: 4px;
+          }
+        }
+      }
+      .buy-btn {
+        width: 398px;
+        height: 88px;
+        background: #f6d3ad;
+        border-radius: 44px;
+        font-size: 32px;
+        font-weight: 500;
+        color: #503323;
+        line-height: 88px;
+        text-align: center;
+        box-shadow: inset 0px -2px 6px 0px rgba(137, 68, 13, 0.5);
+      }
+    }
+  }
+  .highlight {
+    font-size: 40px;
+    display: inline;
+    color: #f9bd7c;
+  }
+
+  .sale-price {
+    font-size: 32px;
+    font-weight: 500;
+    color: #141933;
+    line-height: 44px;
+  }
+  .ori-price {
+    font-size: 24px;
+    font-weight: 400;
+    color: #7a7f99;
+    line-height: 34px;
+    text-decoration: line-through;
+    text-align: right;
+  }
+}

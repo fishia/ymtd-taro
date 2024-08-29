@@ -1,0 +1,171 @@
+@import "~taro-ui/dist/style/components/icon.scss";
+
+.resume-block {
+  margin: 20px 30px;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 5PX;
+  color: $titleColor;
+
+  & &__header {
+    color: inherit;
+    position: relative;
+    display: flex;
+    margin-bottom: 30px;
+    padding: 10px 0 40px;
+    border-bottom: 1PX solid $bgColor;
+    vertical-align: middle;
+    align-items: center;
+
+    &__title {
+      color: inherit;
+      display: inline-block;
+      font-size: 36px;
+      line-height: 36px;
+      font-weight: bold;
+    }
+
+    &__icon {
+      color: $primaryColor;
+      font-weight: normal;
+      position: absolute;
+      right: 0;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: -20px;
+        bottom: -20px;
+        left: -20px;
+        right: -20px;
+      }
+
+      .iconfont {
+        font-size: 35px;
+      }
+    }
+
+    &__required {
+      display: inline-block;
+      margin-left: 16px;
+      font-size: 24px;
+      color: #E32B2C;
+      padding: 10px 24px;
+      background: #fff;
+      border: 1PX solid currentColor;
+      border-radius: 6px;
+      vertical-align: middle;
+      text-align: center;
+    }
+  }
+}
+
+.resume-block-list {
+  position: relative;
+  line-height: 1.2;
+}
+
+.resume-block-item {
+  position: relative;
+  padding-bottom: 48px;
+
+  &.line {
+    padding-left: 36px;
+  }
+
+  // 经历项左侧圆点
+  &.line::after {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    top: 12px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: $primaryColor;
+    border: 4px solid #ccd9e7;
+  }
+
+  // 经历项左侧竖线
+  &.line::before {
+    content: ' ';
+    position: absolute;
+    top: 38px;
+    left: 7px;
+    width: 0.5PX;
+    height: calc(100% - 36px);
+    background-color: #ccd9e7;
+  }
+
+  &:last-child {
+    padding-bottom: 12px;
+
+    &::before {
+      height: calc(100% - 28px);
+    }
+  }
+}
+
+.resume-block-row {
+  $rowSpace: 18px;
+  margin-bottom: $rowSpace;
+  font-size: 26px;
+  vertical-align: middle;
+  line-height: unset;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.resume-block-header {
+  $rowSpace: 18px;
+  margin-bottom: $rowSpace;
+  padding-right: 31px;
+  font-size: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  & &__title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 28px;
+    font-weight: bold;
+    flex-grow: 1;
+  }
+
+  & &__extra {
+    font-size: 26px;
+    font-weight: 400;
+    color: #6F6F6F;
+    display: inline-block;
+    margin-right: 14px;
+    flex-shrink: 0;
+  }
+
+  &--hint {
+    font-weight: 400;
+    font-size: 26px;
+    color: $noticeColor;
+    display: inline-block;
+    margin-right: 14rpx;
+    flex-shrink: 0;
+  }
+
+  & &__icon {
+    margin-left: auto;
+    $iconSize: 35px;
+    color: #ccc;
+    width: $iconSize;
+    height: $iconSize;
+    font-size: $iconSize;
+    position: absolute;
+    right: 0;
+    transform: translateY(3px);
+  }
+}

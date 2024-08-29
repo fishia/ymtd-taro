@@ -1,0 +1,14 @@
+.chat-content-bottom-btn{
+    width: 100%;
+    text-align: center;
+    color:#4256DC;
+    font-size: 28px;
+    &.at-button--disabled{
+        color:#C7CBDE
+    }
+}
+
+.edit{
+    color: #474C66;
+    border-right: 1px solid #E6E8F2;
+}

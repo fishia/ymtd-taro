@@ -1,0 +1,196 @@
+@import "~taro-ui/dist/style/components/icon.scss";
+
+.chat-navigation {
+  z-index: 5;
+  background: #FFF;
+  top: 0;
+  position: fixed;
+  width: 100%;
+
+  & &__head {
+    margin-top: 10px;
+    height: 90px;
+    position: relative;
+  }
+
+  & &__info {
+    text-align: center;
+  }
+
+  & &__name {
+    display: inline-block;
+    text-align: center;
+    font-size: 34px;
+    font-weight: bold;
+    color: #000;
+    @extend .line-ellipsis;
+  }
+
+  & &__company {
+    display: inline-block;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    color: #000;
+    @extend .line-ellipsis;
+  }
+
+  & &__icon {
+    position: absolute;
+    left: 10px;
+    top: 0;
+    height: 90px;
+    display: inline-block;
+  }
+
+  & &__back {
+    display: inline-block;
+    color: #000;
+    font-size: 60px;
+    line-height: 90px;
+  }
+
+  & &__action {
+    height: 126px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 104px;
+  }
+
+  & &__action-item {
+    width:130px;
+    flex: 0 0 auto;
+  }
+
+  & &__action-icon {
+    text-align: center;
+
+    .icon {
+      font-size: 45px;
+    }
+
+    &.sendresume {
+      color: #00BDE4;
+    }
+
+    &.exchangephone {
+      color: #FFBF00;
+    }
+
+    &.exchangeWechat {
+      color: #39C049;
+    }
+
+    &.disabled.disabled {
+      color: $borderColor;
+    }
+  }
+
+  & &__action-text {
+    color: #333;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 10px;
+  }
+
+  & &__direct {
+    background: #dcebfb;
+    color: $primaryColor;
+    font-size: 24px;
+    height: 80px;
+    padding: 0 30px;
+    line-height: 80px;
+    visibility: hidden;
+    position: relative;
+
+    .icon {
+      display: inline-block;
+      font-size: 34px;
+      margin-right: 20px;
+      vertical-align: bottom;
+    }
+
+    .close {
+      position: absolute;
+      right: 30px;
+      margin-right: 0;
+    }
+
+    &::after {
+      content: '';
+      width: 0px;
+      height: 0px;
+      border-width: 16px;
+      border-style: solid;
+      border-color: transparent transparent #DCEBFB transparent;
+      position: absolute;
+      top: -28px;
+      left: 152px;
+    }
+  }
+
+  & &__file {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: #ECF2FE;
+    height: 84px;
+    padding: 0 32px;
+
+    &__text {
+      color: $primaryColor;
+      font-size: 24px;
+    }
+
+    &__action {
+      flex-shrink: 0;
+      margin-left: auto;
+    }
+
+    &__button {
+      display: inline-block;
+      width: 126px;
+      height: 48px;
+      line-height: 46px;
+      border-radius: 9999PX;
+      border: 2px solid $primaryColor;
+      background: transparent;
+      color: $primaryColor;
+      text-align: center;
+      font-size: 24px;
+
+      &.agree {
+        color: #ffffff;
+        background: $primaryColor;
+        margin-left: 24px;
+      }
+    }
+  }
+
+  & &__visible {
+    visibility: visible;
+  }
+
+  & &__toast {
+    width: 598px;
+    left: 76px;
+    bottom: 0;
+    background-color: #E2994F;
+    border-radius: 36px;
+    height: 72px;
+    line-height: 72px;
+
+    .toast-tips__wrap {
+      font-size: 26px;
+      text-align: left;
+      padding-left: 36px;
+    }
+
+    .toast-tips__arrow {
+      border-color: transparent transparent#E2994F transparent;
+      left: 288px;
+      top: -28px;
+    }
+  }
+}

@@ -1,0 +1,70 @@
+.copy-wechat-popup {
+  &__mask {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: opacity 250ms ease-in-out;
+    background: #000;
+
+    &.active {
+      opacity: 0.5;
+    }
+  }
+
+  &__body {
+    position: fixed;
+    width: 100%;
+    z-index: 20;
+    background-color: #fff;
+    padding-top: 64px;
+    height: calc(400px + #{$pageBottom});
+    bottom: calc(-400px - #{$pageBottom});
+    transition: bottom 250ms ease-in-out;
+    border-radius: 24px 24px 0 0;
+    text-align: center;
+
+    &.active {
+      bottom: 0;
+    }
+  }
+
+  &__tips {
+    font-size: 28px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #7A7F99;
+    line-height: 40px;
+  }
+
+  &__content {
+    font-size: 48px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: #141933;
+    line-height: 66px;
+    margin-top: 24px;
+  }
+
+
+  &__action {
+    margin-top: 40px;
+  }
+
+  &__button {
+    width: 510px;
+    border-radius: 44px;
+    margin: 62px auto 0 auto;
+  }
+
+  &__close {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    font-size: 32px;
+    color: #7C819B;
+  }
+}

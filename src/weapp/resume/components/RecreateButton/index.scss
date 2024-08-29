@@ -1,0 +1,9 @@
+.resume-recreate {
+  position: fixed;
+  right: 115px;
+  bottom: calc(60px + #{$tabBarBottom});
+  width: 80px;
+  height: 80px;
+  border-radius: 9999PX;
+  box-shadow: 0rpx 5rpx 15rpx 0 rgba(25, 108, 191, 0.5);
+}

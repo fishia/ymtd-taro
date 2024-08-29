@@ -1,0 +1,39 @@
+.ymtd-mp-static-carousel {
+  width: 100vw;
+  height: calc(100vh - 120px - #{$pageBottom});
+
+  &-sw {
+    width: 100vw;
+    height: 100%;
+
+    .swItem {
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+
+      image {
+        width: 100%;
+      }
+    }
+  }
+  &-login {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: calc(120px + #{$pageBottom});
+    border-bottom: $pageBottom solid #fff;
+    background: #fff;
+    text-align: center;
+    padding-top: 16px;
+
+    button {
+      width: 638px;
+      height: 88px;
+      background: #4256DC;
+      border-radius: 44px;
+      color: #fff;
+      font-size: 32px;
+      font-weight: bold;
+    }
+  }
+}

@@ -1,0 +1,57 @@
+.SelectLimitCompanyCard {
+  // margin-top: 32px;
+  .titles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #333333;
+    margin-bottom: 18px;
+    margin-top: 32px;
+    .limited {
+      font-size: 36px;
+      font-weight: 500;
+      line-height: 50px;
+    }
+    .manage {
+      font-size: 32px;
+      font-weight: 400;
+      line-height: 44px;
+    }
+  }
+}
+
+.bottoms {
+  width: 750px;
+  padding: 44px 0;
+  background-color: #fff;
+  z-index: 9;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  .bottomBtn {
+    width: 686px;
+    height: 88px;
+    border-radius: 44px;
+  }
+  .hd-button--disabled {
+    background: #b4cbfd;
+  }
+  .chooseAll {
+    margin-bottom: 32px;
+    padding: 0 32px;
+    box-sizing: border-box;
+    .allCompanyName {
+      font-size: 32px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #333333;
+      line-height: 44px;
+      line-height: 56px;
+    }
+  }
+  .iconnocheck,
+  .icongouxuan,
+  .icongouxuan--checked {
+    font-size: 36px;
+  }
+}

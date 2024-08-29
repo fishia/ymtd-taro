@@ -1,0 +1,28 @@
+@include setBackground('.hd-error', #fff, -1);
+
+.hd-error {
+  &__image {
+    display: block;
+    width: 446px;
+    height: 374px;
+    margin: 340px auto 0;
+  }
+
+  &__content {
+    text-align: center;
+    line-height: 60px;
+    font-size: 28px;
+    @extend .font24;
+  }
+
+  &__button {
+    @extend .font32;
+    text-align: center;
+    color: #fff;
+    width: 585px;
+    margin: 50px auto;
+    line-height: 88px;
+    background: $primaryColor;
+    border-radius: 44px;
+  }
+}

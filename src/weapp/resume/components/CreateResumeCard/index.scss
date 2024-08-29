@@ -1,0 +1,142 @@
+
+.create-resume{
+&__block-item {
+    position: relative;
+    height: 130px;
+    padding: 32px;
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    border: 2px solid #E2E4EE;
+    margin-bottom: 24px;
+    box-sizing: border-box;
+
+    &::after {
+      @include halfPxBorder;
+      content: '';
+      left: 32px;
+      right: 32px;
+      background: #F0F2F5;
+      bottom: 0;
+    }
+
+    &:last-of-type::after {
+      display: none;
+    }
+
+    &__icon {
+      height: 52px;
+      width: 52px;
+    }
+
+    &__body {
+      margin-left: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+      padding-right: 30px;
+      position: relative;
+      flex-grow: 1;
+    }
+
+    &__title {
+      font-size: 32px;
+      font-weight: 400;
+      color: #141933;
+      line-height: 44px;
+    }
+
+    &__badge {
+      display: inline-block;
+      background: #e8effc;
+      border-radius: 4px;
+      font-size: 20px;
+      color: #436ef3;
+      line-height: 28px;
+      padding: 6px 16px;
+      margin-top: 4px;
+      align-self: start;
+    }
+
+    &__recommend {
+      position: absolute;
+      right: 30px;
+      font-size: 28px;
+      color: #F83131;
+      font-weight: 500;
+      line-height: 34px;
+    }
+
+    &__red_point {
+      position: absolute;
+      right: 30px;
+      width: 12px;
+      height: 12px;
+      background: #E32B2C;
+      border-radius: 50%;
+      line-height: 34px;
+    }
+
+    &__arrow {
+      position: absolute;
+      right: 32px;
+      height: 24px;
+      width: 14px;
+    }
+
+    &.hover {
+      background: #f8faff;
+    }
+  }
+
+  &__toastTips {
+    width: 480px;
+    top: -148px;
+    bottom: auto;
+    border-radius: 8px;
+    z-index: 99;
+    &__content {
+      
+      padding: 32px 44px 32px 32px;
+    }
+  
+    &__avaterList {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: flex-start;
+      position: absolute;
+      top: -24px;
+  
+      .avater-item {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: -15px;
+      }
+    }
+  
+    &__text {
+      font-size: 24px;
+      line-height: 34px;
+      position: relative;
+    }
+  
+    &__description {
+      font-size: 20px;
+      line-height: 28px;
+    }
+  
+    .toast-tips__arrow {
+      left: 42px;
+    }
+  
+    .toast-tips__wrap {
+      text-align: left;
+    }
+    .toast-tips__close{
+      right: 24px;
+    }
+  }
+}

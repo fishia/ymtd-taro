@@ -1,0 +1,37 @@
+@import '~taro-ui/dist/style/components/tabs.scss';
+$tabHeaderHeight:90px;
+
+.my-record {
+  .my-record__scrollview {
+    height: 100%;
+    background-color: $bgColor;
+  }
+
+  .hd-jobcard {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  &__tabs {
+    position: fixed;
+    top: $navBarHeight;
+    bottom: $pageBottom;
+    height: auto;
+
+    .at-tabs__header {
+      height: $tabHeaderHeight;
+    }
+    .at-tabs__item{
+      height: $tabHeaderHeight;
+    }
+    .at-tabs__body {
+      padding-bottom: $tabHeaderHeight;
+      height: 100%;
+    }
+
+    .at-tabs-pane {
+      height: 100%;
+      overflow-y: scroll;
+    }
+  }
+}

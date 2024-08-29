@@ -1,0 +1,274 @@
+@include setBackground('.job-detail', null, null);
+
+.br,
+.h5-br {
+  display: block;
+}
+
+.job-detail {
+  padding-bottom: calc(#{$submitBarHeight} + #{$pageBottom});
+  background-color: #fff;
+
+  .job-detail__scrollview {
+    overflow: scroll;
+  }
+
+  .job-company {
+    overflow: visible;
+  }
+
+  .detail-section__title {
+    font-size: 32px;
+  }
+
+  &__banner{
+    padding: 0 32px;
+  }
+
+  &__toast-tips {
+    .toast-tips__arrow {
+      left: 600px;
+    }
+  }
+
+  &-index-swiper {
+    width: 100%;
+    padding: 0 30px;
+
+    &__image {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__btns {
+    display: flex;
+    align-items: center;
+  }
+
+  &__btnsTips {
+    color: #fff;
+    font-size: 24px;
+    background: orange;
+    text-align: center;
+    line-height: 42px;
+    position: absolute;
+    padding: 0 20px;
+    border-radius: 36px;
+    top: 16px;
+    right: 142px;
+    z-index: 999;
+  }
+
+  &__submitBar {
+    .hd-submitbar__left {
+      width: calc(100vw - 470px);
+    }
+  }
+
+  &__submitBarTwo {
+    .hd-submitbar__left {
+      width: calc(100vw - 278px);
+    }
+
+    .hd-button {
+      width: 218px;
+      border-radius: 44px;
+      font-size: 30px;
+      padding: 0 40px;
+    }
+
+    .sendBtn {
+      margin-left: 30px;
+
+      .circle {
+        background: #fff;
+        color: #4773ff;
+        border: 2px solid #4773ff;
+        transform: rotateZ(360deg);
+      }
+
+      .hd-button--disabled {
+        color: #cccccc !important;
+        border: 1px solid #ccc;
+      }
+    }
+  }
+
+  .toast-tips {
+    border-radius: 0;
+  }
+
+  &__btn {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 500;
+    color: $primaryColor;
+    width: 95px;
+    overflow: visible;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 0;
+    background: unset;
+    line-height: unset;
+
+    .at-icon {
+      font-size: 45px;
+    }
+
+    .at-icon-star {
+      font-weight: 500;
+      // font-size: 24px;
+      color: inherit;
+      position: relative;
+      top: -6px;
+    }
+
+    .at-icon-star-2 {
+      font-weight: 500;
+      // font-size: 24px;
+      color: $primaryColor;
+      position: relative;
+      top: -6px;
+    }
+
+    .iconzhiweifenxiang {
+      font-size: 40px;
+      font-weight: 500;
+      color: inherit;
+      position: relative;
+      top: -6px;
+    }
+  }
+
+  &__button-chat-only {
+    height: 88px;
+    line-height: 88px;
+    text-align: center;
+    z-index: 9999999;
+  }
+
+  &--favorited {
+    color: $primaryColor;
+  }
+
+  &__card {
+    display: block;
+    background-color: #fff;
+    padding: 20px 30px 0 40px;
+  }
+
+  &__companyCard {
+    display: block;
+    background-color: #fff;
+    padding: 0 30px 0 40px;
+    margin-top: 28px;
+  }
+
+  &__submit--disabled {
+    .hd-button {
+      width: 96%;
+    }
+  }
+
+  &__tip {
+    position: relative;
+    left: -2px;
+    margin: 30px auto 0;
+    @extend .font28;
+    color: #666666;
+    line-height: 48px;
+  }
+
+  &__modal {
+    .hd-modal__action {
+      margin-top: 30px;
+    }
+  }
+
+  &__submit_btn {
+    width: 502px;
+    line-height: 88px;
+    text-align: center;
+    color: #fff;
+    @extend .font30;
+    background: $primaryColor;
+    border-radius: 5px;
+    border: 16px solid #fff;
+  }
+
+  .apply-job__subscribe {
+    .hd-modal__container {
+      padding-top: 65px;
+    }
+  }
+
+  .ShieldingCompany {
+    .hd-fixedbottompopup__container {
+      background-color: #fff;
+      height: 480px;
+      bottom: 0;
+      padding: 48px 32px 30px 32px;
+
+      .hd-fixedbottompopup__close {
+        top: 42px;
+        right: 30px;
+        color: #595959;
+      }
+
+      .subscription_popup__card__image {
+        display: none;
+      }
+
+      .subscription_popup__card {
+        height: 100%;
+        margin: 0;
+
+        .subscription_popup__card__body {
+          height: 100%;
+        }
+      }
+
+      .subscription_popup__card .subscription_popup__card__title {
+        padding-top: 0;
+        font-size: 40px;
+        font-weight: 600;
+        color: #333333;
+      }
+
+      .subscription_popup__card__title,
+      .subscription_popup__card__content {
+        margin-left: 16px;
+        margin-right: 16px;
+        word-break: break-all;
+      }
+
+      .subscription_popup__card__content {
+        font-size: 32px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #666666;
+        line-height: 52px;
+      }
+
+      .subscription_popup__card__button {
+        margin: 0;
+        border-radius: 44px;
+      }
+
+      .subscription_popup__card__action {
+        justify-content: space-between;
+      }
+
+      .subscription_popup__card .primary {
+        max-width: 100%;
+        margin-top: 52px;
+      }
+    }
+  }
+}

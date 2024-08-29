@@ -1,0 +1,62 @@
+.LimitCompanyCard {
+  min-height: 108px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #f0f2f5;
+  padding: 22px 0;
+  .companyName {
+    max-width: 512px;
+    font-size: 32px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #333333;
+    line-height: 56px;
+  }
+  .companyNameAll {
+    max-width: 486px;
+    font-size: 32px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #333333;
+    line-height: 56px;
+  }
+  .companyNameThree {
+    // max-width: 486px;
+    font-size: 32px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #333333;
+    line-height: 56px;
+  }
+  .relieveBtn {
+    width: 128px;
+    height: 64px;
+    border-radius: 44px;
+    border: 2px solid #4773ff;
+    font-weight: 600;
+    line-height: 64px;
+    margin-right: 0;
+    font-size: 28px;
+  }
+  .shortName {
+    max-width: 486px;
+    font-size: 24px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #333333;
+    line-height: 34px;
+    margin-top: 16px;
+    display: flex;
+    justify-content: left;
+  }
+  .changeColor {
+    color: $themeColor;
+  }
+
+  .iconnocheck,
+  .icongouxuan,
+  .icongouxuan--checked {
+    font-size: 36px;
+  }
+}

@@ -1,0 +1,66 @@
+@include setBackground('.complete-resume', $bgColor, -2);
+
+.complete-resume {
+  overflow: hidden;
+  position: relative;
+  padding: 10px 0 calc(168px + #{$pageBottom});
+  color: $titleColor;
+  letter-spacing: 0;
+
+  .title {
+    width: 750px;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    background: #e8effc;
+    line-height: 80px;
+    font-size: 24px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #333333;
+    padding-left: 32px;
+    box-sizing: border-box;
+  }
+  .titleCard {
+    position: relative;
+    z-index: 3;
+    height: 80px;
+  }
+
+  &::after {
+    content: ' ';
+    height: 280px;
+    width: 140%;
+    position: absolute;
+    left: -20%;
+    top: 0;
+    border-radius: 0 0 60% 60%;
+    background: $primaryColor;
+  }
+
+  &.no-integrity::after {
+    height: 180px;
+  }
+  .bottomBtn {
+    position: fixed;
+    z-index: 2;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: calc(148px + #{$pageBottom});
+    padding: 30px 15px calc(30px + #{$pageBottom});
+    background: #fff;
+    .recreate {
+      width: 40%;
+    }
+    .rounds {
+      border: 1px solid #4773ff;
+      background-color: #fff;
+      color: #4773ff;
+    }
+    .syncBtn {
+      width: 60%;
+      left: 38%;
+    }
+  }
+}

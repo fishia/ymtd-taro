@@ -1,0 +1,190 @@
+//苹果的字重命名习惯
+// Ultralight、Thin、Light、Regular、Medium、Semibold
+// 100-600
+// 400 normal 700 bold
+
+.font48 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.font42 {
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.font40 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.font36 {
+  font-size: 36px;
+  font-weight: 700;
+  color: $titleColor;
+}
+
+.font34 {
+  font-size: 34px;
+  font-weight: 500;
+  color: $titleColor;
+}
+
+.font32 {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.font30 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.font28 {
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.font26 {
+  font-size: 26px;
+  font-weight: 500;
+  color: $textColor;
+}
+
+.font24 {
+  font-size: 24px;
+  font-weight: 400;
+  color: $textColor;
+}
+
+.line-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin lineEllipsis {
+  width: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin clearfix {
+  &::after {
+    clear: both;
+    content: ' ';
+    display: block;
+  }
+}
+
+@mixin setBackground($selector, $color, $zIndex) {
+  $selector: & !default;
+  $color: #f5f7fa !default;
+  $zIndex: -10 !default;
+
+  #{$selector}::before {
+    content: ' ';
+    z-index: $zIndex;
+    background: $color;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+@mixin bg($color: $bgColor, $selector: '&', $zIndex: -10) {
+  #{$selector}::before {
+    content: ' ';
+    z-index: #{$zIndex};
+    background: #{$color};
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+@mixin bg2 {
+  &::before {
+    content: ' ';
+    z-index: -10;
+    background: #f7f6fb;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+@mixin bgFFF {
+  &::before {
+    content: ' ';
+    z-index: -10;
+    background: #FFF;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+@mixin textSpliter($selector, $position) {
+  $selector: & !default;
+  $position: 'after' !default;
+
+  #{$selector}::#{$position} {
+    content: '|';
+    display: inline-block;
+    padding: 0 16px;
+    text-align: center;
+    vertical-align: baseline;
+    color: #7A7F99;
+  }
+}
+
+@mixin normalized__tag {
+  width: 200px;
+  max-width: 200px;
+  margin: 20px 20px 0 0;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 12px 22px;
+  vertical-align: middle;
+  text-align: center;
+  border: 1PX solid #F6F6F6;
+  background-color: #F6F6F6;
+  color: #333;
+  font-size: 24px;
+  white-space: wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  border-radius: 5px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  word-break: break-all;
+}
+
+@mixin halfPxBorder {
+  position: absolute;
+  height: 1PX;
+  transform: scaleY(0.5);
+  transform-origin: 0 0;
+}
+
+@mixin multiLineEllipsis($rows: 2) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: wrap;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $rows;
+}

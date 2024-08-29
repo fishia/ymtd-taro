@@ -1,0 +1,63 @@
+.job-subscribe-block {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background: #fff;
+  padding: 36px 32px;
+  margin: 0 32px 16px 32px;
+  border-radius: 18px;
+  z-index: 200;
+  text-align: left;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &__left {
+    & &__title {
+      font-size: 36px;
+      font-family: PingFangSC-Semibold,
+        PingFang SC;
+      font-weight: 500;
+      color: #333333;
+      line-height: 50px;
+    }
+
+    & &__subTitle {
+      padding-left: 18px;
+      @extend .font24;
+      color: #999999;
+      line-height: 34px;
+    }
+
+    & &__text {
+      line-height: 34px;
+      @extend .font24;
+      color: #333333;
+      margin-top: 16px;
+    }
+  }
+
+  &__right {
+    position: relative;
+
+    &__icon {
+      text-align: center;
+
+      .iconfont {
+        font-size: 35px;
+      }
+    }
+
+    &__iconText {
+      @extend .font24;
+      line-height: 42px;
+      background: #4773FF;
+      border-radius: 21px;
+      color: #fff;
+      padding: 0 14px;
+    }
+  }
+}

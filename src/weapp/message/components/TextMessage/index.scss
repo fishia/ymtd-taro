@@ -1,0 +1,81 @@
+.message-item__text {
+  display: flex;
+
+  .message-item__text__body {
+    position: relative;
+  }
+
+  &.show-phone-tips {
+    margin-bottom: 50px;
+  }
+
+  &.self {
+    justify-content: flex-end;
+  }
+
+  & &__tag {
+    width: 80px;
+    padding-top: 28px;
+    text-align: center;
+  }
+
+  &.self .message-item__text__body {
+    text-align: end;
+  }
+
+  & &__receipt {
+    font-size: 24px;
+
+    &.read {
+      color: $tipColor;
+    }
+
+    &.unread {
+      color: $primaryColor;
+    }
+
+    &.error {
+      width: 30px;
+      height: 30px;
+      border-radius: 9999PX;
+      background-color: #ff5b4e;
+      color: #FFF;
+      font-size: 20px;
+      text-align: center;
+      line-height: 30px;
+      vertical-align: top;
+      display: inline-block;
+      position: absolute;
+      left: -54px;
+      top: 32px;
+    }
+  }
+
+  & &__content {
+    color: $titleColor;
+    font-size: 32px;
+    max-width: 532px;
+    padding: 26px 32px;
+    font-weight: 500;
+    word-break: break-all;
+    display: inline-block;
+    position: relative;
+    text-align: start;
+  }
+
+  &.self .message-item__text__content {
+    background-color: #CCE6FF;
+    border-radius: 10px 10px 0px 10px;
+  }
+
+  &.hr .message-item__text__content {
+    background-color: #FFF;
+    border-radius: 10px 10px 10px 0px;
+  }
+
+  & &__fail-reason {
+    font-size: 24px;
+    color: $tipColor;
+    margin-top: 20px;
+  }
+}

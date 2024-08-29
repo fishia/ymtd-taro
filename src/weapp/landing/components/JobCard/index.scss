@@ -1,0 +1,125 @@
+$prefixCls: 'landing-jobcard';
+
+.#{$prefixCls} {
+  width: 686px;
+  overflow: hidden;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 10px 0px rgba(216, 216, 216, 0.5);
+  border-radius: 8px;
+  margin: auto;
+  margin-bottom: 20px;
+  position: relative;
+  padding: 32px;
+
+  & &__content {
+    position: relative;
+    z-index: 1;
+  }
+
+
+
+  & &__name {
+    max-width: 520px;
+    font-size: 36px;
+    font-weight: 500;
+    color: #333333;
+    line-height: 50px;
+    margin-bottom: 20px;
+    @include lineEllipsis;
+  }
+
+  & &__info {
+    margin-bottom: 20px;
+
+    &-item {
+      display: inline-block;
+      font-size: 28px;
+      font-weight: 400;
+      color: #999999;
+      line-height: 40px;
+    }
+
+    &-after {
+      margin-right: 46px;
+      position: relative;
+
+      &::after {
+        position: absolute;
+        right: -24px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        content: " ";
+        display: block;
+        border-left: 2px solid #D1CECF;
+        height: 20px;
+      }
+    }
+  }
+
+  & &__job {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+
+  }
+
+  & &__icon {
+    flex: 0 0 auto;
+    width: 36px;
+    height: 36px;
+  }
+
+  & &__text {
+    flex: 1;
+    margin-left: 4px;
+    font-size: 28px;
+    font-weight: 400;
+    color: #333333;
+    line-height: 40px;
+    @include lineEllipsis;
+  }
+
+  & &__avatar {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+  }
+
+  & &__avatarIcon {
+    position: absolute;
+    bottom: 4px;
+    right: 0;
+    width: 24px;
+    height: 24px;
+    box-shadow: 0 0 2px 0 #FFFFFF;
+    border-radius: 50%;
+  }
+
+  &__tags {
+    &-item {
+      display: inline-block;
+      background: #F5F7F8;
+      padding: 16px;
+      margin-top: 20px;
+      margin-right: 16px;
+      max-width: 196px;
+      font-size: 24px;
+      font-weight: 400;
+      color: #262626;
+      line-height: 34px;
+      @include lineEllipsis;
+    }
+  }
+
+
+
+  & &__bk {
+    position: absolute;
+    top: 44px;
+    right: -70px;
+    max-width: 384px;
+
+  }
+}

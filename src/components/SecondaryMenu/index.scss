@@ -1,0 +1,84 @@
+.career-secondaryMenu {
+  display: flex;
+
+  &__primary {
+    height: 100%;
+    flex-shrink: 0;
+    width: 243px;
+    box-sizing: border-box;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 1PX;
+      transform: scaleX(0.5);
+      transform-origin: 0 0;
+      background: #F0F2F5;
+      top: 0;
+      bottom: 0;
+      right: 0;
+    }
+
+    &-item {
+      height: 96px;
+      font-size: 28px;
+      font-weight: 400;
+      color: #333333;
+      display: flex;
+      align-items: center;
+      padding-left: 30px;
+
+      &--selected {
+        background: #E8EFFC;
+        color: $primaryColor;
+        position: relative;
+
+        &::before {
+          content: ' ';
+          position: absolute;
+          left: 0;
+          top: 30px;
+          background: $primaryColor;
+          height: 36px;
+          width: 6px;
+        }
+      }
+    }
+  }
+
+  &__secondary {
+    flex-grow: 1;
+    height: 100%;
+    overflow: hidden;
+    padding: 20px 0 20px 30px;
+
+    &-block {
+      padding-bottom: 60px;
+    }
+
+    &-name {
+      font-size: 36px;
+      font-weight: bold;
+      color: #000000;
+      line-height: 50px;
+    }
+
+    &-children {
+      margin-right: -24px;
+      display: flex;
+      width: 455px;
+      flex-wrap: wrap;
+    }
+
+    &-button {
+      @include normalized__tag;
+
+      &--selected {
+        border: 1PX solid $primaryColor;
+        background-color: #F2F9FF;
+        color: $primaryColor;
+      }
+    }
+  }
+}

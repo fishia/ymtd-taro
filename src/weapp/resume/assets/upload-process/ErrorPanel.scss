@@ -1,0 +1,46 @@
+.error-panel {
+  text-align: center;
+  margin-top: 166px;
+
+  &__img {
+    width: 602px;
+    height: 322px;
+  }
+
+  &__tips {
+    margin-top: 32px;
+
+    .title {
+      font-size: 28px;
+      font-weight: 500;
+      color: #141933;
+      line-height: 36px;
+    }
+
+    .sub {
+      margin-top: 16px;
+      font-size: 20px;
+      color: #7A7F99;
+      line-height: 36px;
+    }
+  }
+
+  &__action {
+    margin-top: 136px;
+  }
+
+  &__button {
+    width: 346px;
+
+    &.upload {
+      background: #4256DC;
+    }
+
+    &.others {
+      border-width: 2px;
+      border-color: #4256DC;
+      background: #F3F5FF;
+      margin-top: 32px;
+    }
+  }
+}

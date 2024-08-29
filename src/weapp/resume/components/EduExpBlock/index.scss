@@ -1,0 +1,22 @@
+.eduexp-block {
+  $minHeight: 150px;
+
+  &__datediv::after {
+    content: '-';
+    color: $titleColor;
+    margin-left: 16px;
+  }
+
+  &__title {
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  &__empty {
+    font-size: 26px;
+    line-height: $minHeight;
+    text-align: center;
+    vertical-align: middle;
+    color: $noticeColor;
+  }
+}

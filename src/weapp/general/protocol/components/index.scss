@@ -1,0 +1,54 @@
+.my-protocol {
+  padding-right: 30px;
+  padding-left: 30px;
+
+  @extend .font26;
+  color: $textColor;
+  letter-spacing: 4px;
+  line-height: 50px;
+
+  &__boby {
+    padding: 110px 0 55px 0;
+  }
+
+  &__title {
+    line-height: 110px;
+    @extend .font36;
+    color: $titleColor;
+  }
+
+  &__section {
+    margin-bottom: 40px;
+    word-break: break-all;
+    text-indent: 1em;
+  }
+
+  &__image {
+    width: 100%;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__li {
+    text-indent: 1.5em;
+    margin-bottom: 30px;
+  }
+
+  &__subli {
+    text-indent: 3em;
+    margin-bottom: 30px;
+  }
+
+  &--strong {
+    font-weight: 700;
+  }
+
+  &--underline {
+    text-decoration: underline;
+  }
+
+  &--link {
+    color: $primaryColor;
+  }
+}

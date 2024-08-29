@@ -1,0 +1,32 @@
+.resume__job-category--empty {
+  margin-top: 144px;
+
+  &__line {
+    text-align: center;
+    margin: 20px 0;
+    font-weight: 400;
+  }
+
+  &--black {
+    font-size: 28px;
+    color: #000000;
+    line-height: 40px;
+  }
+
+  &--grey {
+    font-size: 24px;
+    color: #8E8E8E;
+    line-height: 34px;
+  }
+
+  &__btn {
+    $height: 60px;
+    width: 200px;
+    height: $height;
+    font-size: 24px;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: $height;
+    margin: 32px auto;
+  }
+}

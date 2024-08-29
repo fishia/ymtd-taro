@@ -1,0 +1,36 @@
+.detail-pdfCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__position {
+    width: 560px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #474C66;
+    line-height: 34px;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    white-space: nowrap;  
+  }
+
+  &__rightText {
+    font-size: 24px;
+    font-weight: 400;
+    color: $primaryColor;
+    display: flex;
+    align-items: center;
+  }
+
+   .icondingwei {
+    margin-left: 5px;
+    font-size: 26px;
+    color: $primaryColor;
+  }
+
+  // &__line {
+  //   margin: 20px 0;
+  //   height: 1px;
+  //   background-color: $bgColor;
+  // } 
+}

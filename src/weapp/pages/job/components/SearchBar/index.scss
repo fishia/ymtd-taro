@@ -1,0 +1,56 @@
+.inputCommonStyle {
+  width: calc(100% - 2PX);
+  height: calc(100% - 2PX);
+  border-radius: 32PX;
+  background-color: #fff;
+  padding: 0 35px;
+  display: flex;
+  align-items: center;
+  font-size: 26px;
+  margin: 1PX auto;
+}
+
+.job-index__search-bar {
+  width: 100%;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+
+  &__inputWrapper {
+    width: 100%;
+    height: 100%;
+    border-radius: 32PX;
+  }
+
+  &__border {
+    border: 2px solid transparent;
+    /* 这里需要设置两个背景，第一个背景是内容区域的白色背景，另一个是实现渐变边框的背景 */
+    background-image: linear-gradient(#fff, #fff),
+      linear-gradient(137deg, #d6aeeb, #9abdfd);
+    /* 设置背景图标的坐标原点为border-box区域的左上角，因为我们希望背景可以渗透到边框处，
+    因此需要从边框处开始裁切，因此需要设置为border-box，默认为padding-box的左上*/
+    background-origin: border-box;
+    /* 背景裁切的时候，第一个背景需要从内容区域开始裁切，因此设置为content-box；
+第二个背景需要作为渐变边框，因此需要从边框处开始裁切 */
+    background-clip: content-box, border-box;
+  }
+
+  & &__gradientInput {
+    @extend .inputCommonStyle;
+    color: #D6DCFB;
+    // background-image: -webkit-linear-gradient(127deg, #d6aeeb, #9abdfd);
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
+  }
+
+  & &__input {
+    @extend .inputCommonStyle;
+    background: linear-gradient(144deg, rgba(237, 244, 255, 0.5) 0%, rgba(232, 234, 255, 0.5) 100%);
+    color: #fff;
+  }
+
+  & &__icon {
+    font-size: 26px;
+    margin-right: 20px;
+  }
+}

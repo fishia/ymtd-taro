@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon_gongwenbao</title>
+    <g id="投放页" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="画板" transform="translate(-152.000000, -1570.000000)">
+            <g id="icon_gongwenbao" transform="translate(152.000000, 1570.000000)">
+                <rect id="矩形" fill="#FFFFFF" opacity="0" x="0" y="0" width="18" height="18"></rect>
+                <g id="编组-4" transform="translate(2.390625, 2.812500)" stroke="#999999">
+                    <path d="M12.4453125,3.1015625 L12.7890625,11.4146559 L0.84375,11.7584059 L0.5,3.4453125 L12.4453125,3.1015625 Z" id="矩形"></path>
+                    <path d="M4.0078125,3.0030831 L4.0078125,0.84375 C4.0078125,0.377759742 4.38557224,0 4.8515625,0 L8.4375,0 C8.90349026,0 9.28125,0.377759742 9.28125,0.84375 L9.28125,3.0030831" id="路径"></path>
+                    <line x1="0.28125" y1="6.096875" x2="12.9656221" y2="6.096875" id="路径-10"></line>
+                    <line x1="5.43629819" y1="7.3625" x2="7.82692319" y2="7.3625" id="路径-10备份" stroke-linecap="round"></line>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="189px" height="109px" viewBox="0 0 189 109" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 3</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="95.4615246%" id="linearGradient-1">
+            <stop stop-color="#FFE82D" offset="0%"></stop>
+            <stop stop-color="#FF9D45" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-49.2%" y="-100.0%" width="198.4%" height="300.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="10" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-27.2%" y="-27.2%" width="154.4%" height="154.4%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="1.08816964" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-40.8%" y="-40.8%" width="181.6%" height="181.6%" filterUnits="objectBoundingBox" id="filter-4">
+            <feGaussianBlur stdDeviation="1.08816964" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-40.8%" y="-40.8%" width="181.6%" height="181.6%" filterUnits="objectBoundingBox" id="filter-5">
+            <feGaussianBlur stdDeviation="1.08816964" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="创建简历得红包" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="无抽奖资格" transform="translate(-91.000000, -206.000000)">
+            <g id="编组-2" transform="translate(16.000000, 220.000000)">
+                <g id="编组-3" transform="translate(75.000000, 0.000000)">
+                    <g id="Group-3" transform="translate(36.772043, 56.772043) rotate(-26.000000) translate(-36.772043, -56.772043) translate(9.272043, 29.272043)">
+                        <circle id="Oval" fill="#FDCE3A" cx="27.5" cy="27.5" r="27.5"></circle>
+                        <circle id="Oval" stroke="#FE762A" stroke-width="2" cx="27" cy="28" r="23"></circle>
+                        <text id="￥" font-family=".PingFangSC-Regular, .PingFang SC" font-size="38" font-weight="normal" fill="#FD995A">
+                            <tspan x="8" y="38">￥</tspan>
+                        </text>
+                    </g>
+                    <g id="Group-3-Copy" transform="translate(158.086217, 39.086217) rotate(-26.000000) translate(-158.086217, -39.086217) translate(135.586217, 16.586217)">
+                        <circle id="Oval" fill="#FDCE3A" cx="22.1736949" cy="22.1736949" r="22.1736949"></circle>
+                        <circle id="Oval" stroke="#FE762A" stroke-width="2" cx="21.7705368" cy="22.576853" r="18.5452721"></circle>
+                        <text id="￥" font-family=".PingFangSC-Regular, .PingFang SC" font-size="32" font-weight="normal" fill="#FD995A">
+                            <tspan x="6" y="33">￥</tspan>
+                        </text>
+                    </g>
+                    <path d="M96.6214277,44.8214998 L117.732204,44.8214998 C117.576003,53.7297436 116.798569,60.3139832 115.399901,64.5742188 C114.001233,68.8344543 111.534452,75.4186939 107.999557,84.3269377 L91.7923312,84.3269377 C95.0117289,75.3567192 96.6214277,68.4638914 96.6214277,63.6484543 C96.6214277,58.8330173 96.6214277,52.5573658 96.6214277,44.8214998 Z" id="Path-5" fill="url(#linearGradient-1)" transform="translate(104.762268, 64.574219) rotate(12.000000) translate(-104.762268, -64.574219) "></path>
+                    <ellipse id="Oval-2" fill="#FFC538" filter="url(#filter-2)" cx="81.5" cy="31" rx="30.5" ry="15"></ellipse>
+                    <circle id="Oval-3" fill="#FDCC3A" filter="url(#filter-3)" cx="44" cy="6" r="6"></circle>
+                    <circle id="Oval-3" fill="#FDCC3A" filter="url(#filter-4)" cx="172" cy="8" r="4"></circle>
+                    <circle id="Oval-3-Copy" fill="#FDCC3A" filter="url(#filter-5)" cx="74" cy="87" r="4"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

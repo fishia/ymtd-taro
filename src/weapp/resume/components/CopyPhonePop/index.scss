@@ -1,0 +1,66 @@
+@import "~taro-ui/dist/style/components/float-layout.scss";
+
+.CopyPhonePopCss{
+    .layout{
+        height: 452px;
+        min-height: 452px;
+        border-radius: 24px 24px 0px 0px;
+    }
+    .layout-header{
+        background-color: #fff;
+        padding:59px 32px 32px 32px;
+        border-radius: 24px 24px 0px 0px;
+        &__title{
+            font-size: 36px;
+            font-weight: 600;
+            color: #151931;
+        }
+    }
+    .layout-body{
+        background: #fff;
+        // max-height: calc(90vh - 150px);
+        padding: 0;
+        &__content{
+            height: 160px;
+            max-height: 160px;    
+        }
+    }
+    &__saveBtnContent{
+       width: 100%;
+       position: fixed; 
+       bottom: 0;
+       padding: 16px 0 84px 0;
+       background-color: #fff;
+       .saveBtn{
+          width: 510px;
+          margin: 0 auto;
+       }
+    }
+    &__resumeContent{
+        .title{
+            font-size: 32px;
+            font-weight: 400;
+            color: #7A7F99;
+            line-height: 44px;
+            margin-bottom: 32px;
+            text-align: center;
+        }
+        .phone{
+            font-size: 48px;
+            font-weight: 500;
+            color: #141933;
+            line-height: 66px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-left: 30px;
+            .copy{
+                font-size: 20px;
+                font-weight: 400;
+                color: #436EF3;
+                line-height: 28px;
+                margin-left: 8px;
+            }
+        }
+    }
+}

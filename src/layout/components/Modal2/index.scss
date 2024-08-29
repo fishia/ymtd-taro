@@ -1,0 +1,98 @@
+.hd-modal2 {
+  &__overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.55);
+    opacity: 0;
+    transition: opacity 150ms;
+    z-index: 99999;
+
+    &.show {
+      opacity: 1;
+    }
+  }
+
+  &__container {
+    height: calc(440px + #{$pageBottom});
+    position: fixed;
+    left: 0;
+    right: 0;
+    transition: all 150ms ease-in-out;
+    bottom: calc(-440px - #{$pageBottom});
+    padding: 48px 32px $pageBottom;
+    background: #FFF;
+    z-index: 4;
+    border-radius: 24px 24px 0px 0px;
+    padding: 48px 32px 30px;
+
+    &.show {
+      bottom: 0;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 40px;
+    right: 24px;
+    height: 40px;
+    width: 40px;
+  }
+
+  &__title {
+    padding-left: 16px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #333333;
+    line-height: 56px;
+  }
+
+  &__text {
+    padding-left: 16px;
+    margin-top: 40px;
+    font-size: 32px;
+    color: #666666;
+    line-height: 44px;
+  }
+
+  &__action {
+    position: absolute;
+    bottom: calc(30px + #{$pageBottom});
+    left: 32px;
+    right: 32px;
+  }
+
+  &__button {
+    border-radius: 9999PX;
+    height: 88px;
+    line-height: 88px;
+    text-align: center;
+    font-size: 32px;
+    display: inline-block;
+
+    &::after {
+      display: none;
+    }
+
+    &.confirm {
+      // width: 430px;
+      background: #4256DC;
+      margin-left: 32px;
+      color: #FFF;
+    }
+
+    &.cancel {
+      // width: 224px;
+      color: #4256DC;
+      background: #F3F5FF;
+      border: 2px solid #4256DC;
+    }
+  }
+
+  // 清除taro默认伪元素
+  taro-button-core::after {
+    display: none;
+  }
+}

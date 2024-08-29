@@ -1,0 +1,20 @@
+{
+  "miniprogramRoot": "./dist",
+  "projectname": "taro-ymtd",
+  "description": "医脉同道 · Taro 小程序",
+  "appid": "wx69366cf26256bb87",
+  "setting": {
+    "urlCheck": false,
+    "es6": false,
+    "postcss": false,
+    "minified": false,
+    "minifyWXSS": false,
+    "minifyWXML": false,
+    "uglifyFileName": false,
+    "ignoreDevUnusedFiles": true,
+    "autoAudits": false,
+    "compileHotReLoad": false,
+    "bigPackageSizeSupport": true
+  },
+  "compileType": "miniprogram"
+}

@@ -1,0 +1,25 @@
+.safety-tips {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  // padding-top: 0;
+  // background: #ECEEF4;
+
+  &_header {
+    color: #484C64;
+    font-size: 24px;
+    margin-bottom: 8px;
+    display: flex;
+
+    &__icon {
+      width: 32px;
+      height: 32px;
+      margin-right: 2px;
+    }
+  }
+
+  &_content {
+    color: #7B7F97;
+    font-size: 20px;
+  }
+}

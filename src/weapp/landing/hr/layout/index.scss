@@ -1,0 +1,83 @@
+$prefixCls: 'landing-hr';
+
+.#{$prefixCls} {
+  background: #F5F7F8;
+  padding-bottom: 130px;
+  overflow-x: hidden;
+
+  &--fixed {
+    padding-bottom: 400px;
+  }
+
+
+
+  & &__header {
+    position: relative;
+    height: 940px;
+  }
+
+
+  & &__header-bg {
+    position: relative;
+    height: 900px;
+    background: url('https://kr-ymtd.oss-cn-beijing.aliyuncs.com/mp/hrLayout/hr-bg.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+  }
+
+  & &__login--fixed {
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+  }
+
+
+  & &__slogan--candidate::after {
+    content: "CANDIDATE";
+
+  }
+
+  & &__slogan--hr::after {
+    content: "DRUG FIRMS";
+  }
+
+  & &__slogan-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 365px;
+    height: 72px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    font-size: 52px;
+    font-weight: bold;
+    color: #4773FF;
+    letter-spacing: 1px;
+    margin-bottom: 18px;
+  }
+
+  & &__slogan-icon {
+    margin-left: 16px;
+    width: 40px;
+    height: 40px;
+
+  }
+
+
+  &__swiper--job {
+    margin: auto;
+    width: 686px;
+    height: 760px;
+  }
+
+  &__swiper--company {
+    margin: auto;
+    width: 686px;
+    height: 1060px;
+  }
+
+
+
+
+}

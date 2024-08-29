@@ -1,0 +1,49 @@
+.message-item__job-card {
+  display: flex;
+
+  &.self {
+    justify-content: flex-end;
+  }
+
+  & &__body {
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 582px;
+    height: 212px;
+  }
+
+  & &__card {
+    width: 582px;
+    border-radius: 10px;
+
+    .hd-message-jobcard__salary {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .hd-message-jobcard__company {
+      padding-bottom: 0;
+      line-height: 40px;
+    }
+
+    .hd-message-jobcard__jobhunter {
+      font-size: 22px;
+    }
+
+    .hd-message-jobcard__icon {
+      width: 34px;
+      height: 34px;
+    }
+  }
+
+  .loading {
+    z-index: 2;
+    background-color: #fff;
+    font-size: 30px;
+    color: $textColor;
+    text-align: center;
+    line-height: 212px;
+    height: 212px;
+  }
+}

@@ -1,0 +1,21 @@
+@import '@/components/Popup/loginPopup/index.scss';
+
+.getPhone-popup{
+    .wx-fast-login{
+        .login-popup__action{
+            height: 260rpx;
+        }
+    }
+    .login-popup__wxConfirm{
+        &:first-child {
+            margin-top: 0px;
+          }
+      
+        &:nth-child(2) {
+            background-color: #FFF;
+            color: #4256DC;
+            font-weight: 400;
+            border: none;
+          }
+    }
+}

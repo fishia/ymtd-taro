@@ -1,0 +1,79 @@
+.my-cooperation {
+  min-height: 100vh;
+  background-color: $bgColor;
+
+  &__logo {
+    background: url('https://oss.yimaitongdao.com/mp/common/cooperation-bg.png') no-repeat;
+    background-size: 100% auto;
+    height: 410px;
+  }
+
+  &__section {
+    position: relative;
+    top: -78px;
+    width: 690px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 50px 30px;
+    margin: 0 auto 30px;
+
+    .cooperation-section__header {
+      display: flex;
+      height: 80px;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    .cooperation-section__title {
+      letter-spacing: 4px;
+      text-align: center;
+      width: 226px;
+      line-height: 80px;
+      background: #02439c;
+      border-radius: 24px 0px 24px 0px;
+      font-size: 36px;
+      font-weight: 800;
+      color: #ffffff;
+    }
+
+    .cooperation-section__dot {
+      margin-left: 16px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: #02439c;
+    }
+
+    .cooperation-section__text {
+      font-size: 28px;
+      font-weight: 500;
+      color: $titleColor;
+      line-height: 52px;
+    }
+
+    .dot--idx2 {
+      opacity: 0.5;
+    }
+
+    .dot--idx3 {
+      opacity: 0.2;
+    }
+  }
+
+  &__contact {
+    display: flex;
+    align-items: center;
+    height: 88px;
+    font-size: 32px;
+    font-weight: 500;
+    color: $titleColor;
+    line-height: 88px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+
+    .iconfont {
+      font-size: 40px;
+      margin: 0 33px;
+    }
+  }
+}

@@ -1,0 +1,82 @@
+.resume-scan {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  & &__camera {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+  }
+
+  & &__tips {
+    margin: 10px 0;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    z-index: 2;
+  }
+
+  $angleBorderWidth: 5px;
+  $angleBorderOffset: 16px;
+  $angleBorderSize:50px;
+
+  & &__square {
+    width: 500px + 2 * ($angleBorderWidth + $angleBorderOffset);
+    height: 500px + 2 * ($angleBorderWidth + $angleBorderOffset);
+    padding: $angleBorderWidth + $angleBorderOffset;
+    z-index: 5;
+    margin: 120px 0 70px;
+    position: relative;
+    overflow: visible;
+
+    &__line {
+      border: 3px solid #FFFFFF;
+      height: 500px;
+      width: 500px;
+      z-index: 5;
+      box-sizing: border-box;
+    }
+
+    &__angle {
+      position: absolute;
+      z-index: 5;
+      content: '';
+      display: block;
+      background-color: #FFFFFF;
+      position: absolute;
+    }
+  }
+
+  .vertical {
+    width: $angleBorderWidth;
+    height: $angleBorderSize;
+  }
+
+  .horizontal {
+    width: $angleBorderSize;
+    height: $angleBorderWidth;
+  }
+
+  .top {
+    top: 0;
+  }
+
+  .bottom {
+    bottom: 0;
+  }
+
+  .left {
+    left: 0;
+  }
+
+  .right {
+    right: 0;
+  }
+}

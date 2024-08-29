@@ -1,0 +1,151 @@
+.job-position {
+  background-color: #fff;
+
+  &__basic {
+    display: flex;
+    align-items: center;
+  }
+
+  &__company {
+    color: #484C64;
+    margin: 24px 0 3px 0;
+    @extend .font24;
+    .iconcompany{
+      font-size:28px;
+      margin-right: 4px;
+    }
+  }
+
+  &__require {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    // border-bottom: 1px solid $bgColor;
+  }
+
+  &__fireTips{
+    width: 100%;
+    margin-top: 20px;
+    padding:16px 20px;
+    border-radius: 4px;
+    background: #FFF3D7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .fireTipsLeft{
+      color: #F4881B;
+      font-size: 24px;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      .iconfire{
+        font-size: 30px;
+        margin-right: 8px;
+      }
+    }
+    .fireTipsRignt{
+      color: #474C66;
+      font-size: 24px;
+      font-weight: 400;
+      display: flex;
+      align-items: center;
+      .iconright{
+        font-size: 22px;
+        margin-left: 8px;
+        margin-top: 4px;
+      }
+    }
+  }
+}
+
+.job-position__basic {
+  display: flex;
+  align-items: center;
+
+  &-title {
+    max-width: 520px;
+    font-size:40px;
+    color: #151931;
+    font-weight: bold;
+    flex-grow: 1;
+    word-wrap:break-word;
+    word-break:break-all;
+  }
+
+  &-name {
+    display: flex;
+    align-items: center;
+  }
+
+  .tag {
+    margin-left: 12px;
+  }
+
+  &__top, &__hunter {
+    @extend .tag;
+    width: 32px;
+    height: 32px;
+  }
+
+  &__urgent {
+    @extend .tag;
+    width: 58px;
+    height: 32px;
+  }
+
+  &-salary {
+    flex-shrink: 0;
+    font-size: 32px;
+    font-weight: 500;
+    color: $primaryColor;
+    margin: 0 0 0 15px;
+  }
+
+  &__new {
+    font-size: 24px;
+    font-weight: 400;
+    color: #EF953C;
+    width: 96px;
+    text-align: center;
+    line-height: 44px;
+    border: 1px solid #F8C795;
+    border-radius: 4px;
+    display: inline-block;
+    margin-left: 12px;
+    vertical-align: middle;
+  }
+}
+
+
+.job-position__require {
+  &-item {
+    margin-right: 40px;
+    color: #484C64;
+    font-size: 24px;
+    font-weight: 400;
+    // @extend .font28;
+  }
+
+  &__left {
+    // color: #474C66;
+    // font-size: 24px;
+    // font-weight: 500;
+    display: inline-flex;
+    flex-wrap: wrap;
+    max-width: 630px;
+    line-height: 2;
+  }
+
+  &__right {
+    @extend .font26;
+    color: #a6a6a6;
+    font-weight: 400;
+    margin-left: auto;
+  }
+
+  .icon {
+    margin-right: 4px;
+    font-size: 28px;
+    color: $titleColor
+  }
+}

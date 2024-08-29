@@ -1,0 +1,49 @@
+.resume-step {
+  @include bgFFF();
+
+  padding-bottom: calc(169px + #{$pageBottom});
+
+  &__step-bar {
+    margin-bottom: 10px;
+  }
+
+  &__banner {
+    height: 100px;
+    background: #e8effc;
+    display: flex;
+    align-items: center;
+    padding: 0 32px;
+
+    &__tips {
+      display: inline;
+      font-size: 26px;
+      color: #333333;
+    }
+
+    &__button {
+      display: inline;
+      font-size: 26px;
+      font-weight: 500;
+      color: #4773ff;
+      line-height: 36px;
+      margin-left: auto;
+    }
+  }
+
+  .resume-step-title {
+    padding: 48px 32px 20px;
+
+    &__title {
+      font-size: 40px;
+      font-weight: bold;
+      color: #333333;
+      line-height: 56px;
+    }
+
+    &__tips {
+      margin-top: 16px;
+      font-size: 24px;
+      color: #666666;
+    }
+  }
+}

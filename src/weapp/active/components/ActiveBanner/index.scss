@@ -1,0 +1,16 @@
+$bannerHeight: 324px;
+.active-banner {
+  height: $bannerHeight;
+  .job-index__swiper-bar {
+    margin: 0 0;
+
+    &__swiper {
+      width: 100%;
+      height: 100%;
+      border-radius:0;
+    }
+    &__swiper-item{
+      border-radius:0;
+    }
+  }
+}

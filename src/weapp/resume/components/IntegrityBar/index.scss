@@ -1,0 +1,33 @@
+@import '~taro-ui/dist/style/components/progress.scss';
+
+.integrity-bar {
+  display: flex;
+  align-items: center;
+  margin: 30px 30px 20px;
+  background-color: #FFF;
+  border-radius: 5PX;
+  padding: 30px 40px;
+  font-size: 26px;
+  position: relative;
+  z-index: 2;
+
+  &__text {
+    color: $titleColor;
+    flex-shrink: 0;
+  }
+
+  &__percent {
+    color: $warningColor;
+    flex-shrink: 0;
+  }
+
+  &__progress {
+    display: inline-block;
+    padding-left: 30px;
+    flex-grow: 1;
+
+    .at-progress__outer-inner {
+      background-color: #e5ecf3;
+    }
+  }
+}

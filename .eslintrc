@@ -1,0 +1,32 @@
+{
+  "ignorePatterns": [
+    "node_modules/",
+    "dist/",
+    "tests/",
+    "demo/",
+    "cache/",
+    "coverage/",
+    "**/*-min.js",
+    "**/*.min.js"
+  ],
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "extends": [
+    "taro/react"
+  ],
+  "rules": {
+    "jsx-quotes": [
+      "warn",
+      "prefer-double"
+    ],
+    "no-shadow": "off",
+    "@typescript-eslint/no-shadow": "error",
+    "import/order": "off",
+    "import/first": "off",
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
+    "import/no-commonjs": "off",
+    "no-restricted-globals": "off"
+  }
+}

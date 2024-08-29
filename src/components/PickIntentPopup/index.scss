@@ -1,0 +1,147 @@
+.pick-intent-popup-mask {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+  background: rgba(39, 39, 47, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 200ms;
+  opacity: 0;
+  pointer-events: none;
+
+  &.actived {
+    opacity: 1;
+    pointer-events: unset;
+  }
+}
+
+.pick-intent-popup {
+  position: relative;
+  width: 608px;
+  height: 860px;
+  background: #FFFFFF;
+  border-radius: 24px;
+  padding: 32px;
+  z-index: 99999;
+  transition: opacity 200ms;
+  opacity: 0;
+  pointer-events: none;
+
+  &.actived {
+    opacity: 1;
+    pointer-events: unset;
+  }
+
+  &__title {
+    font-size: 36px;
+    font-weight: 600;
+    color: #151931;
+    line-height: 50px;
+
+    &__hl {
+      color: #4655D4;
+      display: inline-block;
+    }
+  }
+
+  &__sub-title {
+    margin-top: 8px;
+    font-size: 24px;
+    color: #7B7F97;
+    line-height: 34px;
+    margin-bottom: 24px;
+  }
+
+  &__tips {
+    margin-top: 48px;
+    margin-bottom: 24px;
+    font-size: 24px;
+    color: #484C64;
+    line-height: 34px;
+  }
+
+  &__item {
+    position: relative;
+    height: 130px;
+    background: #F7F8FA;
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 24px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    &.current {
+      background: #F3F5FE;
+      margin-bottom: 0;
+    }
+
+    &__title {
+      display: flex;
+      align-items: baseline;
+    }
+
+    &__main-title {
+      display: inline-block;
+      max-width: 280px;
+      font-size: 28px;
+      font-weight: 500;
+      color: #151931;
+      line-height: 40px;
+
+      &.fw600 {
+        font-weight: 600;
+      }
+    }
+
+    &__sub-title {
+      display: inline-block;
+      margin-left: 16px;
+      font-size: 24px;
+      color: #151931;
+      line-height: 34px;
+    }
+
+    &__intro {
+      margin-top: 8px;
+      max-width: 340px;
+      font-size: 24px;
+      color: #484C64;
+      line-height: 34px;
+    }
+
+    &__button {
+      position: absolute;
+      right: 24px;
+      top: 44px;
+      display: inline-block;
+      padding: 4px 24px;
+      background: #4655D4;
+      border-radius: 9999PX;
+      color: #FFFFFF;
+      font-size: 24px;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    width: 32px;
+    height: 32px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: -10px;
+      bottom: -10px;
+      left: -10px;
+      right: -10px;
+    }
+  }
+}

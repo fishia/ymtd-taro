@@ -1,0 +1,124 @@
+.message-conversation {
+  display: flex;
+  height: 160px;
+  padding: 30px;
+
+  & &__head {
+    height: 100px;
+    width: 100px;
+    position: relative;
+  }
+
+  & &__avatar {
+    height: 100px;
+    width: 100px;
+    border-radius: 9999PX;
+    background-color: #FFF;
+  }
+
+  & &__avatarPendeant {
+    height: 140px;
+    width: 140px;
+    position: absolute;
+    top: -24px;
+    left: -20px;
+  }
+
+  & &__notice {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-radius: 9999PX;
+    line-height: 30px;
+    background-color: #FF5B4E;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    top: 0;
+    right: 0;
+  }
+
+  &--hover {
+    background-color: $bgColor;
+  }
+
+  .notice-10 {
+    width: 42px;
+    right: -12px;
+  }
+
+  .notice-99 {
+    width: 54px;
+    right: -12px;
+  }
+
+  & &__body {
+    margin-left: 25px;
+    flex-grow: 1;
+  }
+
+  & &__meta {
+    display: flex;
+    flex-grow: 1;
+    align-items: baseline;
+    margin-top: 4px;
+    max-width: 560px;
+  }
+
+  & &__name {
+    flex-shrink: 1;
+    font-weight: bold;
+    color: #151931;
+    font-size: 32px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 288px;
+  }
+
+  & &__company {
+    flex-shrink: 2;
+    margin-left: 8px;
+    font-weight: 400;
+    color: #7B7F97;
+    font-size: 26px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  & &__date {
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #7A7F99;
+    flex-shrink: 0;
+    margin-left: auto;
+    font-size: 24px;
+    padding-left: 20px;
+  }
+
+  & &__content {
+    display: inline-block;
+    color: #474C66;
+    font-size: 26px;
+    max-width: 450px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 14px;
+  }
+
+  & &__chat-status {
+    font-size: 26px;
+    font-weight: 500;
+
+    &.profile-file {
+      color: #7A7F99;
+    }
+
+    &.no-read {
+      color: $primaryColor;
+    }
+  }
+}

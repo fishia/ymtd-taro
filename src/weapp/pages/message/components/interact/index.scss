@@ -1,0 +1,74 @@
+@include setBackground('.interact-index', #ECEEF4, -1);
+
+
+.message__ad-look-me {
+  box-shadow: none;
+  margin-top: 0;
+}
+
+.interact-index {
+  &__content {
+    width: 100%;
+    position: fixed;
+    bottom: $tabBarBottom;
+    overflow: hidden;
+  }
+
+  &__aggregateCard {
+    &__title {
+      font-size: 28px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #141933;
+      line-height: 40px;
+      margin: 24px auto;
+      padding-left: 48px;
+    }
+  }
+
+  &__tips {
+    display: flex;
+    padding: 0 32px;
+    height: 84px;
+    align-items: center;
+    justify-content: space-between;
+    background: #F3F5FF;
+  }
+
+  &__text {
+    font-size: 24px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #474C66;
+    line-height: 34px;
+
+    &:last-child {
+      color: $primaryColor;
+    }
+  }
+
+  &__scrollview {
+    position: fixed;
+    width: 100%;
+    bottom: $tabBarBottom;
+
+    .hd-jobcard {
+      margin: 0 32px 16px;
+
+      &:first-child {
+        margin-top: 18px;
+      }
+
+      &__basic {
+        position: relative;
+      }
+
+      &__salary {
+        right: 0;
+      }
+    }
+  }
+  &__list{
+    height: 100%;
+  }
+}

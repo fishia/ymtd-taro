@@ -1,0 +1,398 @@
+.hd-jobcard {
+  background-color: #fff;
+  padding: 24px;
+  margin-bottom: 16px;
+  border-radius: 12px;
+  position: relative;
+
+  &--hover {
+    background-color: $bgColor;
+  }
+
+  &__basic {
+    display: flex;
+    display: -webkit-box;
+    /* mate8 支持 */
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    align-items: center;
+    flex-grow: 1;
+    line-height: 44px;
+  }
+
+  &__title {
+    max-width: 365px;
+    font-size: 34px;
+    color: $titleColor;
+    font-weight: bold;
+    @extend .line-ellipsis;
+  }
+
+  &__title--top {
+    max-width: 330px;
+  }
+
+  &__title--is_priority {
+    max-width: 270px;
+  }
+
+  &__top,
+  &__hunter {
+    width: 32px;
+    height: 32px;
+    margin-left: 8px;
+  }
+
+  &__urgent {
+    width: 58px;
+    height: 32px;
+    margin-left: 8px;
+  }
+
+  &__salary {
+    position: absolute;
+    right: 30px;
+    width: 330px;
+    text-align: right;
+    @extend .line-ellipsis;
+    font-size: 28px;
+    font-weight: bold;
+    color: $primaryColor;
+  }
+
+  &__require {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &.simple {
+      .hd-jobcard__company_address {
+        position: relative;
+        padding: 5px 0;
+        flex-shrink: 0;
+        width: 100px;
+        text-align: right;
+        color: #999999;
+        @extend .font24;
+      }
+    }
+  }
+
+  &__tags {
+    height: 41px;
+    overflow: hidden;
+
+    .job-require__item {
+      display: inline-block;
+      background: #F3F5FF;
+      color: #474C66;
+      line-height: 34px;
+      padding: 5px 10px;
+      margin-right: 12px;
+      max-width: 208px;
+      @extend .line-ellipsis;
+      @extend .font24;
+      border-radius: 4px;
+    }
+
+  }
+
+  &__wanted {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  &__border {
+    border-bottom: 1px solid #f5f7fa;
+  }
+
+  &__icon {
+    width: 40px;
+    height: 40px;
+    background: #D8D8D8;
+    border-radius: 50%;
+    position: relative;
+  }
+
+  &__headFrame {
+    width: 54px;
+    height: 54px;
+    position: absolute;
+    top: -7px;
+    left: -7px;
+    z-index: 1;
+  }
+
+
+  &__hr {
+    position: relative;
+  }
+
+  &__company {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+
+    &__name {
+      font-size: 24px;
+      font-weight: 400;
+      color: #474C66;
+      line-height: 34px;
+      @extend .line-ellipsis;
+      margin-right: 12px;
+      flex: 0 1 auto;
+    }
+
+    &__attractTags {
+      display: flex;
+      flex: 0 0 auto;
+    }
+
+    &__attractTag {
+      line-height: 32px;
+      background: #F3F5FF;
+      border-radius: 4px;
+      font-size: 20px;
+      font-weight: 400;
+      color: #4256DC;
+      padding: 0 8px;
+      margin-right: 12px;
+    }
+  }
+
+  &__company_address {
+    position: absolute;
+    right: 0px;
+    top: 4px;
+    @extend .font24;
+    color: #7A7F99;
+  }
+
+  &__jobhunter {
+    margin-left: 10px;
+    @extend .font24;
+    max-width: 450px;
+    @extend .line-ellipsis;
+    color: #474C66;
+    line-height: 34px;
+  }
+
+  &__updateTime {
+    margin-left: auto;
+    @extend .font24;
+    @extend .font24--grey;
+  }
+
+  &__tipsWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 0;
+  }
+
+  .flex-space-between {
+    justify-content: space-between;
+  }
+
+  .flex-end {
+    justify-content: flex-end;
+  }
+
+  &__tips {
+    min-width: calc(100% - 208px);
+    font-size: 20px;
+    color: #7A7F99;
+  }
+
+  &__tipsItem {
+    max-width: 352px;
+    line-height: 28px;
+    flex: 0 1 auto;
+    @extend .line-ellipsis;
+  }
+
+  &__lightTitle {
+    width: 64px;
+    height: 32px;
+    background: #EEF0FF;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    color: #4256DC;
+    line-height: 32px;
+    flex-shrink: 0;
+  }
+
+  &__btn {
+    width: 144px;
+    line-height: 50px;
+    background: #4256DC;
+    border-radius: 44px;
+    font-size: 24px;
+    flex-shrink: 0;
+    padding: 0;
+    margin-left: auto;
+    text-align: center;
+  }
+
+  &__chatBtn {
+    background: #4256dc;
+    color: #fff;
+  }
+
+  &__continueChatBtn {
+    background: #f3f5ff;
+    color: #4256dc;
+    border: 1px solid #4256dc;
+  }
+
+  &--disabled {
+    opacity: 0.7;
+  }
+
+  &__behaviorTags {
+    display: flex;
+
+    &__onlineTag {
+      width: 64px;
+      padding-left: 18px;
+      line-height: 34px;
+      background-color: #EBFFFC;
+      color: #02C4AB;
+      font-size: 20px;
+      margin-left: 12px;
+      border-radius: 6px;
+      position: relative;
+
+      &::before {
+        content: '';
+        width: 6px;
+        height: 6px;
+        background-color: #02C4AB;
+        border-radius: 50%;
+        position: absolute;
+        top: 15px;
+        left: 8px;
+      }
+    }
+
+    &__replyTag {
+      background: #F3F5FF;
+      border-radius: 4px;
+      font-size: 20px;
+      font-weight: 400;
+      color: #8F96AE;
+      line-height: 28px;
+      padding: 3px 6px;
+      margin-left: 12px;
+    }
+
+    &__textTag {
+      @extend .font24;
+      color: #7A7F99;
+      margin-left: 12px;
+    }
+  }
+
+  &__activityTag {
+    width: 212px;
+    line-height: 34px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #EA6262;
+    color: #fff;
+    font-size: 20px;
+    text-shadow: 2px 2px 2px grey
+  }
+
+  &__fireTips {
+    padding:6px 12px;
+    border-radius: 4px 16px 4px 4px;
+    background: #FFF3D7;
+    color: #FF865B;
+    font-size: 20px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    .iconfire{
+      font-size: 30px;
+      margin-right: 8px;
+    }
+  }
+
+  &__bottomTips {
+    border-top: 1px solid #E6E8F2;
+    height: 28px;
+    font-size: 20px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #7B7F97;
+    line-height: 28px;
+    padding: 20px 0;
+    margin-top: 20px;
+  }
+
+  &__shareCard {
+    width: 100%;
+    height: 254px;
+    margin-bottom: 16px;
+  }
+
+  &__resumeStickCard {
+    width: 100%;
+    height: 392px;
+    margin-bottom: 16px;
+  }
+
+  &__maskGuideLogin {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(255,255,255,0.8) 0%, #FFFFFF 100%);
+    border-radius: 12px;
+    backdrop-filter: blur(2px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1;
+    &-desc {
+      font-size: 32px;
+      color: #141933;
+      margin-bottom: 32px;
+      width: 622px;
+      line-height: 44px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    button {
+      width: 440px;
+      height: 64px;
+      background: #4655D4;
+      border-radius: 34px;
+      font-size: 24px;
+      font-weight: 400;
+      color: #FFFFFF;
+    }
+  }
+}
+
+.font24--grey {
+  font-size: 24px;
+  font-weight: 400;
+  color: $tipColor;
+}
+
+.acLine {
+  width: 10px;
+  height: 10px;
+}

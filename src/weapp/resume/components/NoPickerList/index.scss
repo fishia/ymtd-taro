@@ -1,0 +1,29 @@
+.picker-no-list {
+  overflow: hidden;
+  position: fixed;
+  display: flex;
+  top: 180px;
+  bottom: $tabBarBottom;
+  width: 100%;
+  justify-content: center;
+  background-color: #fff;
+  z-index: 5;
+
+  & &__empty {
+    .hd-empty__content {
+      color: #B8B8B8;
+      line-height: 44px;
+      @extend .font24;
+    }
+
+    .hd-empty__image {
+      width: 110PX;
+      height: 110PX;
+      margin: 10px auto;
+    }
+  }
+
+  & &__strong {
+    color: #000;
+  }
+}

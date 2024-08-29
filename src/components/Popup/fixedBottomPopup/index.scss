@@ -1,0 +1,165 @@
+.hd-fixedbottompopup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  // will-change: opacity;
+  // transition: all 0.5s;
+  visibility: hidden;
+  z-index: 99999;
+
+  &--active {
+    pointer-events: auto;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .hd-fixedbottompopup__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+  }
+
+  .hd-fixedbottompopup__container {
+    position: absolute;
+    bottom: $pageBottom;
+    width: 100%;
+    height: 650px;
+    padding: 70px 30px 30px 30px;
+    border-radius: 30px 30px 0 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    // will-change: transform;
+    // -webkit-transition: -webkit-transform .3s cubic-bezier(0, 0, .25, 1) 80ms;
+    transition: transform .3s cubic-bezier(0, 0, .25, 1) 80ms;
+  }
+
+  .hd_trans {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  &__title {
+    @extend .font32;
+    color: $titleColor;
+    line-height: 60px;
+    text-align: center;
+  }
+
+  &__swiper {
+    width: 100%;
+    height: calc(100% - 156px);
+    border-radius: 10px;
+    margin: 25px auto;
+
+    .hd-fixedbottompopup__swiper-img {
+      width: 480px;
+      height: 704px;
+      margin: 0 auto;
+      box-shadow: 0px 10px 20px 0px rgba(0, 66, 133, 0.2);
+      display: block;
+      border-radius: 10px;
+    }
+  }
+
+  &__bg_image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  &__action {
+    &-confirm {
+      width: 630px;
+      line-height: 88px;
+      border-radius: 10px;
+      @extend .font32;
+      color: #fff;
+      background-color: $primaryColor;
+      letter-spacing: 4px;
+      position: absolute;
+      bottom: 60px;
+      left: 60px;
+    }
+
+    // 清除taro默认伪元素
+    &-confirm:after {
+      display: none;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    color: #D9D9D9;
+  }
+
+  .swiper_action {
+    width: 750px;
+    height: 88px;
+    background: #FFFFFF;
+    color: $textColor;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.card__tips {
+  .hd-fixedbottompopup {
+    &__container {
+      background-color: #fff;
+      height: 484px;
+      bottom: 0;
+      padding: 48px;
+      border-radius: 24px 24px 0px 0px;
+    }
+
+    &__close {
+      top: 42px;
+      right: 30px;
+      color: #595959;
+    }
+
+    &__title {
+      text-align: left;
+      font-size: 36px;
+      font-family: PingFangSC-Semibold, PingFang SC;
+      font-weight: 600;
+      color: #141933;
+      margin-bottom: 32px;
+    }
+
+    &__desc {
+      font-size: 28px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #7A7F99;
+      line-height: 42px;
+    }
+
+    &__action {
+      &-confirm {
+        width: 638px;
+        height: 88px;
+        background: #4256DC;
+        border-radius: 44px;
+        position: absolute;
+        bottom: 56px;
+        left: 56px;
+        font-size: 32px;
+        font-family: PingFangSC-Semibold, PingFang SC;
+        font-weight: 600;
+        color: #FFFFFF;
+      }
+    }
+  }
+}

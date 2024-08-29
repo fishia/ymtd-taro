@@ -1,0 +1,94 @@
+.login_index {
+  width: 100%;
+  height: 100%;
+  padding: 100px 30px 64px 30px;
+  text-align: center;
+
+  .login_index__title {
+    image {
+      width: 429px;
+      height: 98px;
+    }
+  }
+
+  .login_index__subTitle {
+    @extend .font36;
+    font-family: PingFang SC;
+    font-weight: bold;
+    margin-top: 46px;
+    color: #26579F;
+  }
+
+  &__bg_image {
+    width: 423px;
+    height: 435px;
+    margin: 64px auto 80px auto;
+
+    image {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__action {
+    &-confirm {
+      width: 586px;
+      line-height: 80px;
+      @extend .font30;
+      border-radius: 40px;
+      margin: auto;
+      color: #fff;
+      background-color: $primaryColor;
+      letter-spacing: 4px;
+      padding-left: 60px;
+
+      .iconWeChat::before {
+        font-size: 38px;
+        position: absolute;
+        left: 135px;
+        top: 2px;
+      }
+    }
+
+    // 清除taro默认伪元素
+    &-confirm:after {
+      display: none;
+    }
+  }
+
+  &__text {
+    width: 100%;
+    text-align: center;
+    @extend .font24;
+    color: $primaryColor;
+    letter-spacing: 4px;
+    margin: 40px auto;
+  }
+
+  &__checkBoxWrap {
+
+    position: absolute;
+    width: max-content;
+    left: 0;
+    right: 0;
+    bottom: calc(#{$pageBottom} + 30px);
+    margin: 48px auto;
+    height: 30px;
+  }
+
+  &__tel {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: calc(#{$pageBottom} + 25px);
+    font-size: 20px;
+    font-weight: 400;
+    color: #999999;
+    line-height: 28px;
+    text-align: center;
+
+    .phone {
+      color: #4773FF;
+    }
+  }
+}

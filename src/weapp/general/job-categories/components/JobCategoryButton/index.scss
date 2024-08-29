@@ -1,0 +1,8 @@
+.job-category-button {
+  @include normalized__tag;
+
+  &--selected {
+    background-color: #F2F9FF;
+    color: #436EF3;
+  }
+}

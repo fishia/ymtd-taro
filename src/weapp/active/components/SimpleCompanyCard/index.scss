@@ -1,0 +1,17 @@
+.active-companyCard {
+
+  .job-company {
+    padding: 32px 34px;
+    overflow: hidden;
+
+    &__icon {
+      width: 112px;
+      height: 112px;
+    }
+
+    .job-company__intro {
+      color: #999999;
+      width: calc(100% - 112px);
+    }
+  }
+}

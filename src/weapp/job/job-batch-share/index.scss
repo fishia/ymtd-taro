@@ -1,0 +1,48 @@
+$searchBarHeight: 132px;
+$filterHeight:45PX;
+
+@include setBackground('.job-batch-share-index', $bgColor, -1);
+
+.job-batch-share-index {
+  .job-batch-share-index__scrollview {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    bottom: $pageBottom;
+  }
+
+  &__container {
+    min-height: calc(100vh - 166px);
+  }
+
+  &__list {
+    height: 100%;
+  }
+
+  &__submitbar {
+    position: fixed;
+    width: 100vw;
+    bottom: calc(50px + #{$pageBottom});
+  }
+
+  &__share {
+    width: 300px;
+    background: $primaryColor;
+    box-shadow: 0px 10px 20px 0px rgba(25, 108, 191, 0.2);
+    border-radius: 9999PX;
+    padding: 24px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    @extend .font32;
+    color: #fff;
+    margin: 0 auto;
+
+    .iconzhiweifenxiang {
+      font-size: 40px;
+      font-weight: 500;
+      color: inherit;
+      position: relative;
+    }
+  }
+}

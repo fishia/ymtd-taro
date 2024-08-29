@@ -1,0 +1,162 @@
+.hd-message-jobcard {
+  background-color: #fff;
+  padding: 30px 30px 14px 30px;
+
+  &__basic {
+    display: flex;
+    display: -webkit-box;
+    /* mate8 支持 */
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    align-items: center;
+    flex-grow: 1;
+    line-height: 44px;
+  }
+
+  &__title {
+    max-width: 365px;
+    font-size: 30px;
+    font-weight: 800;
+    color: $titleColor;
+    @extend .line-ellipsis;
+  }
+
+  &__title--top {
+    max-width: 250px;
+  }
+
+  &__title--is_priority {
+    max-width: 215px;
+  }
+
+  &__top {
+    width:30px;
+    height:30px;
+    margin-left: 12px;
+  }
+
+  &__urgent {
+    width: 58px;
+    height:32px;
+    margin-left: 6px;
+  }
+
+  &__salary {
+    position: absolute;
+    right: 30px;
+    width: 330px;
+    text-align: right;
+    @extend .line-ellipsis;
+    font-size: 28px;
+    font-weight: bold;
+    color: $primaryColor;
+  }
+
+
+
+  &__require {
+    margin: 25px 0 25px;
+    height: 40px;
+    overflow: hidden;
+
+    .job-require__item {
+      display: inline-block;
+      background-color: #F5f5f5;
+      padding: 5px 10px;
+      margin-right: 12px;
+      max-width: 208px;
+      @extend .line-ellipsis;
+      @extend .font24;
+      border-radius: 2px;
+    }
+  }
+
+  &__wanted {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10PX;
+  }
+
+  &__border {
+    border-bottom: 1PX solid #f5f7fa;
+  }
+
+  &__icon {
+    width: 52px;
+    height: 52px;
+    background: #FFFFFF;
+    border: 1px solid $bgColor;
+    border-radius: 50%;
+  }
+
+  &__company {
+    line-height: 60px;
+    padding-bottom: 8PX;
+    position: relative;
+
+    &_address {
+      position: absolute;
+      right: 0;
+      @extend .font24--grey;
+    }
+  }
+
+  &__company_tag {
+    letter-spacing: 0;
+    margin-right: 20px;
+    color: $textColor;
+    @extend .font28;
+    @extend .line-ellipsis;
+  }
+
+  &__jobhunter {
+    margin-left: 20px;
+    color: $titleColor;
+    @extend .font24;
+    max-width: 400px;
+    @extend .line-ellipsis;
+  }
+
+  &__updateTime {
+    margin-left: auto;
+    @extend .font24;
+    @extend .font24--grey;
+  }
+
+  &__tipsWrapper {
+    display: flex;
+    padding-bottom: 14px;
+  }
+
+  &__tips {
+    margin-top: 6PX;
+    padding: 0 0PX 8PX 2PX;
+    max-width: calc(100vw - 20PX);
+    @extend .line-ellipsis;
+    @extend .font24--grey;
+  }
+
+  &__doubleQuotation {
+    font-size: 20PX;
+    color: $tipColor;
+    font-family: cursive;
+    font-weight: 800;
+  }
+
+  &--disabled {
+    opacity: .7;
+  }
+}
+
+
+.font24--grey {
+  font-size: 24px;
+  font-weight: 400;
+  color: $tipColor;
+}
+
+.acLine {
+  width: 10px;
+  height: 10px;
+}

@@ -1,0 +1,40 @@
+.detail-section {
+  box-sizing: content-box;
+  height: max-content;
+  overflow: hidden;
+  padding: 0 30px;
+  margin: 0 auto;
+  background-color: #fff;
+
+
+  .detail-section__title {
+    font-size: 28px;
+    font-weight: 500;
+    color: #151931;
+    line-height: 40px;
+    margin-bottom:16px;
+  }
+
+  .detail-section__text {
+    font-size: 24px;
+    font-weight: 400;
+    color: #474C66;
+    line-height: 34px;
+  }
+
+  .detail-section__content {
+    padding: 40px 0 0 0;
+    @extend .detail-section__text;
+    font-weight: 300;
+  }
+
+  .detail-section__border {
+    border-bottom: 1PX solid $bgColor;
+  }
+}
+
+// .detail-section__line {
+//   margin-top: 40px;
+//   height: 1px;
+//   background-color: $bgColor;
+// }

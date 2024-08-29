@@ -1,0 +1,68 @@
+.message {
+  padding-bottom: calc(#{$tabBarBottom} + 40px);
+  .show{
+    visibility: visible;
+  }
+  .hide{
+    visibility: hidden;
+  }
+  & &__list {
+    margin: 30px 0;
+    margin-top: 0;
+  }
+
+  & &__ad {
+    z-index: 2;
+    padding: 16px 32px;
+
+    image {
+      box-shadow: 0px 0px 16px 4px rgba(66,86,220,0.1);
+    }
+  }
+
+  & &__ad-look-me {
+    z-index: 2;
+    padding: 16px 32px;
+    margin-top: 0;
+    height: 408px;
+  }
+
+  & &__tips {
+    margin-top: 50px;
+    text-align: center;
+    color: #9595A6;
+    font-size: 24px;
+  }
+
+  & &_card {
+    box-shadow: 0px 4px 8px 6px rgba(228, 234, 247, 0.5);
+    border-radius: 8px;
+
+    .subscription_card__body {
+      height: 256px;
+      background: #fff;
+    }
+
+    .subscription_card__title {
+      color: #333;
+    }
+
+  }
+
+  .hd-fixedbottompopup__container {
+    bottom: 0;
+    background-color: #fff;
+    padding: 0 0 $pageBottom 0;
+  }
+
+  & &_card__tips {
+    display: flex;
+    justify-content: space-between;
+    font-size: 28px;
+    font-family: PingFangSC-Regular,
+      PingFang SC;
+    font-weight: 400;
+    color: #333;
+    line-height: 40px;
+  }
+}

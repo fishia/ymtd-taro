@@ -1,0 +1,22 @@
+.active-share {
+  position: fixed;
+  right: 0;
+  bottom: 288px;
+  z-index: 9999;
+  &__button {
+    text-align: center;
+    background-color: transparent;
+    display:inline;
+
+    // 清除taro默认伪元素
+    &:after {
+      display: none;
+    }
+  }
+  &__img {
+    width: 180px;
+    height: 130px;
+    position: relative;
+    top: 8px;
+  }
+}

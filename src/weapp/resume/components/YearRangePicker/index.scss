@@ -1,0 +1,59 @@
+.form__year-range-picker__wrapper {
+  .form__year-range-picker {
+    position: relative;
+    height: 164px;
+    padding: 32px;
+
+    &.hover {
+      background: #f8faff;
+    }
+
+    &__title {
+      font-size: 28px;
+      color: #333333;
+      line-height: 40px;
+    }
+
+    &__content {
+      margin-top: 16px;
+    }
+
+    &__text {
+      display: inline-block;
+
+      &.placeholder {
+        color: #999999;
+      }
+    }
+
+    &__separator {
+      display: inline-block;
+      width: 40px;
+      height: 2px;
+      background: #333333;
+      margin: 0 50px;
+      vertical-align: middle;
+    }
+
+    &::after {
+      @include halfPxBorder;
+      content: '';
+      left: 32px;
+      right: 32px;
+      background: #F0F2F5;
+      bottom: 0;
+    }
+
+    &--error::after {
+      background: $errorColor;
+    }
+
+    &__arrow {
+      position: absolute;
+      bottom: 42px;
+      right: 32px;
+      height: 24px;
+      width: 14px;
+    }
+  }
+}

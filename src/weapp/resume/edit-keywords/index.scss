@@ -1,0 +1,40 @@
+.edit-keyword {
+
+  &__title {
+    margin: 12px 32px 0;
+    font-size: 40px;
+    font-weight: 500;
+    color: #333333;
+    line-height: 56px;
+  }
+
+  &__tips {
+    color: #999999;
+    line-height: 60px;
+    @extend .font26;
+    margin: 0 32px;
+  }
+
+  &__group {
+    position: fixed;
+    right: 0;
+    bottom: calc(#{$submitBarHeight} + #{$pageBottom});
+
+    &--multi {
+      bottom: calc(154px + #{$pageBottom});
+    }
+  }
+
+  .custom-modal-content__text {
+    white-space: nowrap;
+  }
+
+  .hd-modal__action-cancel.hd-modal__action-cancel {
+    border-radius: 9999PX;
+    margin-right: 10px;
+  }
+
+  .hd-modal__action-confirm.hd-modal__action-confirm {
+    border-radius: 9999PX;
+  }
+}

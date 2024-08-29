@@ -1,0 +1,40 @@
+.intent-block {
+  $minHeight: 150px;
+  min-height: $minHeight;
+  position: relative;
+  z-index: 3;
+  padding-bottom: 0;
+
+  & &__job {
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  & &__empty {
+    font-size: 26px;
+    height: 210px;
+    line-height: 210px;
+    text-align: center;
+    vertical-align: middle;
+    color: $noticeColor;
+  }
+
+  .resume-block__header {
+    margin-bottom: 0;
+  }
+
+  .salary {
+    margin-left: 16px;
+    vertical-align: bottom;
+    vertical-align: bottom;
+  }
+
+  .resume-block-item {
+    padding: 32px 0;
+    border-bottom: 1PX solid #f5f7fa;
+
+    &:last-of-type {
+      border-bottom: none;
+    }
+  }
+}

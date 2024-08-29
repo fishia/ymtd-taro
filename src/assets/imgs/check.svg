@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="13px" viewBox="0 0 13 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon_duigou</title>
+    <g id="投放页" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="画板" transform="translate(-155.000000, -1541.000000)" fill="#D8D8D8" fill-rule="nonzero">
+            <g id="icon_duigou" transform="translate(155.000000, 1541.000000)">
+                <path d="M6.5,0 C2.9,0 0,2.9 0,6.5 C0,10.1 2.9,13 6.5,13 C10.1,13 13,10.1 13,6.5 C13,2.9 10.1,0 6.5,0 Z M9.75,5.25000001 L6.3,8.7 C6.2,8.8 6.05,8.85 5.90000001,8.85 C5.75,8.85 5.60000001,8.8 5.5,8.7 L3.35,6.55000001 C3.15,6.35000001 3.15,5.95000001 3.35,5.75 C3.55,5.55 3.94999999,5.55 4.15,5.75 L5.90000001,7.5 L8.95,4.45 C9.14999999,4.25 9.54999999,4.25 9.75,4.45 C10,4.65 10,5.05 9.75,5.25000001 L9.75,5.25000001 Z" id="形状"></path>
+            </g>
+        </g>
+    </g>
+</svg>

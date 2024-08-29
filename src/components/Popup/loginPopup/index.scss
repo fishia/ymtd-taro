@@ -1,0 +1,198 @@
+.login-popup-mask {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+  background: rgba(39, 39, 47, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 200ms;
+  opacity: 0;
+  pointer-events: none;
+
+  &.actived {
+    opacity: 1;
+    pointer-events: unset;
+  }
+}
+
+.login-popup {
+  position: relative;
+  width: 608px;
+  height: 756px;
+  background: #FFFFFF;
+  border-radius: 24px;
+  padding: 32px;
+  z-index: 99999;
+  transition: opacity 200ms;
+  opacity: 0;
+  pointer-events: none;
+
+  &.login-tips {
+    width: 100%;
+    height: calc(440px + #{$pageBottom});
+    border-radius: 24px 24px 0 0;
+    text-align: left;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 72px 56px;
+    padding-bottom: 0;
+    box-sizing: border-box;
+
+    .login-popup__title__tips {
+      width: 638px;
+      height: 100px;
+      font-size: 36px;
+      font-family: PingFangSC-Semibold, PingFang SC;
+      font-weight: bolder;
+      color: #141933;
+    }
+
+    .login-popup__close {
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      top: 32px;
+      right: 32px;
+      color: #7A7F99;
+    }
+
+    .login-popup__tips__button {
+      position: absolute;
+      bottom: 84px;
+      width: 638px;
+      height: 88px;
+      background: #4655D4;
+      border-radius: 44px;
+      font-size: 32px;
+      font-weight: 600;
+      color: #FFFFFF;
+      text-align: center;
+      line-height: 88px;
+    }
+  }
+
+  &.wx-fast-login {
+    height: 522px;
+    padding: 48px 88px;
+    padding-bottom: 0;
+    box-sizing: border-box;
+    .login-popup__title {
+      text-align: center;
+      font-size: 36px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      font-weight: bold;
+      color: #141933;
+    }
+
+    .login-popup__action {
+      height: 400px;
+    }
+
+    .login-popup__wx-action {
+      height: 346px;
+    }
+
+  }
+
+  &.actived {
+    opacity: 1;
+    pointer-events: unset;
+  }
+
+  &__title {
+    font-size: 36px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: bold;
+    color: #151931;
+    line-height: 50px;
+    text-align: center;
+  }
+
+  &__scroll {
+    position: absolute;
+    top: 114px;
+    bottom: 264px;
+    left: 32px;
+    right: 32px;
+    width: 544px;
+    height: 378px;
+  }
+
+  &__content {
+    font-size: 28px;
+    color: #474C66;
+    line-height: 42px;
+    display: inline-block;
+
+    &__br {
+      line-height: 42px;
+      height: 42px;
+    }
+
+    &__link {
+      color: #4655D4;
+      display: inline;
+    }
+  }
+
+  &__action {
+    height: 260px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+
+  &__cancel {
+    padding: 16px;
+    width: 200px;
+    background: none;
+    font-size: 28px;
+    color: #7B7F97;
+    line-height: 40px;
+  }
+
+  &__confirm {
+    margin-top: 32px;
+    width: 432px;
+    height: 88px;
+    line-height: 88px;
+    background: #4655D4;
+    border-radius: 9999PX;
+    font-size: 32px;
+    font-weight: bold;
+    color: #FFFFFF;
+  }
+
+  &__wxConfirm {
+    &:first-child {
+      margin-top: 0px;
+    }
+
+    &:nth-child(2) {
+      background-color: #FFF;
+      border: 2px solid #4256DC;
+      color: #4256DC;
+    }
+
+    &:nth-child(3) {
+      background-color: #FFF;
+      color: #4256DC;
+      font-weight: 400;
+    }
+  }
+
+  &__noConfirm {
+    background: #FFF;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #7B7F97;
+  }
+}

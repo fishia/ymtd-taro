@@ -1,0 +1,58 @@
+.form__picker__wrap {
+  .form__picker {
+    position: relative;
+    height: 164px;
+    padding: 32px;
+
+    &.hover {
+      background: #f8faff;
+    }
+
+    &__title {
+      font-size: 28px;
+      color: #333333;
+      line-height: 40px;
+    }
+
+    &__content {
+      margin-top: 16px;
+    }
+
+    &__text {
+      font-size: 32px;
+      font-weight: 500;
+      color: #333333;
+      line-height: 44px;
+      max-width: 640px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    &__placeholder {
+      font-weight: 400;
+      color: #999999;
+    }
+
+    &::after {
+      @include halfPxBorder;
+      content: '';
+      left: 32px;
+      right: 32px;
+      background: #F0F2F5;
+      bottom: 0;
+    }
+
+    &--error::after {
+      background: $errorColor;
+    }
+
+    &__arrow {
+      position: absolute;
+      bottom: 42px;
+      right: 32px;
+      height: 24px;
+      width: 14px;
+    }
+  }
+}

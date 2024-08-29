@@ -1,0 +1,217 @@
+.chat-message {
+  display: flex;
+  align-items: flex-start;
+  // margin-bottom: 32px;
+  padding: 24px 0;
+
+  &.user {
+    flex-direction: row-reverse;
+
+    .avatar {
+      margin-left: 16px;
+    }
+
+    .message-content {
+      background-color: #5062DF;
+      color: #fff;
+    }
+  }
+
+  &.robot {
+    .avatar {
+      margin-right: 16px;
+    }
+
+    .message-content {
+      background-color: #fff;
+      color: #474C66;
+    }
+  }
+
+  .avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #DDE0F9;
+  }
+
+  .message-content {
+    font-size: 28px;
+    border-radius: 8px;
+    max-width: 80%;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    position: relative;
+
+    &-text {
+      white-space: pre-wrap;
+      word-break: break-all;
+      word-wrap: break-word;
+      padding: 20px 32px;
+      line-height: 46px;
+
+      .iconMAIedit {
+        font-size: 26px;
+      }
+
+      .message-title {
+        font-size: 28px;
+        font-weight: 500;
+        color: #141933;
+        margin-bottom: 8px;
+      }
+
+      .message-subContent {
+        font-size: 24px;
+        font-weight: 400;
+        color: #7A7F99;
+        margin-top: 8px;
+      }
+    }
+
+    &-title {
+      width: 100%;
+      padding: 32px;
+      border-bottom: 1px solid #E6E8F2;
+
+      .title {
+        font-size: 28px;
+        font-weight: 500;
+        color: #141933;
+      }
+
+      .subContent {
+        font-size: 24px;
+        color: #7A7F99;
+        margin-top: 8px;
+      }
+    }
+
+    &-bottom {
+      height: 80px;
+      border-radius: 0 0 8px 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .iconmessage {
+        margin-right: 8px;
+        font-size: 26px;
+        color: #4256DC;
+      }
+    }
+
+    .btnBottom {
+      border-top: 1px solid #E6E8F2;
+    }
+
+    .pb11 {
+      padding-bottom: 11px;
+    }
+
+    &-createResume {
+      border-radius: 0 0 8px 8px;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 34px 8px 34px;
+
+      &__btn {
+        background: #F3F5FF;
+        border-radius: 4px;
+        line-height: 44px;
+        margin-bottom: 16px;
+        margin-right: 16px;
+        padding: 6px 16px;
+        text-align: center;
+        font-size: 24px;
+        font-weight: 400;
+        color: #474C66;
+
+        .icon {
+          font-size: 30px;
+          margin-right: 4px;
+        }
+
+        .iconic_online {
+          color: #FF9F2D;
+        }
+
+        .iconresumeWechat {
+          color: #86DB89;
+        }
+
+        .iconresumeMobile {
+          color: #7996F9;
+        }
+      }
+    }
+
+    .errText {
+      color: #E32B2C;
+      padding: 0 32px 20px 36px;
+    }
+
+    &-card {
+      display: flex;
+      justify-content: center;
+      padding: 32px 44px 18px 44px;
+      text-align: center;
+
+      &-fullImage {
+        width: 552px;
+        height: 510px;
+      }
+
+      &-title {
+        color: #141933;
+        font-size: 28x;
+        font-style: normal;
+        font-weight: 500;
+        text-align: left;
+      }
+
+      &-image {
+        width: 460px;
+        height: 241px;
+        margin-top: 16px;
+      }
+
+      &-text {
+        color: #7A7F99;
+        font-size: 28px;
+        font-weight: 400;
+        margin-top: 20px;
+      }
+
+      &-button {
+        width: 240px;
+        height: 78px;
+        margin-top: 16px;
+      }
+    }
+
+    .AK-LN-left {
+      position: absolute;
+      left: -15px;
+      top: 20px;
+      font-size: 30px;
+      color: #fff;
+    }
+
+    .AK-LN-right {
+      position: absolute;
+      right: -15px;
+      top: 20px;
+      font-size: 30px;
+      color: #5062DF;
+    }
+  }
+
+  .iconfasongshibai {
+    // font-size: 38px;
+    margin-right: 10px;
+    margin-top: 20px;
+    // color: #CF303A;
+  }
+
+}

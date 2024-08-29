@@ -1,0 +1,102 @@
+@import "~taro-ui/dist/style/components/swipe-action.scss";
+
+.commonly-word {
+  @include bgFFF();
+
+  padding-bottom: calc(88px + 64px + #{$pageBottom});
+
+  &__item {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 32px;
+      right: 32px;
+      border-bottom: 1px solid #F0F2F5;
+    }
+
+    &:last-of-type .commonly-word__content::after {
+      border-bottom: none;
+    }
+
+    &__content {
+      width: 100%;
+      position: relative;
+      padding: 32px 32px;
+    }
+
+    &__text {
+      max-width: 626px;
+      display: inline-block;
+      vertical-align: top;
+      font-size: 28px;
+      font-weight: 400;
+      color: #666666;
+      line-height: 48px;
+      word-break: break-all;
+    }
+
+    &__action {
+      position: absolute;
+      right: 32px;
+      top: 32px;
+      width: 48px;
+      height: 48px;
+      vertical-align: top;
+      z-index: 10;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: -30px;
+        bottom: -30px;
+        left: -30px;
+        right: -16px;
+        z-index: 10;
+      }
+    }
+
+    &__edit {
+      width: 48px;
+      height: 48px;
+    }
+
+    &__delete {
+      background-color: none;
+      background: url(../assets/delete-icon.png);
+      background-size: 48px 48px;
+      background-repeat: no-repeat;
+      background-clip: border-box;
+      padding: 0;
+    }
+  }
+
+  .at-swipe-action__option:active {
+    background-color: #FFF;
+  }
+
+  &__action {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 32px 0 calc(32px + #{$pageBottom});
+    background: #FFF;
+    z-index: 10;
+  }
+
+  &__button {
+    width: unset;
+    margin: 0 32px;
+    border-radius: 9999PX;
+  }
+
+  &__full-tips {
+    font-size: 28px;
+    font-weight: 400;
+    color: #999999;
+    line-height: 40px;
+    text-align: center;
+  }
+}

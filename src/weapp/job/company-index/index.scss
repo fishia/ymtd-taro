@@ -1,0 +1,187 @@
+@import '~taro-ui/dist/style/components/tabs.scss';
+
+@include setBackground('.company-index', null, null);
+$companyHeight: 250px;
+$tabHeaderHeight: 90px;
+
+.company-index {
+  padding-bottom: $pageBottom;
+  overflow: hidden;
+
+  .company-index__position {
+    margin: 0 16px 16px 16px;
+  }
+
+  &__scrollview {
+    height: 100%;
+    padding-top: 16px;
+  }
+
+  &__jobList {
+    // margin-top: 16px;
+  }
+
+  &__overview {
+    width: 100%;
+    z-index: 100;
+  }
+
+  .at-tabs {
+    position: fixed;
+    top: #{$companyHeight};
+    bottom:calc(#{$submitBarHeight} + #{$pageBottom});
+    height: auto;
+  }
+
+  .at-tabs__header {
+    height: $tabHeaderHeight;
+    border: none;
+    margin: 16px 0;
+  }
+
+  .at-tabs__item {
+    height: $tabHeaderHeight;
+    flex: none;
+    width: 50%;
+    font-size: 32px;
+  }
+
+  .at-tabs__item--active .at-tabs__item-underline {
+    background: #4256DC;
+    width: 128px !important;
+    transform: scaleX(1) translateX(98%) !important;
+  }
+
+  .at-tabs__body {
+    padding-bottom: calc(#{$tabHeaderHeight} + 30px);
+    height: 100%;
+  }
+
+  .at-tabs-pane {
+    height: 100%;
+    overflow-y: scroll;
+  }
+
+  &__empty {
+    padding-top: 30px;
+    height: 150px;
+    background-color: $bgColor;
+
+  }
+
+  .job-position {
+    &__basic-title {
+      font-size: 34px;
+    }
+
+    &__basic-salary {
+      font-size: 28px;
+    }
+
+    &__require__right {
+      font-size: 24px;
+    }
+
+    &__require-item {
+      color: $titleColor;
+      font-size: 24px;
+      margin-right: 12px;
+      border-radius: 2px;
+    }
+  }
+
+  &__share {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 500;
+    color: $primaryColor;
+    background-color: #fff;
+    width: 85px;
+    overflow: visible;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 0;
+
+    .iconzhiweifenxiang {
+      font-size: 40px;
+      line-height: 40px;
+      font-weight: 500;
+      color: inherit;
+    }
+
+    &__text {
+      line-height: 34px;
+      margin-top: 16px;
+    }
+  }
+
+  &__detail {
+    &__description--fold {
+      @include multiLineEllipsis(7);
+    }
+
+    &__description {
+      font-size: 28px;
+      color: #141933;
+      font-weight: 300;
+      line-height: 56px;
+      margin-bottom: 10px;
+    }
+
+    .at-icon {
+      font-size: 34px;
+      margin: 0 auto;
+      width: 100%;
+      text-align: center;
+      color: #1B2039;
+    }
+
+    .wrapPanel__title {
+      font-size: 28px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      font-weight: 500;
+      color: #141933;
+      line-height: 40px;
+      margin-bottom: 20px;
+    }
+
+    &__tags {
+      display: flex;
+      flex-wrap: wrap;
+
+      &--fold {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .tag {
+        display: inline-block;
+        padding: 4px 12px;
+        background: #F3F5FF;
+        border-radius: 4px;
+        font-size: 24px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #474C66;
+        line-height: 34px;
+        margin: 0 12px 12px 0;
+      }
+    }
+
+    &__producRecommendation {
+      background-color: #fff;
+    }
+
+    .h5-br,
+    .br {
+      display: block;
+    }
+  }
+}

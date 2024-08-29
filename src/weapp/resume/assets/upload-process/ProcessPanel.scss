@@ -1,0 +1,56 @@
+.process-panel {
+  text-align: center;
+  margin-top: 166px;
+
+  &__img {
+    width: 602px;
+    height: 322px;
+  }
+
+  &__tips {
+    margin-top: 32px;
+    font-size: 28px;
+    font-weight: 500;
+    color: #141933;
+    line-height: 36px;
+
+    &__row {
+      height: 36px;
+    }
+  }
+
+  &__process-bar {
+    display: inline-flex;
+    text-align: left;
+    width: 400px;
+    height: 12px;
+    border-radius: 9999PX;
+    background: #D8D8D8;
+    margin-top: 24px;
+    overflow: hidden;
+    line-height: 0;
+
+    .inner {
+      display: inline-block;
+      background: #4256DC;
+      border-radius: 9999PX;
+      height: 100%;
+      transition: width 150ms;
+      width: 0%;
+      line-height: 0;
+      align-items: stretch;
+    }
+  }
+
+  &__action {
+    position: fixed;
+    bottom: 50px;
+    width: 100%;
+  }
+
+  &__button {
+    background: #4256DC;
+    margin: 0 56px;
+    width: 638px;
+  }
+}

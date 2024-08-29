@@ -1,0 +1,42 @@
+@import '../Form/style/normalized.scss';
+
+.jobexp-block {
+  $minHeight: 150px;
+
+
+
+  &__title {
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  &__empty {
+    font-size: 26px;
+    line-height: $minHeight;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  &__tag {
+    margin: 0 20px 20px 0;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 10px;
+    vertical-align: middle;
+    text-align: center;
+    height: 46px;
+    background: #F5F5F5;
+    font-size: 24px;
+    font-weight: 400;
+    max-width: 200px;
+    border-radius: 5px;
+    color: #272727;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__desc {
+    @include resume-form__desc(3)
+  }
+}

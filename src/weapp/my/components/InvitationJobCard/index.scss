@@ -1,0 +1,19 @@
+.my-invitation__job-card {
+  position: relative;
+
+  & &__apply {
+    position: absolute;
+    bottom: 30px;
+    right: 25px;
+    width: 180px;
+    height: 64px;
+    max-width: 180px;
+    border-radius: 9999PX;
+    font-size: 24px;
+    line-height: 64px;
+  }
+
+  .hd-button--disabled {
+    background: #969696;
+  }
+}

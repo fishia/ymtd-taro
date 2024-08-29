@@ -1,0 +1,55 @@
+.dots {
+    overflow: hidden;
+    white-space: nowrap;
+    }
+    .dot1, .dot2 {
+        display: inline-block;
+        margin-right: 16px;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+    }
+    .dot3{
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+    }
+    .dot1 {
+        animation: colorChange1 1.5s infinite;
+    }
+    .dot2 {
+        background-color: #7A88E6;
+        animation: colorChange2 1.5s infinite;
+        animation-delay: 0.2s;
+    }
+    .dot3 {
+        background-color: #B3BBF1;
+        animation: colorChange3 1.5s infinite;
+        animation-delay: 0.4s;
+    }
+    @keyframes colorChange1 {
+        from {
+            background-color: #4256DC;
+        }
+        to{
+            background-color: #B3BBF1;
+        }
+    }
+    @keyframes colorChange2 {
+        from {
+            background-color: #4256DC;
+        }
+        to{
+            background-color: #B3BBF1;
+        }
+    }
+    @keyframes colorChange3 {
+        from {
+            background-color: #4256DC;
+        }
+        to{
+            background-color: #B3BBF1;
+        }
+    }
+    

@@ -1,0 +1,26 @@
+
+@include setBackground('.look-me', #ECEEF4, -1);
+
+.look-me {
+  &__scrollview {
+    // position: fixed;
+    // width: 100%;
+    bottom: $tabBarBottom;
+
+    .hd-jobcard {
+      margin: 0 32px 16px;
+
+      &:first-child {
+        margin-top: 18px;
+      }
+
+      &__basic {
+        position: relative;
+      }
+
+      &__salary {
+        right: 0;
+      }
+    }
+  }
+}

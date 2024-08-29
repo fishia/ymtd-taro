@@ -1,0 +1,126 @@
+.add-shielding_company {
+  // padding-top: 126px;
+  box-sizing: border-box;
+  // padding: 0 32px;
+  .picker-search__navbar {
+    border-bottom: 2px solid #f0f2f5;
+    background-color: #fff;
+
+    .hd-searchbar {
+      height: 126px;
+      margin: 0;
+
+      .hd-searchbar__search {
+        margin-top: 20px;
+        justify-content: space-between;
+      }
+    }
+    .hd-searchbar__input {
+      margin-left: 0;
+      font-size: 32px;
+      width: calc(100% - 140px);
+    }
+    .text--emphasize {
+      color: #4773ff;
+    }
+    .searchbar-list__item {
+      font-size: 32px;
+      border-bottom: 2px solid #f0f2f5;
+      min-height: 108px;
+      font-weight: 400;
+      &::after {
+        display: none;
+      }
+    }
+    .hd-searchbar__list {
+      top: 135px;
+    }
+  }
+  .title {
+    font-size: 32px;
+    font-weight: 500;
+    color: #333333;
+    line-height: 56px;
+    margin: 32px 0 8px 32px;
+  }
+
+  .content {
+    font-size: 28px;
+    font-weight: 400;
+    color: #333333;
+    line-height: 48px;
+    margin-left: 32px;
+  }
+
+  .hd-empty__image {
+    width: 380px;
+    height: 260px;
+    margin-top: 60px;
+  }
+
+  .selectContent {
+    margin: 0 32px;
+    padding-bottom: 176px;
+    box-sizing: border-box;
+  }
+
+  .selectText {
+    color: $themeColor;
+  }
+
+  .hd-fixedbottompopup__container {
+    background-color: #fff;
+    height: 480px;
+    bottom: 0;
+    padding: 48px 32px 30px 32px;
+    .hd-fixedbottompopup__close {
+      top: 42px;
+      right: 30px;
+      color: #595959;
+    }
+    .subscription_popup__card__image {
+      display: none;
+    }
+    .subscription_popup__card {
+      height: 100%;
+      margin: 0;
+      .subscription_popup__card__body {
+        height: 100%;
+      }
+    }
+    .sub {
+      width: 224px;
+      color: #333;
+    }
+    .primary {
+      width: 430px;
+    }
+    .subscription_popup__card .subscription_popup__card__title {
+      padding-top: 0;
+      font-size: 40px;
+      font-weight: 600;
+      color: #333333;
+    }
+    .subscription_popup__card__title,
+    .subscription_popup__card__content {
+      margin-left: 16px;
+      margin-right: 16px;
+    }
+    .subscription_popup__card__content {
+      margin-top: 36px;
+      font-size: 32px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #666666;
+      line-height: 52px;
+    }
+    .subscription_popup__card__button {
+      margin: 0;
+      border-radius: 44px;
+    }
+    .subscription_popup__card__action {
+      margin-top: 174px;
+      justify-content: space-between;
+    }
+  }
+}

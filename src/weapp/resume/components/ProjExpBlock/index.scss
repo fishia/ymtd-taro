@@ -1,0 +1,22 @@
+@import '../Form/style/normalized.scss';
+
+.projexp-block {
+  $minHeight: 150px;
+
+
+  &__desc {
+    @include resume-form__desc(3)
+  }
+
+  &__title {
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  &__empty {
+    font-size: 26px;
+    line-height: $minHeight;
+    text-align: center;
+    vertical-align: middle;
+  }
+}

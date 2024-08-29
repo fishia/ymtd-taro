@@ -1,0 +1,154 @@
+.active-common-page {
+  .hd-jobcard {
+    border-radius: 10px;
+  }
+
+  .header-banner {
+    width: 100vw;
+    text-align: center;
+    height: 400px;
+
+    image {
+      margin: 0 auto;
+      line-height: 100%;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .module-item {
+    &-title {
+      width: 400px;
+      height: 80px;
+      text-align: center;
+      line-height: 100%;
+      box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+      margin: 50px auto 30px auto;
+
+      image {
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+
+    &-content {
+      padding: 0 15px;
+      overflow: hidden;
+    }
+  }
+
+  .company-list {
+    padding-bottom: 30px;
+  }
+
+
+  .advert-list {
+    &-content {
+      overflow: hidden;
+
+      .advert-item {
+        width: 352px;
+        height: 160px;
+        margin: 0 16px 16px 0;
+        float: left;
+
+        &:nth-child(even) {
+          margin-right: 0;
+        }
+
+        image {
+          max-width: 100%;
+          max-height: 100%;
+        }
+      }
+    }
+  }
+
+  .job-list-wrap {
+    padding: 0 15px;
+  }
+
+  .no-more {
+    height: 128px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 500;
+    color: #A6A6A6;
+    text-align: center;
+    background: #F7F7F7;
+  }
+
+  .filter-selector {
+    height: 90px;
+    background: #FFFFFF;
+  }
+
+  .statistic-summary {
+    font-size: 26px;
+    font-weight: 500;
+    color: #262626;
+  }
+
+  .statistic-num {
+    font-size: 28px;
+    font-weight: bold;
+    color: #436EF3;
+  }
+
+  .statistic-cell-warp {
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+    height: 60%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .statistic-cell::after {
+    position: absolute;
+    z-index: 3;
+    content: '';
+    display: block;
+    width: 1px;
+    height: 56px;
+    background: #EBEBEB;
+  }
+
+  .statistic-cell {
+    width: 33.33%;
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .data-statistic {
+    position: relative;
+    z-index: 2;
+    height: 160px;
+    background: #FFFFFF;
+    box-shadow: 0 0 20px 0 rgba(19, 112, 206, 0.1);
+    border-radius: 10px;
+    margin: -90px 15px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .conditions.hasSearchedComanies {
+    box-shadow: none;
+  }
+
+  .look-more-btn.look-more-btn {
+    width: 300px;
+    height: 64px;
+    background: #436EF3;
+    margin: 30px auto 20px;
+    border-radius: 5px;
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 64px;
+  }
+}

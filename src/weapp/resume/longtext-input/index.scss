@@ -1,0 +1,98 @@
+.longtext-input {
+  @include bgFFF();
+
+  padding: 32px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  &__titleContent{
+    padding-top: 8px;
+    padding-bottom: 32px;
+  }
+
+  &__title {
+    font-size: 36px;
+    font-weight: 500;
+    color: #141933;
+    line-height: 56px;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  &__title-count {
+    font-size: 28px;
+    color: #C7CBDE;
+    line-height: 40px;
+
+    .active {
+      color: #4256DC;
+    }
+  }
+
+  &__title-tips{
+    font-size: 24px;
+    font-weight: 400;
+    color: #C7CBDE;
+    margin-top: 8px;
+  }
+
+  &__MAIBtn{
+    position: absolute;
+    right: 0;
+    font-size: 28px;
+    font-weight: 400;
+    color: #4256DC;
+    display: flex;
+    align-items: center;
+    &__Icon{
+      width: 40px;
+      height: 40px;
+      margin-right: 8px;
+    }
+  }
+
+  &__textarea {
+    display: block;
+    line-height: 56px;
+    width: 686px;
+    word-break: break-all;
+    flex: 1;
+    height: 100%;
+    font-size: 28px;
+    font-weight: 400;
+    color: #141933;
+    padding-bottom: 170px;
+  }
+
+  &__textarea-placeholder {
+    line-height: 56px;
+    word-break: break-all;
+    font-size: 28px;
+    font-weight: 400;
+    color: #C7CBDE;
+  }
+
+  &__toolbar {
+    height: 136px;
+    background: #FFF;
+    z-index: 5;
+    display: flex;
+    justify-items: flex-end;
+  }
+
+  &__toolbar-button {
+    width: 128px;
+    height: 72px;
+    background: #4773FF;
+    border-radius: 9999PX;
+    font-size: 32px;
+    font-weight: bold;
+    color: #FFFFFF;
+    line-height: 44px;
+  }
+
+  .hd-button--disabled {
+    background: #B4CBFD;
+  }
+}

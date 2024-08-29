@@ -1,0 +1,47 @@
+.message-avatar {
+  display: flex;
+  align-items: flex-start;
+
+  & &__avatar {
+    width: 138px;
+    padding: 0 20px;
+    flex-shrink: 0;
+    position: relative;
+
+    &.left {
+      padding-left: 30px;
+    }
+
+    &.right {
+      padding-right: 30px;
+    }
+  }
+
+  & &__avatar-image {
+    height: 88px;
+    width: 88px;
+    border-radius: 9999PX;
+    background-color: #fff;
+  }
+
+  & &__slot {
+    width: 612px;
+    flex-shrink: 0;
+  }
+
+  & &__pendeant {
+    height: 122px;
+    width: 122px;
+    position: absolute;
+    top: -20px;
+    left: 0;
+  }
+
+  & &__avatarPendeant {
+    height: 122px;
+    width: 122px;
+    position: absolute;
+    top: -14px;
+    left: 12px;
+  }
+}

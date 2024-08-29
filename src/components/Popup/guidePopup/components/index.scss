@@ -1,0 +1,36 @@
+.guide_popup {
+  width: 100%;
+  height: 100%;
+
+  .guide_popup__image {
+    position: absolute;
+
+    image {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .guide_popup__text {
+    position: absolute;
+    color: #fff;
+    font-family: PingFang SC;
+    @extend .font30
+  }
+
+  .guide_popup__btn {
+    position: absolute;
+    width: 200px;
+    line-height: 72px;
+    border: 2px solid #FFFFFF;
+    border-radius: 36px;
+    text-align: center;
+    color: #fff;
+    text-align: center;
+    @extend .font30;
+  }
+
+  .guide_popup__targetContent {
+    position: absolute;
+  }
+}

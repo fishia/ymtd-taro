@@ -1,0 +1,202 @@
+.award{
+  background: #ECEEF4;
+  min-height: 100vh;
+  overflow: auto;
+
+  .springColor {
+    color: #F4881B;
+  }
+  .font28 {
+    font-size: 28px;
+  }
+  .font48 {
+    font-size: 48px;
+    font-weight: 500;
+  }
+  .font32 {
+    font-size: 32px;
+  }
+  .font20 {
+    font-size: 20px;
+  }
+  .grey {
+    color: #7A7F99;
+  }
+  .bold {
+    font-weight: bold;
+  }
+  .lineThrough {
+    text-decoration: line-through;
+  }
+
+  &-empty {
+    text-align: center;
+    color: #000;
+    &-icon {
+      width: 112px;
+      height: 112px;
+      margin-bottom: 32px;
+      margin-top: 292px;
+    }
+    &-button {
+      margin-top: 72px;
+      width: 204px;
+      height: 64px;
+      line-height: 64px;
+      color: #fff;
+      border-radius: 44px;
+      background: #4655D4;
+      font-size: 28px;
+      font-weight: bold;
+    }
+  }
+
+  &__card {
+    position: relative;
+    width: 686px;
+    margin:  20px 32px;
+    border-radius: 16px;
+    border: 1px solid #FFF;
+    background: #FFF;
+    padding: 68px 32px 32px 32px;
+
+    &.disable-card {
+      .award__card-badge {
+        color: #fff !important;
+        background-image: url('https://oss.yimaitongdao.com/mp/activity/dragonSpringWar/disable-badge.png');
+      }
+      View, Text {
+        color: #C7CBDE !important;
+      }
+
+      .total-icon {
+        border: 1px solid #C7CBDE;
+      }
+
+      Button {
+        background: #BEC7FF;
+      }
+    }
+
+    &-badge {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 162px;
+      height: 44px;
+      color: #fff;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 44px;
+      text-align: center;
+      background-image: url('https://oss.yimaitongdao.com/mp/activity/dragonSpringWar/bagde.png');
+      background-size: 100% 100%;
+    }
+
+    &-title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row;
+      color: #141933;
+      &-left {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        .worth {
+          position: relative;
+        }
+
+        .total-icon {
+          border-radius: 4px;
+          border: 1px solid #F4881B;
+          width: 64px;
+          height: 36px;
+          line-height: 36px;
+          text-align: center;
+          font-size: 18px;
+          color: #F4881B;
+          position: absolute;
+          right: -70px;
+          top: 0;
+        }
+
+        .avatar-group {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          margin-top: 4px;
+
+          Image {
+            width: 97.8px;
+            height: 35.8px;
+            margin-right: 12px;
+          }
+        }
+      }
+      &-right { 
+        display: flex;
+        align-items: flex-end;
+        font-size: 24px;
+        flex-direction: column;
+      }
+    }
+
+    &-line {
+      margin: 20px 0;
+      border-top: 1px solid #F5F5F9;
+    }
+
+    &-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 24px;
+
+      button {
+        border-radius: 24px;
+        background: #4256DC;
+        color: #fff;
+        font-size: 24px;
+        margin: 0;
+        width: 128px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+      }
+    }
+  }
+
+  &__modal {
+    background: linear-gradient(181deg, #FFFFFD 1.35%, #FFF7DF 98.93%);
+    width: 686px;
+    height: 614px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    &-title {
+      color: #141933;      
+      font-size: 40px;
+      font-weight: 500;
+      margin: 64px 0 76px 0;
+    }
+    &-img {
+      width: 230px;
+      height: 230px;
+      margin-bottom: 20px;
+    }
+    &-sub {
+      font-size: 28px;
+      color: #484C64;
+      font-weight: 400;
+    }
+  }
+
+  .no-img{
+    width: 642px;
+    display: block;
+    margin: 126px auto;
+  }
+}

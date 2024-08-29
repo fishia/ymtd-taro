@@ -1,0 +1,115 @@
+.my-shielding_company {
+  padding: 40px 32px 176px;
+  box-sizing: border-box;
+  .title {
+    font-size: 40px;
+    font-family: PingFangSC-Semibold, PingFang SC;
+    font-weight: 600;
+    color: #333333;
+    line-height: 56px;
+    margin-bottom: 14px;
+  }
+
+  .content {
+    font-size: 24px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #666666;
+    line-height: 40px;
+  }
+
+  .noCompany {
+    .hd-empty__image {
+      margin-top: 0;
+      width: 380px;
+      height: 260px;
+      margin: 162px auto 32px;
+    }
+    .hd-empty__content {
+      font-size: 32px;
+      font-weight: 500;
+      color: #333333;
+    }
+  }
+
+  .hd-fixedbottompopup__container {
+    background-color: #fff;
+    height: 480px;
+    bottom: 0;
+    padding: 48px 32px 30px 32px;
+    .hd-fixedbottompopup__close {
+      top: 42px;
+      right: 30px;
+      color: #595959;
+    }
+    .subscription_popup__card__image {
+      display: none;
+    }
+    .subscription_popup__card {
+      height: 100%;
+      margin: 0;
+      .subscription_popup__card__body {
+        height: 100%;
+      }
+    }
+    .sub {
+      width: 224px;
+      color: #333;
+    }
+    .primary {
+      width: 430px;
+    }
+    .subscription_popup__card .subscription_popup__card__title {
+      padding-top: 0;
+      font-size: 40px;
+      font-weight: 600;
+      color: #333333;
+    }
+    .subscription_popup__card__title,
+    .subscription_popup__card__content {
+      margin-left: 16px;
+      margin-right: 16px;
+    }
+    .subscription_popup__card__content {
+      margin-top: 36px;
+      font-size: 32px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #666666;
+      line-height: 52px;
+    }
+    .subscription_popup__card__button {
+      margin: 0;
+      border-radius: 44px;
+    }
+    .subscription_popup__card__action {
+      margin-top: 174px;
+      justify-content: space-between;
+    }
+  }
+  .bottoms {
+    padding: 44px 0;
+    background-color: #fff;
+    z-index: 9;
+    position: fixed;
+    bottom: 0;
+    .bottomBtn {
+      width: 686px;
+      height: 88px;
+      border-radius: 44px;
+    }
+    .hd-button--disabled {
+      background: #b4cbfd;
+    }
+    .chooseAll {
+      margin-bottom: 32px;
+      .allCompanyName {
+        font-size: 32px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #333333;
+        line-height: 44px;
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.job-recommed-block {
+  height: 246px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  padding: 32px;
+  box-sizing: border-box;
+  text-align: center;
+
+  &__tip {
+    font-size: 32px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: bold;
+    color: #141933;
+    line-height: 44px;
+  }
+
+  &__content {
+    font-size: 24px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #7B7F97;
+    line-height: 34px;
+    margin-top: 8px;
+  }
+
+  &__operateBlock {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+  }
+
+  &__button {
+    width: 440px;
+    height: 64px;
+    background: #4655D4;
+    border-radius: 34px;
+    font-size: 24px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 64px;
+    text-align: center;
+  }
+}

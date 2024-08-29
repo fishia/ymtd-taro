@@ -1,0 +1,178 @@
+$prefixCls: 'landing-loginHR';
+
+.landing-loginHR {
+  position: absolute;
+  z-index: 2;
+
+  width: 686px;
+  height: 280px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin-top: 638px;
+  background: #FFFFFF;
+  box-shadow: 0px 12px 18px 0px rgba(220, 223, 255, 0.5);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+
+  &--fixed {
+    position: fixed;
+    bottom: 0;
+    margin-top: 0;
+    top: initial;
+    width: 100%;
+    margin-top: 0;
+  }
+
+  & &__btnBlock {
+    position: relative;
+    margin: 40px 0 32px;
+
+  }
+
+  & &__btn {
+    position: relative;
+    text-align: center;
+    width: 570px;
+    background: #4256DC;
+    border-radius: 8px;
+    font-size: 32px;
+    font-weight: 500;
+    color: #FFFFFF;
+    line-height: 76px;
+
+
+
+    &--text {
+      font-size: 28px;
+      font-weight: 400;
+      color: #4256DC;
+      line-height: 40px;
+    }
+  }
+
+
+
+  &__handler {
+    width: 70px;
+    height: 82px;
+    animation: guide 4s ease-in 0s infinite;
+    position: absolute;
+    right: -180px;
+    top: 130px;
+    z-index: 1;
+
+    @keyframes guide {
+      0% {
+        right: -180px;
+        top: 130px;
+        transform: scale(1.5);
+      }
+
+      // 2s
+      50% {
+        right: 0px;
+        top: 50px;
+        transform: scale(1.5);
+      }
+
+
+      // 2.5s
+      63% {
+        transform: scale(1);
+      }
+
+      // 3s
+      75% {
+        transform: scale(1.5);
+      }
+
+      // 3.5s
+      88% {
+        transform: scale(1);
+      }
+
+      94% {
+        right: 0px;
+        top: 50px;
+      }
+    }
+  }
+
+  &__bubble,
+  &__bubble2 {
+    border-radius: 50%;
+    position: absolute;
+    right: 45px;
+    top: 38px;
+    width: 10px;
+    height: 10px;
+    box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.4);
+    background-color: #b2c2ff;
+    border-radius: 50%;
+    opacity: 0;
+  }
+
+  &__bubble {
+    animation: bubble1 4s linear 0s infinite;
+
+    @keyframes bubble1 {
+      50% {
+        opacity: 0;
+      }
+
+      63% {
+        // 2.5s
+        width: 30px;
+        height: 30px;
+        box-shadow: 0 0 0 15px rgba(255, 255, 255, 0.4);
+        opacity: 1;
+      }
+
+      64% {
+        opacity: 0;
+      }
+    }
+  }
+
+  &__bubble2 {
+    animation: bubble2 4s linear 0s infinite;
+
+    @keyframes bubble2 {
+      80% {
+        opacity: 0;
+      }
+
+      92% {
+        // 3.5s
+        width: 30px;
+        height: 30px;
+        box-shadow: 0 0 0 15px rgba(255, 255, 255, 0.4);
+        opacity: 1;
+      }
+
+      93% {
+        opacity: 0;
+      }
+    }
+
+
+  }
+
+  &__tel {
+    margin-top: 38px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #999999;
+    line-height: 28px;
+    text-align: center;
+
+    .phone {
+      color: #4256DC;
+    }
+  }
+}

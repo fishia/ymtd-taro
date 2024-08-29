@@ -1,0 +1,31 @@
+.city-button {
+  display: inline-block;
+  width: auto;
+  margin: 20px 20px 0 0;
+  line-height: 72px;
+  text-align: center;
+  border-radius: 5px;
+  @extend .font28;
+  color: $textColor;
+  background: #FFFFFF;
+  border: 1px solid #D9D9D9;
+
+  &--active {
+    background: #F2F9FF;
+    border: 1px solid #156BC2;
+    color: $primaryColor;
+  }
+
+  &-fast {
+    @extend .font26;
+    @extend .line-ellipsis;
+    max-width: 500px;
+    display: inline-block;
+    // height: 64px;
+    padding: 0 30px;
+    line-height: 64px;
+    background: #F5F7FA;
+    border-radius: 32px;
+    margin: 30px 30px 0 0;
+  }
+}

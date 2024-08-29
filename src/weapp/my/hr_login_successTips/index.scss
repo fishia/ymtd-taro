@@ -1,0 +1,30 @@
+.login_successTips-index {
+  padding: 100px 65px;
+
+  &__icon {
+    width: 357px;
+    height: 317px;
+    display: block;
+    margin: 100px auto 142px;
+  }
+
+  &__tips {
+    @extend .font30;
+    color: $titleColor;
+    line-height: 1.5;
+  }
+
+  &__link {
+    color: $primaryColor;
+  }
+
+  &__bottom {
+    width: 100%;
+    text-align: center;
+    @extend .font26;
+    line-height: 56px;
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+  }
+}

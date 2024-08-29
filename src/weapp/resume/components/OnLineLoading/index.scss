@@ -1,0 +1,40 @@
+@import "~taro-ui/dist/style/components/progress.scss";
+@import "~taro-ui/dist/style/components/icon.scss";
+
+.OnLineLoadingCss{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    float: left;
+    margin: 210px auto 0;
+    
+    .img{
+        width: 602px;
+        height: 322px;
+    }
+    .text{
+        font-size: 28px;
+        font-weight: 500;
+        color: #141933;
+        margin: 30px auto 24px;
+    }
+    .failText{
+        margin-top: 0;
+        margin-bottom: 48px;
+    }
+    .progress{
+        width: 400px;
+        .at-progress__outer-inner{
+            background-color: #D8D8D8;
+        }
+    }
+    .refrashBtn{
+        width: 176px;
+        height: 64px;
+        border-radius: 44px;
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 64px;
+    }
+}

@@ -1,0 +1,47 @@
+.toast-tips {
+  width: 100%;
+  position: absolute;
+  bottom:calc(146px + #{$pageBottom});
+  left: 0;
+  line-height: 84px;
+  z-index: 999;
+  display: none;
+  background: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+
+  &--active {
+    display: block;
+  }
+
+  &__close {
+    position: absolute;
+    top: 24px;
+    right: 32px;
+    width: 24px;
+    height: 26px;
+    z-index: 2;
+  }
+
+  &__arrow {
+    position: absolute;
+    left: 340px;
+    bottom: -31px;
+    width: 0;
+    height: 0;
+    z-index: 100001;
+    border-width: 16px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
+  }
+
+  &__wrap {
+    text-align: center;
+    font-size: 24px;
+    font-family: PingFang SC;
+    font-weight: 500;
+    color: #fff;
+    box-sizing: border-box;
+    z-index: 100001;
+  }
+}

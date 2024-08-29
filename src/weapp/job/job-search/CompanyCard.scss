@@ -1,0 +1,102 @@
+.job-search__company-card {
+  margin: 0 32px 16px;
+  background: #fff;
+  border-radius: 8px;
+
+  &.hover {
+    background-color: $bgColor;
+  }
+
+  &:first-child {
+    margin-top: 32px;
+  }
+
+  &__main {
+    display: flex;
+    padding: 32px;
+  }
+
+  &__logo {
+    margin-right: 16px;
+    width: 84px;
+    height: 84px;
+    border-radius: 4px;
+    border: 2px solid #E2E4EE;
+    flex-shrink: 0;
+  }
+
+  &__info {
+    flex: 1;
+    width: calc(100% - 100px);
+  }
+  &__name {
+    font-size: 32px;
+    font-weight: 500;
+    color: #141933;
+    line-height: 44px;
+    max-width: 460px;
+    @extend .line-ellipsis;
+  }
+
+  &__tags {
+    margin-top: 8px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #474C66;
+    line-height: 34px;
+    max-width: 460px;
+    @extend .line-ellipsis;
+  }
+
+  &__jd-count {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 32px;
+    font-size: 28px;
+    font-weight: 400;
+    color: #999999;
+    line-height: 40px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      border-top: 1px solid #EBEBEB;
+      top: 0;
+      left: 32px;
+      right: 32px;
+    }
+
+    &__num {
+      color: #4773FF;
+    }
+
+    &__arrow {
+      position: absolute;
+      right: 32px;
+      font-size: 32px;
+      color: #A6A6A6;
+    }
+  }
+
+  &__attractTags {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    @extend .line-ellipsis;
+    margin-top: 14px;
+  }
+
+  &__attractTag {
+    text-align: center;
+    border-radius: 4px;
+    background: #F3F5FF;
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #474C66;
+    line-height: 32px;
+    margin-right: 8px;
+    padding: 0 6px;
+  }
+}

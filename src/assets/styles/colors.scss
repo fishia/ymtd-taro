@@ -1,0 +1,35 @@
+$primaryColor: #4256DC;
+$themeColor: #4773FF;
+$warningColor: #f85f36;
+$tagColor: #00bde4;
+$icon1Color: #55cd83;
+$icon2Color: #ffbf00;
+$borderColor: #d9d9d9;
+$bgColor: #ECEEF4;
+$titleColor: #262626;
+$textColor: #595959;
+$tipColor: #a6a6a6;
+$noticeColor: #D90024;
+$errorColor: #F7461D;
+$topColor: #FF3700;
+$hotColor: #FF6940;
+$hotColor: #FF6940;
+$bgLightColor: #F7F8FA;
+
+:export {
+  primaryColor: $primaryColor;
+  warningColor: $warningColor;
+  tagColor: $tagColor;
+  icon1Color: $icon1Color;
+  icon2Color: $icon2Color;
+  borderColor: $borderColor;
+  bgColor: $bgColor;
+  titleColor: $titleColor;
+  textColor: $textColor;
+  tipColor: $tipColor;
+  noticeColor: $noticeColor;
+  errorColor: $errorColor;
+  topColor: $topColor;
+  hotColor: $hotColor;
+  bgLightColor: $bgLightColor;
+}

@@ -1,0 +1,88 @@
+.commonTextStyle {
+  font-family: PingFangSC-Regular,
+    PingFang SC;
+  color: #FFFFFF;
+  line-height: 44px;
+}
+
+.subscription_card {
+  margin: 20px 32px 0 32px;
+
+  & &__body {
+    width: 100%;
+    height: 304px;
+    background: url("../../../../../assets/imgs/backgrounds/intent-bg.png") no-repeat;
+    background-size: 100% 100%;
+    border-radius: 8px;
+    position: relative;
+  }
+
+  & &__title {
+    padding-top: 32px;
+    font-size: 32px;
+    font-weight: 500;
+    @extend .commonTextStyle;
+    text-align: center;
+  }
+
+  & &__content {
+    font-size: 24px;
+    font-weight: 400;
+    @extend .commonTextStyle;
+    margin: 32px 54px;
+  }
+
+  & &__action {
+    display: flex;
+  }
+
+  & &__button {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 60px;
+    color: $textColor;
+    border-radius: 8px;
+    font-size: 24px;
+    font-family: PingFangSC-Regular,
+      PingFang SC;
+    font-weight: 400;
+    margin: 0 20px;
+
+    &.hl {
+      background: #fff;
+      color: $primaryColor;
+      margin: 0 54px;
+    }
+  }
+
+  .primary {
+    color: #fff;
+    background: $primaryColor;
+  }
+
+  .sub {
+    color: #333;
+    background: #F5F7F8;
+  }
+
+  .icon {
+    display: inline-block;
+    font-size: 28px;
+    margin-right: 15px;
+    vertical-align: text-top;
+  }
+
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 5px;
+    font-size: 34px;
+    color: rgba($color: #fff, $alpha: 0.59);
+  }
+}
+
+.dis-n {
+  display: none;
+}

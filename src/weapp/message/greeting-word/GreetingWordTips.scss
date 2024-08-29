@@ -1,0 +1,40 @@
+.greeting-word-tips {
+  z-index: 100;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+  bottom: -126px;
+  height: 116px;
+  left: 0;
+  width: 360px;
+
+  &.show {
+    opacity: 1;
+  }
+
+  &__body {
+    position: absolute;
+    background: #262626;
+    font-size: 28px;
+    color: #FFFFFF;
+    line-height: 100px;
+    text-align: center;
+    border-radius: 8px;
+    bottom: 0;
+    left: 0;
+    width: 360px;
+    height: 100px;
+    font-weight: 400;
+  }
+
+  &__arrow {
+    position: absolute;
+    top: -16px;
+    left: 40px;
+    border-width: 16px;
+    border-style: solid;
+    border-color: transparent transparent #262626 transparent;
+    width: 0;
+    display: inline-block;
+  }
+}

@@ -1,0 +1,35 @@
+@import "~taro-ui/dist/style/components/icon.scss";
+
+.resume-competition {
+  padding-bottom: calc(140px + #{$pageBottom});
+
+  & &__background {
+    width: 100%;
+  }
+
+  & &__confirm {
+    position: fixed;
+    width: 100%;
+    background-color: #FFF;
+    padding: 24px 25px calc(24px + #{$pageBottom});
+    height: calc(140px + #{$pageBottom});
+    bottom: 0;
+  }
+
+  & &__button {
+    background: linear-gradient(90deg, #31C7EB 0%, #0C8CE0 100%);
+    border-radius: 9999PX;
+    color: #FFF;
+    height: 92px;
+    line-height: 92px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 34px;
+    vertical-align: middle;
+
+    .at-icon {
+      font-size: 36px;
+      margin-right: 20px;
+    }
+  }
+}

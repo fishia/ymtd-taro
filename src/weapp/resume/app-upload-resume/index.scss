@@ -1,0 +1,7 @@
+.app-upload-resume {
+  @include bgFFF();
+
+  &.bg-custom {
+    @include bg(#F7F8FA);
+  }
+}

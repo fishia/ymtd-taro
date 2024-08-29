@@ -1,0 +1,117 @@
+$searchBarHeight: 132px;
+$filterHeight:45PX;
+
+@include setBackground('.zones-index', $bgColor, -1);
+
+.active {
+  .hd-scrollbar {
+    height: 100vh;
+  }
+
+  .hd-jobcard {
+    border-radius: 10px;
+  }
+
+  .zones-index {
+    &::before {
+      display: none;
+    }
+
+    .zones-index__scrollview {
+      width: 100%;
+      padding: 15px 15px 0 15px;
+      box-sizing: border-box;
+    }
+
+    &__positions {
+      width: 750px !important;
+      position: fixed;
+      top: 0;
+      border-radius: 0 !important;
+    }
+
+    &__filter {
+      width: 720px;
+      background-color: #fff;
+      z-index: 1000;
+      height: $filterHeight;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid $bgColor;
+      margin: 0 auto;
+      border-radius: 10px;
+      // position: fixed;
+      // top:480px;
+
+      .job-filter__divider {
+        width: 1PX;
+        height: 32px;
+        background-color: #D4D6D9;
+      }
+
+      .job-filter__menu {
+        width: 100%;
+      }
+
+      .job-filter__city {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .job-filter__cityName {
+          font-size: 28px;
+          font-weight: 500;
+          color: $textColor;
+          white-space: nowrap;
+        }
+
+        .at-icon {
+          margin-left: 20px;
+          color: #595959;
+          font-size: 35px;
+        }
+      }
+    }
+
+    &__container {
+      min-height: calc(100vh - (270px + #{$filterHeight}));
+
+      .hd-empty::before {
+        top:calc(270px + #{$filterHeight});
+      }
+    }
+
+    &__list {
+      height: 100%;
+    }
+
+    &__subtitle {
+      padding-left: 30px;
+      line-height: 45PX;
+      @extend .font36;
+      background-color: #fff;
+    }
+
+    &__card {
+      padding: 15PX 30px 0;
+    }
+
+    &__divider {
+      height: 1PX;
+      background: #F7F8FB;
+    }
+
+    .job-index__swiper-bar {
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  .at-load-more {
+    background-color: transparent;
+    color: #FFF;
+  }
+}

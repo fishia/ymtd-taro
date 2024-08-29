@@ -1,0 +1,33 @@
+.wrapPanel {
+  padding: 0 30px;
+  background-color: #fff;
+
+  &__title {
+    font-size: 32px;
+    font-weight: 500;
+    color: #141933;
+    line-height: 40px;
+    padding: 34px 0 16px 0;
+  }
+
+  &__imgList {
+    image {
+      width: 218px;
+      height: 158px;
+      margin-right: 16px;
+      border-radius: 4px;
+
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .at-icon {
+    font-size: 34px;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    color: #1B2039;
+  }
+}

@@ -1,0 +1,14 @@
+@include setBackground('.my-invitation', #f5f7fa, -1);
+
+.my-invitation {
+  & &__scrollview {
+    position: fixed;
+    top: $navBarHeight;
+    bottom: $pageBottom;
+  }
+
+  .hd-jobcard {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}

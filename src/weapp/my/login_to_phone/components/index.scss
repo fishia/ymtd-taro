@@ -1,0 +1,48 @@
+.login-form {
+  width: 690px;
+  position: absolute;
+  top: 500px;
+  z-index: 1;
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 60px 30px 100px;
+  height: 650px;
+
+  .at-form::after {
+    display: none;
+  }
+
+  // .at-input {
+  //   margin-left: 0;
+  //   padding-top: 30px;
+  //   padding-bottom: 20px;
+
+  //   input {
+  //     color: $titleColor;
+  //     font-size: 30px;
+  //   }
+
+  //   &__container {
+  //     height: 70px;
+  //   }
+
+  //   &__children::after {
+  //     display: none;
+  //   }
+  // }
+
+  &__button--otp {
+    font-size: 30px;
+  }
+
+  .login-form__protocol {
+    margin: 60px auto 0;
+  }
+
+  &__button--submit {
+    margin-top: 70px;
+    font-size: 32px;
+    width: 100%;
+  }
+}

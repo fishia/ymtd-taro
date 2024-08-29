@@ -1,0 +1,13 @@
+.edit-job-exp {
+  @include bgFFF();
+
+  padding-bottom: calc(169px + #{$pageBottom});
+  overflow: hidden;
+  position: relative;
+  color: $titleColor;
+
+  &__block {
+    margin-bottom: 10px;
+    background-color: #fff;
+  }
+}

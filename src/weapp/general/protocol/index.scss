@@ -1,0 +1,9 @@
+@import '~taro-ui/dist/style/components/tabs.scss';
+
+.my-protocol {
+
+  .at-tabs__header {
+    position: fixed;
+    top: 0;
+  }
+}

@@ -1,0 +1,17 @@
+.message-item__notice {
+  display: flex;
+  justify-content: center;
+
+  & &__body {
+    font-size: 24px;
+    color: #A6A6A6;
+    text-align: center;
+
+    &.strong {
+      padding: auto;
+      border-radius: 9999PX;
+      background-color: #fff;
+      padding: 13px 25px;
+    }
+  }
+}

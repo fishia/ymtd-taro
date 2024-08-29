@@ -1,0 +1,92 @@
+$prefixCls: 'landing-companycard';
+
+.#{$prefixCls} {
+  width: 686px;
+  overflow: hidden;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 10px 0px rgba(216, 216, 216, 0.5);
+  border-radius: 8px;
+  margin-bottom: 20px;
+  position: relative;
+  padding: 32px;
+
+  & &__bk {
+    position: absolute;
+    top: 44px;
+    right: -70px;
+    max-width: 384px;
+
+  }
+
+  & &__content {
+    position: relative;
+    z-index: 1;
+  }
+
+  & &__title {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  & &__avatar {
+    flex: 0 0 auto;
+  }
+
+  & &__name {
+    margin-left: 20px;
+    flex: 1;
+    font-size: 36px;
+    font-weight: 500;
+    color: #333333;
+    line-height: 50px;
+    @include lineEllipsis;
+  }
+
+  & &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  & &__job {
+    max-width: 448px;
+    @include lineEllipsis;
+    font-size: 28px;
+    font-weight: 400;
+    color: #333333;
+    line-height: 40px;
+  }
+
+  & &__salary {
+    flex: 1;
+    font-size: 32px;
+    font-weight: 600;
+    color: #436EF3;
+    line-height: 44px;
+    text-align: right;
+  }
+
+
+  &__tags {
+    &-item {
+      display: inline-block;
+      background: #F5F7F8;
+      padding: 16px;
+      margin-top: 20px;
+      margin-right: 16px;
+      max-width: 196px;
+      font-size: 24px;
+      font-weight: 400;
+      color: #262626;
+      line-height: 34px;
+      @include lineEllipsis;
+    }
+  }
+
+
+
+
+
+}

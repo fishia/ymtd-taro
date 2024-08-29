@@ -1,0 +1,21 @@
+@mixin resume-form__desc($row) {
+  $row: 2 !default;
+  font-size: 26px;
+  font-weight: 400;
+  color: #6F6F6F;
+  line-height: 39px;
+  text-overflow: ellipsis;
+  display: -webkit-inline-box;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $row;
+  overflow: hidden;
+  max-width: unset;
+  white-space: normal;
+  padding-right: 0;
+}
+
+.resume-form__Block {
+  margin-bottom: 10px;
+  background-color: #fff;
+}

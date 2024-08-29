@@ -1,0 +1,116 @@
+.commonBtnStyle {
+  width: 100%;
+  line-height: 96px;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 500;
+  border-radius: 56px;
+  letter-spacing: 4px;
+}
+
+.hd-luckyDrawPopup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  z-index: 99999;
+  font-family: PingFangSC-Semibold,
+    PingFang SC;
+
+  &--active {
+    visibility: visible;
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+  }
+
+  &__container {
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 686px;
+    height: 528px;
+    padding: 48px;
+    background: linear-gradient(180deg, #FE304E 0%, #FF8E29 100%);
+    border-radius: 24px;
+    text-align: center;
+  }
+
+  &__image {
+    width: 378px;
+    height: 218px;
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  &__title {
+    @extend .font40;
+    font-weight: 500;
+    color: #333;
+    width: 588px;
+    line-height: 180px;
+    margin: 0 auto;
+    background: #FFFFFF;
+    border-radius: 0 0 50% 50%/0 0 60px 60px;
+  }
+
+  &__content {
+    font-size: 44px;
+    font-weight: 500;
+    color: #fff;
+    margin: 48px auto;
+  }
+
+  &__action {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    &-cancel {
+      @extend .commonBtnStyle;
+      background: #F5F7F8;
+      color: #999;
+      width: 350px;
+      margin-right: 16px;
+    }
+
+    &-confirm {
+      @extend .commonBtnStyle;
+      background: #FFE05E;
+      color: #FF4E43;
+    }
+
+    // 清除taro默认伪元素
+    &-confirm:after {
+      display: none;
+    }
+  }
+
+  .icon {
+    font-size: 48px;
+    color: #a6a6a6;
+  }
+
+  &__close {
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    right: -48px;
+    top: -120px;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+}

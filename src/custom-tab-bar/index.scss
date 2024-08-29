@@ -1,0 +1,130 @@
+@import '~taro-ui/dist/style/components/badge.scss';
+@import '../components/ToastTips/index.scss';
+
+.custom-tab-bar-wrapper {
+  width: 100%;
+  height: $tabBarBottom;
+  display: flex;
+  background: #ECEEF4;
+  z-index: 1;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0;
+  padding-bottom: $pageBottom;
+  z-index: 2;
+  border-top: 1px solid #ebebeb;
+}
+
+.tab-bar-icon-wrapper {
+  width: 25%;
+  text-align: center;
+
+  .at-badge {
+    vertical-align: unset;
+  }
+
+  .at-badge__num {
+    top: 0px;
+    border-radius: 9999px;
+  }
+
+  .tab-bar-icon {
+    width: 50px;
+    height: 50px;
+    margin: 6px auto 0 auto;
+  }
+
+  .tab-bar-title {
+    font-size: 20px;
+
+    .dis-n {
+      display: none;
+    }
+
+    .dotted {
+      width: 12px;
+      height: 12px;
+      background: #E32B2C;
+      border-radius: 50%;
+      position: absolute;
+      top: 10px;
+      right: 50px;
+    }
+  }
+}
+
+.custom-toast__tips {
+  top: -104px;
+  bottom: auto;
+  border-radius: 0;
+
+  &__content {
+    padding: 20px 32px;
+  }
+
+  &__avaterList {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    position: absolute;
+    top: -24px;
+
+    .avater-item {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: -15px;
+    }
+
+    image {
+      @extend .avater-item;
+    }
+
+    .avater__ellipsis {
+      @extend .avater-item;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &__dotted {
+        width: 5px;
+        height: 5px;
+        background: #242a45;
+        margin: 0 2px;
+      }
+    }
+  }
+
+  &__text {
+    font-size: 24px;
+    line-height: 34px;
+    position: relative;
+  }
+
+  &__description {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .toast-tips__arrow {
+    left: 452px;
+  }
+
+  .toast-tips__wrap {
+    text-align: left;
+  }
+}
+
+.guideToast {
+  top: -80px;
+  left: 306px;
+  width: 328px;
+  border-radius: 8px;
+
+  .toast-tips__arrow {
+    left: 150px;
+  }
+}

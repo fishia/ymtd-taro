@@ -1,0 +1,41 @@
+.greetingCard{
+    position: relative;
+    width: 100%;
+    height: 296px;
+    background-image: url('https://oss.yimaitongdao.com/mp/MAI/greeting.png');
+    background-repeat: no-repeat;
+    background-size: 100%, 100%;
+    padding-top: 40px;
+    .greeting{
+        width: 100%;
+        // height: 260px;
+        margin: 24px 0;
+        box-shadow: 0px 6px 12px 0px rgba(114, 129, 153, 0.10);
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      .title{
+        color:#141933;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        z-index: 9;
+        margin-left: 32px;
+      }
+      .content{
+        width: 450px;
+        color:#474C66;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 36px; 
+        z-index: 9;
+        margin-left: 32px;
+        margin-top: 16px;
+        .w500{
+           font-weight: 500;
+        }
+      }
+}

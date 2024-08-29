@@ -1,0 +1,38 @@
+$curPrimaryColor:#668EF6;
+$lineHeight:42px;
+
+.selected-button {
+  position: relative;
+  height: $lineHeight;
+  line-height: $lineHeight;
+  background: #F5F5F5;
+  border-radius: 21px;
+  margin: 0 5px;
+  color: $curPrimaryColor;
+  @extend .font24;
+  padding: 0 20px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+
+  &__label {
+    max-width: 178px;
+    height: $lineHeight;
+    margin-right: 40px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  &__close {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+  }
+
+  .at-icon-close::before {
+    font-size: 24px;
+    color: $curPrimaryColor;
+    vertical-align: center;
+  }
+}

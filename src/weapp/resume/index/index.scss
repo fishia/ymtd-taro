@@ -1,0 +1,31 @@
+@include setBackground('.resume-index', $bgColor, -1);
+
+.resume-index {
+  overflow: hidden;
+  position: relative;
+  padding: 10px 0 calc(176px + #{$pageBottom});
+  color: $titleColor;
+  letter-spacing: 0;
+
+  &.hide-button {
+    padding-bottom: calc(10px + #{$pageBottom});
+  }
+
+  .hd-fixedbottompopup__container {
+    background-color: #fff;
+    bottom: $pageBottom;
+    padding: 48px 32px 0 32px;
+    height: auto;
+  }
+
+  &::after {
+    content: ' ';
+    height: 300px;
+    width: 140%;
+    position: absolute;
+    left: -20%;
+    top: 0;
+    border-radius: 0 0 60% 60%;
+    background: $primaryColor;
+  }
+}

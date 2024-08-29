@@ -1,0 +1,16 @@
+@import "~taro-ui/dist/style/components/input.scss";
+@import "~taro-ui/dist/style/components/icon.scss";
+
+.at-input {
+
+  .at-icon-close::before {
+    width: 40px;
+    height: 40px;
+    background: #B8BCBF;
+    border-radius: 50%;
+    font-size: 8PX;
+    color: #fff;
+    padding: 4PX;
+    line-height: 40PX;
+  }
+}

@@ -1,0 +1,41 @@
+$audioHeight: 420px;
+
+.active-audio {
+  width: 100%;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+
+  &__img,
+  &__videoWrapper {
+    width: 100%;
+    height: $audioHeight;
+  }
+
+  &__status {
+    width: 74px;
+    height: 34px;
+    margin-left: 8px;
+    vertical-align: text-bottom;
+  }
+
+  &__description {
+    padding: 24px 32px;
+  }
+
+  &__title {
+    font-size: 28px;
+    font-weight: 500;
+    color: #333333;
+    line-height: 40px;
+    margin-bottom: 4px;
+  }
+
+  &__date {
+    font-size: 24px;
+    font-weight: 400;
+    color: #999999;
+    line-height: 34px;
+  }
+}

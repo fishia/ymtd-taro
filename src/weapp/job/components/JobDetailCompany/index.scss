@@ -1,0 +1,91 @@
+.job-company {
+  padding: 40px 0;
+  background-color: #fff;
+  border-top: 1PX solid #F5F5F9;
+  border-bottom: 1PX solid #F5F5F9;
+
+  &__header {
+    font-size: 32px;
+    color: #151931;
+    margin-bottom: 32px;
+    font-weight: 500;
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+  }
+
+  &__right {
+    flex: 1;
+    width: calc(100% - 180px);
+  }
+
+  &__icon {
+    width: 84px;
+    height: 84px;
+    border-radius: 4px;
+    border: 2px solid #E2E4EE;
+    flex-shrink: 0;
+    margin-right: 18px;
+  }
+
+  &__title {
+    @extend .line-ellipsis;
+    height: 44px;
+    font-size: 32px;
+    font-weight: 400;
+    color: #151931;
+    line-height: 44px;
+    margin-bottom: 8px;
+  }
+
+  &__intro {
+    width: 100%;
+    @extend .font24;
+    @extend .line-ellipsis;
+    color: #474C66;
+    line-height: 34px;
+  }
+
+
+  &__attractTags {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    @extend .line-ellipsis;
+    margin: 12px 42px 0 102px;
+
+  }
+
+  &__attractTag {
+    text-align: center;
+    border-radius: 4px;
+    background: #F3F5FE;
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #484C64;
+    line-height: 32px;
+    margin-right: 8px;
+    padding: 0 6px;
+  }
+
+  &__jobCount {
+    margin-top: 16px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #8F96AE;
+    line-height: 34px;
+  }
+
+  &__jobCountNum {
+    font-size: 24px;
+  }
+
+  .at-icon-chevron-right {
+    color: #7A7F99;
+    margin-left: auto;
+    font-size: 32px;
+  }
+}

@@ -1,0 +1,26 @@
+$prefixCls: 'landing-avatar';
+
+.#{$prefixCls} {
+  & &__img {
+    width: 96px;
+    height: 96px;
+    background: #FFFFFF;
+    border-radius: 50%;
+  }
+
+  &__gender {
+    width: 32px;
+    height: 30px;
+    font-size: 28px;
+    display: inline-block;
+    text-align: center;
+
+    &.iconnan {
+      color: $primaryColor;
+    }
+
+    &.iconnv {
+      color: #F85F36
+    }
+  }
+}

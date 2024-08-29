@@ -1,0 +1,51 @@
+.form__toggle {
+  position: relative;
+  height: 164px;
+  padding: 32px;
+  display: flex;
+  align-items: center;
+
+  &__title {
+    font-size: 28px;
+    color: #333333;
+  }
+
+  &__switch {
+    position: absolute;
+    right: 32px;
+    border-radius: 4px;
+    border: 2PX solid #4256DC;
+    display: flex;
+    align-items: stretch;
+    border-radius: 8px;
+  }
+
+  &__switch-item {
+    justify-self: flex-end;
+    min-width: 146px;
+    background: transparent;
+    font-size: 24px;
+    font-weight: 500;
+    color: #4256DC;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+    vertical-align: middle;
+    margin: -1px;
+
+    &.selected {
+      background: #4256DC;
+      color: #FFF;
+    }
+
+  }
+
+  &::after {
+    @include halfPxBorder;
+    content: '';
+    left: 32px;
+    right: 32px;
+    background: #F0F2F5;
+    bottom: 0;
+  }
+}

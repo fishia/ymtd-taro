@@ -1,0 +1,52 @@
+.commonly-word-item {
+  background: #fff;
+  padding: 27px 30px;
+  position: relative;
+
+  &__text {
+    font-size: 28px;
+    font-weight: 400;
+    color: #666666;
+    line-height: 40px;
+    display: inline-block;
+    vertical-align: middle;
+
+    &.fold {
+      max-width: 630px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    &.unfold {
+      max-width: 690px;
+      word-break: break-all;
+    }
+  }
+
+  &__unfold {
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #4773FF;
+    line-height: 40px;
+    width: 50px;
+    margin-left: 10px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &__tester {
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    z-index: -1;
+    display: inline-block;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 40px;
+  }
+}

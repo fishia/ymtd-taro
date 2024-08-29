@@ -1,0 +1,121 @@
+.hd-dropdown {
+  height: 100%;
+  background: #fff;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .choose-button {
+    min-width: 210px;
+  }
+
+  .dropdown-btn--reset {
+    width: 224px;
+    background: #fff;
+    color: #4773ff;
+    border: 2rpx solid #4773ff;
+  }
+
+  .dropdown-btn--confirm {
+    width: 430px;
+    color: #FFFFFF;
+    font-weight: 600;
+    background: #4256dc;
+  }
+
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .hd-dropdown__text {
+      font-size: 24px;
+      color: #484C64;
+      white-space: nowrap;
+    }
+
+    .hd-dropdown__icon {
+      margin-left: 8px;
+      color: #484C64;
+      font-size: 35px;
+    }
+  }
+
+  &__overlay {
+    position: fixed;
+    z-index: 800;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .3);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 200ms ease-in-out;
+  }
+
+  &__overlayShow {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__content {
+    position: absolute;
+    height: 70vh;
+    top: 70px;
+    left: 0;
+    padding-bottom: 100px;
+    width: 750px;
+    background-color: #fff;
+    z-index: 900;
+    overflow: scroll;
+  }
+
+  &__subCond {
+    .hd-dropdown__block-title {
+      font-size: 28px;
+    }
+  }
+
+  &__block-title {
+    font-size: 32px;
+    font-weight: 600;
+    color: #151931;
+    line-height: 44px;
+    margin-bottom: 32px;
+  }
+
+  &__section {
+    padding: 32px 0 0 32px;
+  }
+
+  &__block-content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__action {
+    padding: 44px 32px;
+    background-color: #fff;
+    position: absolute;
+    top: 70vh;
+    left: 0;
+    width: 750px;
+    z-index: 900;
+    position: absolute;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+
+    button {
+      height: 88px;
+      line-height: 88px;
+      border-radius: 9999PX;
+      font-size: 32px;
+      text-align: center;
+      font-weight: 400;
+    }
+  }
+
+}

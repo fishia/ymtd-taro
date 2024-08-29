@@ -1,0 +1,17 @@
+@include setBackground('.hd-empty',#fff,-1);
+
+.hd-empty {
+  &__image {
+    display: block;
+    // width: 446px;
+    // height: 374px;
+    margin: 340px auto 0;
+  }
+  &__content {
+    text-align: center;
+    line-height: 60px;
+    @extend .font24;
+  }
+}
+
+

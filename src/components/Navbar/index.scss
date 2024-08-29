@@ -1,0 +1,70 @@
+.nav-boxs {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  background: white;
+
+  .status {
+    background: #fff;
+  }
+
+  .navbar {
+    position: relative;
+    background: #fff;
+  }
+
+  .back-icon {
+    width: 28px;
+    height: 100%;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    display: flex;
+  }
+
+  .back-icon {
+    width: 60rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .back-icon-home {
+    width: 100rpx;
+  }
+
+  .back-icon-img {
+    width: 21px;
+    height: 30px;
+    transform: rotate(180deg);
+  }
+
+  .back-icon-img-home {
+    width: 70px;
+    height: 70px;
+    transform: rotate(0);
+    margin-left: 10px;
+  }
+
+  .page-back-icon-img {
+    width: 55px;
+    height: 55px;
+    transform: rotate(0);
+    margin-left: 20px;
+  }
+
+  .nav-title,
+  .back-icon {
+    font-size: 30px;
+    color: #000;
+    // font-weight: bold;
+  }
+
+  .nav-title {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    // font-weight: bold;
+  }
+}

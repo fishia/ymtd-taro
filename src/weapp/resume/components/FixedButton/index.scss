@@ -1,0 +1,44 @@
+.resume-fixed-button {
+  position: fixed;
+  z-index: 2;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: calc(148px + #{$pageBottom});
+  padding: 30px 15px calc(30px + #{$pageBottom});
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+
+  .resume-fixed-button__button,
+  .hd-button {
+    width: 100%;
+    margin: 0 15px;
+    height: 88px;
+    display: block;
+    font-weight: bold;
+    border-radius: 9999PX;
+  }
+
+  &__button {
+    font-weight: bold;
+    color: #FFF;
+    text-align: center;
+    line-height: 88px;
+    background: #4256DC;
+    flex-grow: 1;
+    border-radius: 9999PX;
+
+    &.disabled {
+      background: #B4CBFD;
+    }
+  }
+
+  &.no-round .hd-button {
+    border-radius: 5px;
+  }
+
+  &.round .resume-fixed-button__button {
+    border-radius: 5px;
+  }
+}

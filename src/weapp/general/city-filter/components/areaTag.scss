@@ -1,0 +1,13 @@
+.cityFilter-index__menu__block {
+  @extend .font28;
+  @extend .line-ellipsis;
+  font-family: PingFangSC-Medium, PingFang SC;
+  color: #474C66;
+  line-height: 40px;
+  padding: 20px 0 20px 32px;
+
+  &--selected {
+    color: #4655D4;
+    font-weight: bold;
+  }
+}

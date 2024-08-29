@@ -1,0 +1,54 @@
+.recommend-job-list {
+  &__subtitle {
+    padding-top: 62px;
+    padding-bottom: 32px;
+    box-sizing: border-box;
+    background-color: #ECEEF4;
+  }
+  
+  &__subtitleItem {
+    width: 240px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  &__line {
+    width: 16px;
+    height: 3px;
+    background-color: #474C66;
+  }
+
+  &__subtitleText {
+    height: 44px;
+    font-size: 32px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: bold;
+    color: #141933;
+    line-height: 44px;
+    margin: 0 8px;
+  }
+
+  &__list {
+    padding: 0 16px;
+    box-sizing: border-box;
+    background-color: #ECEEF4;
+  }
+
+  &__card {
+    padding: 24px;
+    box-sizing: border-box;
+  }
+
+  &__divider {
+    height: 1PX;
+    background: #F7F8FB;
+  }
+}
+
+.recommend-jobList {
+  .at-load-more {
+    background-color: #ECEEF4;
+  }
+}
+

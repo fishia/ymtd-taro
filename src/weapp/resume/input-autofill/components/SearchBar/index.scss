@@ -1,0 +1,56 @@
+.hd-searchbar__text {
+  font-size: 28px;
+  color: $titleColor;
+  white-space: nowrap;
+
+  .input-placeholder {
+    color: #B3B3B3;
+  }
+}
+
+.hd-searchbar__city {
+  @extend .hd-searchbar__text;
+  max-width: 90px;
+  @extend .line-ellipsis;
+}
+
+.hd-searchbar {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  margin: 8PX 32px;
+  overflow: hidden;
+  position: relative;
+
+  .hd-searchbar__left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+
+    .at-icon {
+      margin-left: 20px;
+      color: #595959;
+      font-size: 35px;
+    }
+  }
+
+  .hd-searchbar__divider {
+    margin-right: 30px;
+    width: 1PX;
+    height: 32px;
+    background: #d9d9d9;
+    margin-left: 30px;
+  }
+
+  &__border {
+    background: #f7f7f7;
+    border-radius: 40px;
+    padding: 0 0 0 30px;
+  }
+
+  .hd-searchbar__static {
+    color: #757575;
+  }
+}

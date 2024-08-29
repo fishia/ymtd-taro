@@ -1,0 +1,22 @@
+.message-item__exchange-phone {
+  font-size: 30px;
+  color: $titleColor;
+
+  &__name {
+    font-size: 34px;
+    font-weight: bold;
+    color: #333333;
+  }
+
+  &__number {
+    margin-top: 30px;
+  }
+
+  &__notice {
+    margin-bottom: 40px;
+  }
+
+  &__notice-bottom {
+    margin-top: 40px;
+  }
+}

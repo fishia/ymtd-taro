@@ -1,0 +1,58 @@
+.job-index {
+  &__no-job {
+    margin-top: 10px;
+    background: #fff;
+
+    .hd-empty__image {
+      width: 602px;
+      height: 320px;
+      margin-top: 0;
+    }
+
+    .hd-empty__content {
+      background-color: #fff;
+      font-size: 28px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      color: #474C66;
+      line-height: 40px;
+    }
+  }
+
+  &__reloadBtn {
+    width: 320px;
+    line-height: 88px;
+    margin: 0 auto;
+    text-align: center;
+    background: #4256dc;
+    border-radius: 44px;
+    font-size: 32px;
+    font-family: PingFangSC-Semibold, PingFang SC;
+    font-weight: 600;
+    color: #fff;
+    margin: 32px auto;
+  }
+
+  &__reload {
+    &__text {
+      font-size: 32px;
+      font-weight: 500;
+      color: #151931;
+      line-height: 44px;
+    }
+
+    &__description {
+      margin-top: 16px;
+      font-size: 28px;
+      font-weight: 400;
+      color: #7B7F97;
+      line-height: 40px;
+    }
+  }
+}
+
+.custom-image {
+  .hd-empty__image {
+    width: 602px;
+    height: 320px;
+  }
+}

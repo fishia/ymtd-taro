@@ -1,0 +1,188 @@
+@import '~taro-ui/dist/style/components/icon.scss';
+
+.avatar-uploader {
+  position: relative;
+  padding: 32px;
+
+  &::after {
+    @include halfPxBorder;
+    content: '';
+    left: 32px;
+    right: 32px;
+    background: #F0F2F5;
+    bottom: 0;
+  }
+
+  &__title {
+    font-size: 28px;
+    color: #333333;
+    line-height: 40px;
+  }
+
+  &__title-button {
+    margin-left: 20px;
+    font-weight: 500;
+    color: #4773FF;
+    display: inline;
+    background: none;
+    font-size: 28px;
+    padding: 0;
+  }
+
+  &__tips {
+    font-size: 32px;
+    color: #999999;
+    line-height: 44px;
+    margin-top: 16px;
+  }
+
+  &__avatar {
+    position: absolute;
+    right: 32px;
+    bottom: 32px;
+    width: 128px;
+    height: 128px;
+    background: none;
+    display: inline-block;
+    padding: 0;
+
+    &__image {
+      height: 128px;
+      width: 128px;
+      border-radius: 9999PX;
+    }
+
+    &__mask {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      border-radius: 9999PX;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__mask-icon {
+      width: 40px;
+      height: 40px;
+      margin-top: 28px;
+    }
+
+    &__mask-tips {
+      font-size: 20px;
+      font-weight: bold;
+      color: #FFFFFF;
+      line-height: 28px;
+      margin-top: 4px;
+      text-align: center;
+      z-index: 2;
+    }
+  }
+
+  &__mask {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.55);
+    opacity: 0;
+    transition: opacity 250ms;
+    z-index: 3;
+
+    &.show {
+      opacity: 1;
+    }
+  }
+
+  &__modal {
+    position: fixed;
+    left: 0;
+    right: 0;
+    transition: all 250ms ease-in-out;
+    bottom: calc(-1030px - #{$pageBottom});
+    padding: 48px 32px $pageBottom;
+    background: #FFF;
+    z-index: 4;
+    border-radius: 24px 24px 0px 0px;
+
+    &.show {
+      bottom: 0;
+    }
+
+    &__close {
+      position: absolute;
+      top: 35px;
+      right: 24px;
+      font-size: 35px;
+      color: #595959;
+
+      &::after {
+        content: ' ';
+        z-index: 15;
+        position: absolute;
+        top: -30px;
+        bottom: -30px;
+        right: -30px;
+        left: -30px;
+      }
+    }
+
+    &__title {
+      font-size: 40px;
+      font-weight: bold;
+      color: #333333;
+      line-height: 56px;
+    }
+
+    &__tips {
+      margin-top: 16px;
+      font-size: 28px;
+      color: #666666;
+      line-height: 40px;
+    }
+
+    &__example {
+      margin-top: 30px;
+      margin-bottom: 78px;
+      width: 152px;
+      height: 152px;
+    }
+
+    &__wrong {
+      margin-top: 22px;
+      margin-bottom: 80px;
+      height: 204px;
+    }
+
+    &__button {
+      position: relative;
+      font-size: 32px;
+      font-weight: 600;
+      color: #333333;
+      line-height: 44px;
+      text-align: center;
+      height: 122px;
+      line-height: 122px;
+      background: #FFF;
+
+      &.hover {
+        background: #f8faff;
+      }
+
+      &::before {
+        @include halfPxBorder;
+        content: '';
+        left: 32px;
+        right: 32px;
+        background: #F0F2F5;
+        top: 0;
+      }
+    }
+  }
+}

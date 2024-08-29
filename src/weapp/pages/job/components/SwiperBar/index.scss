@@ -1,0 +1,65 @@
+.job-index__swiper-bar {
+  // margin: 16px 32px;
+  height: 324px;
+  // background-color: #fff;
+
+  & &__swiper {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 50;
+    margin: 0 auto;
+  }
+
+  & &__swiper-item {
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  & &__img-wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    border-radius: 0;
+  }
+
+  & &__img {
+    width: 100%;
+    height: 100%;
+  }
+
+  & &__swiper-dots {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    display: flex;
+  }
+
+  & &__swiper-dot {
+    width: 16px;
+    height: 4px;
+    background: #FFFFFF;
+    border-radius: 2px;
+    opacity: 0.44;
+    margin: 0 4px;
+  }
+
+  .active {
+    opacity: 1;
+  }
+
+  // &::before {
+  //   content: ' ';
+  //   height: 130px;
+  //   width: 110%;
+  //   position: absolute;
+  //   left: -5%;
+  //   top: 0;
+  //   border-radius: 0 0 75% 75%;
+  //   background: $primaryColor;
+  // }
+}

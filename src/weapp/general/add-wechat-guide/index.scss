@@ -1,0 +1,75 @@
+.add-wechat-guide {
+  position: fixed;
+  top: 0;
+  bottom: $pageBottom;
+  background-color: #F1F6FC;
+
+  &__jump {
+    width: 112px;
+    line-height: 56px;
+    background: #C7CBDE;
+    border-radius: 34px;
+    text-align: center;
+    font-size: 28px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #FFFFFF;
+    position: absolute;
+    top: 200px;
+    right: 48px;
+  }
+
+  &__title {
+    font-size: 52px;
+    font-family: PingFangSC-Semibold, PingFang SC;
+    font-weight: bolder;
+    color: #141933;
+    line-height: 74px;
+    margin-top: 92px;
+  }
+
+  &__desc,
+  &__tips {
+    font-size: 32px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #484C64;
+    line-height: 48px;
+    margin-top: 16px;
+  }
+
+  &__tips {
+    margin-top: 84px;
+  }
+
+  &__input {
+    width: 638px;
+    height: 104px;
+    background: #FFFFFF;
+    border-radius: 12px;
+    border: 2px solid #E2E4ED;
+    margin-top: 24px;
+    padding-left: 32px;
+
+    .input-placeholder {
+      font-size: 32px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #C7CBDE;
+      line-height: 44px;
+    }
+  }
+
+  &__button {
+    width: 638px;
+    line-height: 88px;
+    text-align: center;
+    background: $primaryColor;
+    border-radius: 44px;
+    margin-top: 80px;
+    font-size: 32px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: #FFFFFF;
+  }
+}

@@ -1,0 +1,106 @@
+.location-area__item {
+  display: inline-block;
+  width: 200px;
+  text-align: center;
+  line-height: 64px;
+  background: #f6f6f6;
+  font-size: 26px;
+  font-weight: 500;
+  color: #262626;
+  margin: 0 30px 30px 0;
+}
+
+.select-location {
+  .at-indexes__menu {
+    right: 10px;
+  }
+
+  & &__indexes {
+    padding: 0 30px 40px;
+
+    &--multi {
+      padding-bottom: calc(154px + #{$pageBottom});
+    }
+
+    .at-indexes__list-title {
+      padding: 40px 0 20px;
+      background: #ffffff;
+      font-size: 36px;
+      font-weight: bold;
+      color: #000000;
+    }
+
+    .at-indexes__menu-item {
+      // padding: 10px 20px;
+      font-size: 22px;
+      font-weight: 500;
+      color: $primaryColor;
+    }
+
+    &--disabled {
+      display: inline-block;
+      width: 200px;
+      margin: 20px 20px 0 0;
+      line-height: 64px;
+      text-align: center;
+      background: #f6f6f6;
+      color: $titleColor;
+      @extend .font26;
+    }
+
+    .city-button {
+      @extend .font26;
+      width: 200px;
+      line-height: 64px;
+      background: #f6f6f6;
+      color: $titleColor;
+      border: 1px solid transparent;
+      border-radius: 0;
+      padding: 0 20px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    .city-button--active {
+      background: #f2f9ff;
+      border: 1px solid #156bc2;
+      color: $primaryColor;
+    }
+  }
+
+  & &__multi-bar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 2;
+    padding: 33px 30px calc(33px + #{$pageBottom});
+    height: calc(154px + #{$pageBottom});
+    border-top: 1px solid #c8c7c8;
+    background: #fff;
+    display: flex;
+
+    &__tip {
+      width: 230px;
+      font-size: 24px;
+      vertical-align: middle;
+      display: flex;
+      align-items: center;
+      padding-left: 15px;
+
+      .icon {
+        display: inline-block;
+        font-size: 30px;
+        width: 30px;
+        height: 30px;
+        color: $primaryColor;
+        margin-right: 17px;
+        vertical-align: middle;
+      }
+    }
+
+    &__confirm {
+      flex-grow: 1;
+    }
+  }
+}
